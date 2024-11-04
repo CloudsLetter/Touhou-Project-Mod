@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"bomb"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>th16.exe+A5800</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"player"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>th16.exe+A57F4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"power"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>th16.exe+A57E4</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <Comments>关于表格信息:
+</Comments>
+</CheatTable>

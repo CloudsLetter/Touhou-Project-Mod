@@ -58,17 +58,17 @@ namespace Touhou_Project_Mod_UI.Models
 
 
         //东方风神录
-
+        // 99
         public static IntPtr Fuujinroku_Power_Offset = 0x0074C48;
 
         // dec ecx -> nop 1 bit
         public static IntPtr Fuujinroku_Sub_Plyaer_Offset = 0x0026A15;
 
         // add word ptr [00474C48],-14 -> nop 8 bit
-        public static IntPtr Fuujinroku_Sub_Bomb_Offset = 0x00;
+        public static IntPtr Fuujinroku_Sub_Bomb_Offset = 0x00259D4;
 
         // add word ptr [00474C48],-40 -> nop 8 bit
-        public static IntPtr Fuujinroku_Sub_Power_Offset = 0x00;
+        public static IntPtr Fuujinroku_Sub_Power_Offset = 0x0025AB6;
 
 
         //
