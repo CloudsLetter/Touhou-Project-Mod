@@ -4,7 +4,7 @@
 使用 C# 编写，通过外部对应用内存R/W实现功能。支持中/英/日语言，除中文外其他语言均使用机器翻译，使用Visual Stuido 2022 Preview 及 WPF开发，DONET 版本为8.0
 
 非独立版本使用前需安装 DONET 8.0 运行时，下载地址: https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0
-
+[English](README_en.md)  [日本語](README_jp.md)
 TH06 东方红魔乡: 已支持 
 
 TH07 东方妖妖梦: 开发中
