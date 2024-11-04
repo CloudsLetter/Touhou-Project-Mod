@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"bomb"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>th13.exe+BE800</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"power"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>th13.exe+BE7E8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"player"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>th13.exe+BE7F4</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

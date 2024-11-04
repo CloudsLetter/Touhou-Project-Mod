@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"bomb"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>th14.exe+F5870</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"player"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>th14.exe+F5864</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"power"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>th14.exe+F5858</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
