@@ -9,26 +9,26 @@ TH06 Touhou Koumakyou: Supported
 
 TH07 Touhou Youyoumu:  development
 
-TH08 Touhou Eiyashou : Under development
+TH08 Touhou Eiyashou : development
 
-TH09 Touhou Kaeizuka : Under selection
+TH09 Touhou Kaeizuka : selection
 
-TH10 Touhou Fuujinroku: Under development
+TH10 Touhou Fuujinroku: development
 
-TH11 Touhou Chireiden: Under development
+TH11 Touhou Chireiden: development
 
 TH12 Touhou Seirensen: Ship: Supported
 
-TH13 Touhou Shinreibyou: Under development
+TH13 Touhou Shinreibyou: development
 
-TH14 Touhou Kishinjou: Under development
+TH14 Touhou Kishinjou: development
 
-TH15 Touhou Kanjuden: Legend: Under development
+TH15 Touhou Kanjuden: Legend: development
 
-TH16 Touhou Tenkuushou: Under development
+TH16 Touhou Tenkuushou: development
 
-TH17 Touhou Kikeijuu: Under development
+TH17 Touhou Kikeijuu: development
 
-TH18 Touhou Kouryuudou: Under development
+TH18 Touhou Kouryuudou: development
 
-TH19 Touhou Juuouen: Under selection
+TH19 Touhou Juuouen: selection
