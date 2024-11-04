@@ -12,7 +12,7 @@
         Background="{DynamicResource SystemControlPageBackgroundAltHighBrush}"
         Loaded="Window_Main_Loaded"
         >
-    <Grid ShowGridLines="True">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.3*" />
             <ColumnDefinition Width="0.7*" />
