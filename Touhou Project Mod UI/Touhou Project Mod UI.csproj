@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Touhou_Project_Mod_UI</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+	 <Nullable>enable</Nullable>
+	 <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Img\Th10.png" />
+    <None Remove="Img\Th11.png" />
+    <None Remove="Img\Th12.png" />
+    <None Remove="Img\Th13.png" />
+    <None Remove="Img\Th14.png" />
+    <None Remove="Img\Th15.png" />
+    <None Remove="Img\Th16.png" />
+    <None Remove="Img\Th17.png" />
+    <None Remove="Img\Th18.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModernWpfUI" Version="0.9.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Img\Th10.png" />
+    <Resource Include="Img\Th11.png" />
+    <Resource Include="Img\Th12.png" />
+    <Resource Include="Img\Th13.png" />
+    <Resource Include="Img\Th14.png" />
+    <Resource Include="Img\Th15.png" />
+    <Resource Include="Img\Th16.png" />
+    <Resource Include="Img\Th17.png" />
+    <Resource Include="Img\Th18.png" />
+    <Resource Include="Img\Th06.png" />
+    <Resource Include="Img\Th07.png" />
+    <Resource Include="Img\Th08.png" />
+    <Resource Include="Img\Th09.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+</Project>

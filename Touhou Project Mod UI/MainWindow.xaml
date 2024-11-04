@@ -1,0 +1,56 @@
+﻿<Window x:Class="Touhou_Project_Mod_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Touhou_Project_Mod_UI"
+        xmlns:t="clr-namespace:Touhou_Project_Mod_UI.Properties"
+        mc:Ignorable="d"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        Title="MainWindow" Height="450" Width="800"
+        Background="{DynamicResource SystemControlPageBackgroundAltHighBrush}"
+        Loaded="Window_Main_Loaded"
+        >
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*" />
+            <ColumnDefinition Width="0.7*" />
+        </Grid.ColumnDefinitions>
+        <DockPanel
+            Grid.Row="1"
+            Background="{DynamicResource NavigationViewExpandedPaneBackground}"
+            >
+            <ui:AutoSuggestBox
+                x:Name="controlsSearchBox"
+                DockPanel.Dock="Top"
+                Margin="12"
+                PlaceholderText="{x:Static t:Resources.Search}"
+                QuerySubmitted="OnControlsSearchBoxQuerySubmitted"
+                TextChanged="OnControlsSearchBoxTextChanged"
+                QueryIcon="Find"
+               
+               />
+
+            <ui:ListView
+                x:Name="PagesList"
+                DockPanel.Dock="Top"
+                DisplayMemberPath="Title"
+                SelectedValuePath="PageType"
+                SelectedIndex="0"
+                SelectionChanged="PagesList_SelectionChanged">
+                <ui:ListView.ItemsSource>
+                    <local:ControlPagesData />
+                </ui:ListView.ItemsSource>
+            </ui:ListView>
+        </DockPanel>
+
+        <local:SampleFrame
+            x:Name="rootFrame"
+            Grid.Row="1"
+            Grid.Column="1"
+            Navigating="RootFrame_Navigating"
+            Navigated="RootFrame_Navigated" />
+    </Grid>
+
+</Window>

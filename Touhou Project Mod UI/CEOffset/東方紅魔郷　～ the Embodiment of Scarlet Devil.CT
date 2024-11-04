@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"power"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>th06.exe+29D4B0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"bomb"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>th06.exe + 29d4bb</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"player"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Byte</VariableType>
+      <Address>th06.exe + 029d4ba</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"得分"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>th06.exe+29BCA0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"最大得分"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>th06.exe+29BCAC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"计时器"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>th06.exe+29BC4C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"计时器1"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>th06.exe+29BC48</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"点"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>th06.exe+29D4B4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>11</ID>
+      <Description>"graze"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>th06.exe+29BCB4</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
