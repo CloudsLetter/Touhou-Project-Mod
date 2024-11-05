@@ -5,30 +5,30 @@ Written in C#, the function is realized by external R/W of application memory. S
 
 DONET 8.0 runtime must be installed before using the non-independent version. Download address: https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0
 
-TH06 Touhou Crimson Devil Village: Supported
+TH06 Touhou Koumakyou: Supported
 
-TH07 Touhou Yaoyou Dream: Under development
+TH07 Touhou Youyoumu:  development
 
-TH08 Touhou Eternal Night Trace: Under development
+TH08 Touhou Eiyashou : development
 
-TH09 Touhou Flower Reflection Tomb: Under selection
+TH09 Touhou Kaeizuka : selection
 
-TH10 Touhou Wind God Record: Under development
+TH10 Touhou Fuujinroku: development
 
-TH11 Touhou Earth Spirit Hall: Under development
+TH11 Touhou Chireiden: development
 
-TH12 Touhou Star Lotus Ship: Supported
+TH12 Touhou Seirensen: Ship: Supported
 
-TH13 Touhou God Temple: Under development
+TH13 Touhou Shinreibyou: development
 
-TH14 Touhou Huizhen Castle: Under development
+TH14 Touhou Kishinjou: development
 
-TH15 Touhou Blue Pearl Legend: Under development
+TH15 Touhou Kanjuden: Legend: development
 
-TH16 Eastern Sky Scepter: Under development
+TH16 Touhou Tenkuushou: development
 
-TH17 Eastern Ghost Beast: Under development
+TH17 Touhou Kikeijuu: development
 
-TH18 Eastern Rainbow Dragon Cave: Under development
+TH18 Touhou Kouryuudou: development
 
-TH19 Eastern Beast King Garden: Under selection
+TH19 Touhou Juuouen: selection
