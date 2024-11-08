@@ -22,8 +22,8 @@ public static class Globals
     public static Models.Status YouyoumuStatus = new() { };
     public static Models.Status EiyashouStatus = new();
     public static Models.Status KaeizukaStatus = new();
-    public static Models.Status FuujinrokuStatus = new();
-    public static Models.Status ChireidenStatus = new();
+    public static Models.Status FuujinrokuStatus = new() {PlayersOriginalBytes = new byte[1], BombOriginalBytes = new byte[8], PowerOriginalBytes = new byte[8], InvincibleOriginalBytes = new byte[10] };
+    public static Models.Status ChireidenStatus = new() { PlayersOriginalBytes = new byte[6], BombOriginalBytes = new byte[6], PowerOriginalBytes = new byte[5], InvincibleOriginalBytes = new byte[10] };
     public static Models.Status SeirensenStatus = new() { PlayersOriginalBytes = new byte[6], BombOriginalBytes = new byte[3], PowerOriginalBytes = new byte[5], InvincibleOriginalBytes = new byte[10] };
     public static Models.Status ShinreibyouStatus = new();
     public static Models.Status KishinjouStatus = new();

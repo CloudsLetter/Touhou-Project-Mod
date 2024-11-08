@@ -93,22 +93,22 @@ namespace Touhou_Project_Mod_UI.Models
         public static IntPtr Fuujinroku_Sub_Power_Offset = 0x0025AB6;
 
 
-        //
-        public static IntPtr Fuujinroku_Sub_Invincible_Offset = 0x00;
+        // mov [ebp+00000458],00000004 -> 10 bit
+        public static IntPtr Fuujinroku_Sub_Invincible_Offset = 0x0026CFF;
 
 
         //11东方地灵殿
 
-        public static IntPtr Chireiden_Power_Offset = 0x00;
+        public static IntPtr Chireiden_Power_Offset = 0xA56E8;
+        // mov [004A5718],edx -> nop 6 bit
+        public static IntPtr Chireiden_Sub_Plyaer_Offset = 0x0327F0;
+        // sub [004A56E8],edx -> nop 6 bit
+        public static IntPtr Chireiden_Sub_Bomb_Offset = 0x00311F1;
+        // mov [004A56E8],eax -> nop 5 bit
+        public static IntPtr Chireiden_Sub_Power_Offset = 0x00312E0;
 
-        public static IntPtr Chireiden_Sub_Plyaer_Offset = 0x00;
-
-        public static IntPtr Chireiden_Sub_Bomb_Offset = 0x00;
-
-        public static IntPtr Chireiden_Sub_Power_Offset = 0x00;
-
-
-        public static IntPtr Chireiden_Sub_Invincible_Offset = 0x00;
+        // mov [edi+00000928],00000004 -> nop 10 bit
+        public static IntPtr Chireiden_Sub_Invincible_Offset = 0x0032A9E;
 
 
         //12东方星莲船

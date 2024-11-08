@@ -21,7 +21,7 @@ namespace Touhou_Project_Mod_UI.Views
     /// <summary>
     /// Fuujinroku.xaml 的交互逻辑
     /// </summary>
-    public partial class Fuujinroku : Page
+    public partial class Fuujinroku : Page, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -140,7 +140,7 @@ namespace Touhou_Project_Mod_UI.Views
             {
                 if (Globals.FuujinrokuStatus.IsRunStatus)
                 {
-                    (Globals.FuujinrokuStatus.BaseAddress, Globals.FuujinrokuStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th07");
+                    (Globals.FuujinrokuStatus.BaseAddress, Globals.FuujinrokuStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th10");
                     if (Globals.FuujinrokuStatus.BaseAddress == IntPtr.Zero && Globals.FuujinrokuStatus.ProcessHandle == IntPtr.Zero)
                     {
                         return false;
@@ -148,7 +148,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
                 if (Globals.FuujinrokuStatus.IsRunStatusC)
                 {
-                    (Globals.FuujinrokuStatus.BaseAddress, Globals.FuujinrokuStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th07c");
+                    (Globals.FuujinrokuStatus.BaseAddress, Globals.FuujinrokuStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th10c");
                     if (Globals.FuujinrokuStatus.BaseAddress == IntPtr.Zero && Globals.FuujinrokuStatus.ProcessHandle == IntPtr.Zero)
                     {
                         return false;
@@ -156,7 +156,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
                 if (Globals.FuujinrokuStatus.IsRunStatusE)
                 {
-                    (Globals.FuujinrokuStatus.BaseAddress, Globals.FuujinrokuStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th07e");
+                    (Globals.FuujinrokuStatus.BaseAddress, Globals.FuujinrokuStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th10e");
                     if (Globals.FuujinrokuStatus.BaseAddress == IntPtr.Zero && Globals.FuujinrokuStatus.ProcessHandle == IntPtr.Zero)
                     {
                         return false;
@@ -290,7 +290,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
 
 
-                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Power_Offset, Value.Fuujinroku_Power_Value, true, Globals.POWEROB, Globals.FuujinrokuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Power_Offset, Value.Fuujinroku_Sub_Power_Value, true, Globals.POWEROB, Globals.FuujinrokuStatus, 0x00))
                 {
                     Globals.FuujinrokuStatus.MaxPower_Locker = true;
                     MaxPower = false;

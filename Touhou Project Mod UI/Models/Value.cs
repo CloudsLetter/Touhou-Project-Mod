@@ -57,43 +57,43 @@ namespace Touhou_Project_Mod_UI.Models
 
         // 08东方永夜抄
         // 
-        public static byte[] Eiyashou_Power_Offset = [];
+        public static byte[] Eiyashou_Power_Value = [];
 
-        public static byte[] Eiyashou_Sub_Plyaer_Offset = [];
+        public static byte[] Eiyashou_Sub_Plyaer_Value = [];
 
-        public static byte[] Eiyashou_Sub_Bomb_Offset = [];
+        public static byte[] Eiyashou_Sub_Bomb_Value = [];
 
         // 
-        public static byte[] Eiyashou_Sub_Power_Offset = [];
+        public static byte[] Eiyashou_Sub_Power_Value = [];
 
 
         //
-        public static byte[] Eiyashou_Sub_Invincible_Offset = [];
+        public static byte[] Eiyashou_Sub_Invincible_Value = [];
 
         // 09东方花映塚 
 
-        public static byte[] Kaeizuka_Power_Offset = [];
+        public static byte[] Kaeizuka_Power_Value = [];
 
-        public static byte[] Kaeizuka_Sub_Plyaer_Offset = [];
+        public static byte[] Kaeizuka_Sub_Plyaer_Value = [];
 
-        public static byte[] Kaeizuka_Sub_Bomb_Offset = [];
+        public static byte[] Kaeizuka_Sub_Bomb_Value = [];
 
-        public static byte[] Kaeizuka_Sub_Power_Offset = [];
+        public static byte[] Kaeizuka_Sub_Power_Value = [];
 
 
-        public static byte[] Kaeizuka_Sub_Invincible_Offset = [];
+        public static byte[] Kaeizuka_Sub_Invincible_Value = [];
 
         // 10东方风神录
-        public static byte[] Fuujinroku_Power_Value = [0x8F, 0x01];
+        public static byte[] Fuujinroku_Power_Value = [0x63];
 
         // 
-        public static byte[] Fuujinroku_Sub_Plyaer_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
+        public static byte[] Fuujinroku_Sub_Plyaer_Value = [0x90];
 
         // 
-        public static byte[] Fuujinroku_Sub_Bomb_Value = [0x90, 0x90, 0x90];
+        public static byte[] Fuujinroku_Sub_Bomb_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
         //
-        public static byte[] Fuujinroku_Sub_Power_Value = [0x90, 0x90, 0x90, 0x90, 0x90];
+        public static byte[] Fuujinroku_Sub_Power_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
         // 
         public static byte[] Fuujinroku_Sub_Power2_Value = [];
 
@@ -103,16 +103,16 @@ namespace Touhou_Project_Mod_UI.Models
 
         //11东方地灵殿
 
-        public static byte[] Chireiden_Power_Offset = [];
+        public static byte[] Chireiden_Power_Value = [0x4F];
 
-        public static byte[] Chireiden_Sub_Plyaer_Offset = [];
+        public static byte[] Chireiden_Sub_Plyaer_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Chireiden_Sub_Bomb_Offset = [];
+        public static byte[] Chireiden_Sub_Bomb_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Chireiden_Sub_Power_Offset = [];
+        public static byte[] Chireiden_Sub_Power_Value = [0x90, 0x90, 0x90, 0x90, 0x90];
 
 
-        public static byte[] Chireiden_Sub_Invincible_Offset = [];
+        public static byte[] Chireiden_Sub_Invincible_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
 
         // 12东方星莲船
@@ -134,94 +134,94 @@ namespace Touhou_Project_Mod_UI.Models
 
         // 13东方神灵庙
 
-        public static byte[] Shinreibyou_Power_Offset = [];
+        public static byte[] Shinreibyou_Power_Value = [];
 
-        public static byte[] Shinreibyou_Sub_Plyaer_Offset = [];
+        public static byte[] Shinreibyou_Sub_Plyaer_Value = [];
 
-        public static byte[] Shinreibyou_Sub_Bomb_Offset = [];
+        public static byte[] Shinreibyou_Sub_Bomb_Value = [];
 
-        public static byte[] Shinreibyou_Sub_Power_Offset = [];
+        public static byte[] Shinreibyou_Sub_Power_Value = [];
 
 
-        public static byte[] Shinreibyou_Sub_Invincible_Offset = [];
+        public static byte[] Shinreibyou_Sub_Invincible_Value = [];
 
         // 14东方辉针城
 
-        public static byte[] Kishinjou_Power_Offset = [];
+        public static byte[] Kishinjou_Power_Value = [];
 
-        public static byte[] Kishinjou_Sub_Plyaer_Offset = [];
+        public static byte[] Kishinjou_Sub_Plyaer_Value = [];
 
-        public static byte[] Kishinjou_Sub_Bomb_Offset = [];
+        public static byte[] Kishinjou_Sub_Bomb_Value = [];
 
-        public static byte[] Kishinjou_Sub_Power_Offset = [];
+        public static byte[] Kishinjou_Sub_Power_Value = [];
 
 
-        public static byte[] Kishinjou_Sub_Invincible_Offset = [];
+        public static byte[] Kishinjou_Sub_Invincible_Value = [];
 
         // 15东方绀珠传
 
-        public static byte[] Kanjuden_Power_Offset = [];
+        public static byte[] Kanjuden_Power_Value = [];
 
-        public static byte[] Kanjuden_Sub_Plyaer_Offset = [];
+        public static byte[] Kanjuden_Sub_Plyaer_Value = [];
 
-        public static byte[] Kanjuden_Sub_Bomb_Offset = [];
+        public static byte[] Kanjuden_Sub_Bomb_Value = [];
 
-        public static byte[] Kanjuden_Sub_Power_Offset = [];
+        public static byte[] Kanjuden_Sub_Power_Value = [];
 
 
-        public static byte[] Kanjuden_Sub_Invincible_Offset = [];
+        public static byte[] Kanjuden_Sub_Invincible_Value = [];
 
         // 16东方天空璋
 
-        public static byte[] Tenkuushou_Power_Offset = [];
+        public static byte[] Tenkuushou_Power_Value = [];
 
-        public static byte[] Tenkuushou_Sub_Plyaer_Offset = [];
+        public static byte[] Tenkuushou_Sub_Plyaer_Value = [];
 
-        public static byte[] Tenkuushou_Sub_Bomb_Offset = [];
+        public static byte[] Tenkuushou_Sub_Bomb_Value = [];
 
-        public static byte[] Tenkuushou_Sub_Power_Offset = [];
+        public static byte[] Tenkuushou_Sub_Power_Value = [];
 
 
-        public static byte[] Tenkuushou_Sub_Invincible_Offset = [];
+        public static byte[] Tenkuushou_Sub_Invincible_Value = [];
 
         // 17东方鬼形兽
 
-        public static byte[] Kikeijuu_Power_Offset = [];
+        public static byte[] Kikeijuu_Power_Value = [];
 
-        public static byte[] Kikeijuu_Sub_Plyaer_Offset = [];
+        public static byte[] Kikeijuu_Sub_Plyaer_Value = [];
 
-        public static byte[] Kikeijuu_Sub_Bomb_Offset = [];
+        public static byte[] Kikeijuu_Sub_Bomb_Value = [];
 
-        public static byte[] Kikeijuu_Sub_Power_Offset = [];
+        public static byte[] Kikeijuu_Sub_Power_Value = [];
 
 
-        public static byte[] Kikeijuu_Sub_Invincible_Offset = [];
+        public static byte[] Kikeijuu_Sub_Invincible_Value = [];
 
         // 18东方虹龙洞
 
-        public static byte[] Kouryuudou_Power_Offset = [];
+        public static byte[] Kouryuudou_Power_Value = [];
 
-        public static byte[] Kouryuudou_Sub_Plyaer_Offset = [];
+        public static byte[] Kouryuudou_Sub_Plyaer_Value = [];
 
-        public static byte[] Kouryuudou_Sub_Bomb_Offset = [];
+        public static byte[] Kouryuudou_Sub_Bomb_Value = [];
 
-        public static byte[] Kouryuudou_Sub_Power_Offset = [];
+        public static byte[] Kouryuudou_Sub_Power_Value = [];
 
 
-        public static byte[] Kouryuudou_Sub_Invincible_Offset = [];
+        public static byte[] Kouryuudou_Sub_Invincible_Value = [];
 
         // 19东方兽王国
 
-        public static byte[] Juuouen_Power_Offset = [];
+        public static byte[] Juuouen_Power_Value = [];
 
-        public static byte[] Juuouen_Sub_Plyaer_Offset = [];
+        public static byte[] Juuouen_Sub_Plyaer_Value = [];
 
-        public static byte[] Juuouen_Sub_Bomb_Offset = [];
+        public static byte[] Juuouen_Sub_Bomb_Value = [];
 
-        public static byte[] Juuouen_Sub_Power_Offset = [];
+        public static byte[] Juuouen_Sub_Power_Value = [];
 
 
-        public static byte[] Juuouen_Sub_Invincible_Offset = [];
+        public static byte[] Juuouen_Sub_Invincible_Value = [];
 
 
     }

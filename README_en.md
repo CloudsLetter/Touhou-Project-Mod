@@ -13,9 +13,9 @@ TH08 Touhou Eiyashou : development
 
 TH09 Touhou Kaeizuka : selection
 
-TH10 Touhou Fuujinroku: development
+TH10 Touhou Fuujinroku: Supported
 
-TH11 Touhou Chireiden: development
+TH11 Touhou Chireiden: Supported
 
 TH12 Touhou Seirensen: Ship: Supported
 
