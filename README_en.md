@@ -19,7 +19,7 @@ TH11 Touhou Chireiden: Supported
 
 TH12 Touhou Seirensen: Ship: Supported
 
-TH13 Touhou Shinreibyou: development
+TH13 Touhou Shinreibyou: Supported
 
 TH14 Touhou Kishinjou: development
 

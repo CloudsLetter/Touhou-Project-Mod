@@ -130,17 +130,17 @@ namespace Touhou_Project_Mod_UI.Models
 
 
         // 13东方神灵庙
+        // 399 
+        public static IntPtr Shinreibyou_Power_Offset = 0x00BE7E8;
+        // dec [004BE7F4] -> nop 6 bit
+        public static IntPtr Shinreibyou_Sub_Plyaer_Offset = 0x0044A52;
+        // sub eax,edi -> nop 2 bit
+        public static IntPtr Shinreibyou_Sub_Bomb_Offset = 0x000A402;
+        // mov [004BE7E8],eax -> nop 5 bit
+        public static IntPtr Shinreibyou_Sub_Power_Offset = 0x0045A31;
 
-        public static IntPtr Shinreibyou_Power_Offset = 0x00;
-
-        public static IntPtr Shinreibyou_Sub_Plyaer_Offset = 0x00;
-
-        public static IntPtr Shinreibyou_Sub_Bomb_Offset = 0x00;
-
-        public static IntPtr Shinreibyou_Sub_Power_Offset = 0x00;
-
-
-        public static IntPtr Shinreibyou_Sub_Invincible_Offset = 0x00;
+        // mov [edi+0000065C],00000004 -> nop 10 bit 
+        public static IntPtr Shinreibyou_Sub_Invincible_Offset = 0x0044D75;
 
         // 14东方辉针城
 

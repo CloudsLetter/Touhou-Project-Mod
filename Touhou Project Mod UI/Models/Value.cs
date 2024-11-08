@@ -134,16 +134,16 @@ namespace Touhou_Project_Mod_UI.Models
 
         // 13东方神灵庙
 
-        public static byte[] Shinreibyou_Power_Value = [];
+        public static byte[] Shinreibyou_Power_Value = [0x8F, 0x01];
 
-        public static byte[] Shinreibyou_Sub_Plyaer_Value = [];
+        public static byte[] Shinreibyou_Sub_Plyaer_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Shinreibyou_Sub_Bomb_Value = [];
+        public static byte[] Shinreibyou_Sub_Bomb_Value = [0x90, 0x90];
 
-        public static byte[] Shinreibyou_Sub_Power_Value = [];
+        public static byte[] Shinreibyou_Sub_Power_Value = [0x90, 0x90, 0x90, 0x90, 0x90];
 
 
-        public static byte[] Shinreibyou_Sub_Invincible_Value = [];
+        public static byte[] Shinreibyou_Sub_Invincible_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
         // 14东方辉针城
 
