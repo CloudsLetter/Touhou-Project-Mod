@@ -147,55 +147,56 @@ namespace Touhou_Project_Mod_UI.Models
 
         // 14东方辉针城
 
-        public static byte[] Kishinjou_Power_Value = [];
+        public static byte[] Kishinjou_Power_Value = [0x8F, 0x01];
 
-        public static byte[] Kishinjou_Sub_Plyaer_Value = [];
+        public static byte[] Kishinjou_Sub_Plyaer_Value = [0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Kishinjou_Sub_Bomb_Value = [];
+        public static byte[] Kishinjou_Sub_Bomb_Value = [0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Kishinjou_Sub_Power_Value = [];
+        public static byte[] Kishinjou_Sub_Power_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
 
-        public static byte[] Kishinjou_Sub_Invincible_Value = [];
+        public static byte[] Kishinjou_Sub_Invincible_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
         // 15东方绀珠传
 
-        public static byte[] Kanjuden_Power_Value = [];
+        public static byte[] Kanjuden_Power_Value = [0x8F, 0x01];
 
-        public static byte[] Kanjuden_Sub_Plyaer_Value = [];
+        public static byte[] Kanjuden_Sub_Plyaer_Value = [0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Kanjuden_Sub_Bomb_Value = [];
+        public static byte[] Kanjuden_Sub_Bomb_Value = [0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Kanjuden_Sub_Power_Value = [];
+        public static byte[] Kanjuden_Sub_Power_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
 
-        public static byte[] Kanjuden_Sub_Invincible_Value = [];
+        public static byte[] Kanjuden_Sub_Invincible_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
         // 16东方天空璋
 
-        public static byte[] Tenkuushou_Power_Value = [];
+        public static byte[] Tenkuushou_Power_Value = [0x8F, 0x01];
 
-        public static byte[] Tenkuushou_Sub_Plyaer_Value = [];
+        public static byte[] Tenkuushou_Sub_Plyaer_Value = [0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Tenkuushou_Sub_Bomb_Value = [];
+        public static byte[] Tenkuushou_Sub_Bomb_Value = [0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Tenkuushou_Sub_Power_Value = [];
+        public static byte[] Tenkuushou_Sub_Power_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
 
-        public static byte[] Tenkuushou_Sub_Invincible_Value = [];
+        public static byte[] Tenkuushou_Sub_Invincible_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
+
 
         // 17东方鬼形兽
 
-        public static byte[] Kikeijuu_Power_Value = [];
+        public static byte[] Kikeijuu_Power_Value = [0x8F, 0x01];
 
-        public static byte[] Kikeijuu_Sub_Plyaer_Value = [];
+        public static byte[] Kikeijuu_Sub_Plyaer_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Kikeijuu_Sub_Bomb_Value = [];
+        public static byte[] Kikeijuu_Sub_Bomb_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Kikeijuu_Sub_Power_Value = [];
+        public static byte[] Kikeijuu_Sub_Power_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
 
-        public static byte[] Kikeijuu_Sub_Invincible_Value = [];
+        public static byte[] Kikeijuu_Sub_Invincible_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
         // 18东方虹龙洞
 

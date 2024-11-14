@@ -143,56 +143,54 @@ namespace Touhou_Project_Mod_UI.Models
         public static IntPtr Shinreibyou_Sub_Invincible_Offset = 0x0044D75;
 
         // 14东方辉针城
-
-        public static IntPtr Kishinjou_Power_Offset = 0x00;
-
-        public static IntPtr Kishinjou_Sub_Plyaer_Offset = 0x00;
-
-        public static IntPtr Kishinjou_Sub_Bomb_Offset = 0x00;
-
-        public static IntPtr Kishinjou_Sub_Power_Offset = 0x00;
-
-
-        public static IntPtr Kishinjou_Sub_Invincible_Offset = 0x00;
+        // 8F 01 399
+        public static IntPtr Kishinjou_Power_Offset = 0x00F5858;
+        // mov [004F5864],eax -> 5 bit
+        public static IntPtr Kishinjou_Sub_Plyaer_Offset = 0x004F618;
+        // mov [004F5870],eax -> nop 5 bit
+        public static IntPtr Kishinjou_Sub_Bomb_Offset = 0x001218A;
+        // mov [004F5858],ecx -> nop 6 bit
+        public static IntPtr Kishinjou_Sub_Power_Offset = 0x004DDBF;
+        // mov [edi+00000684],00000004 -> nop 10 bit
+        public static IntPtr Kishinjou_Sub_Invincible_Offset = 0x004F871;
 
         // 15东方绀珠传
-
+        // 399
         public static IntPtr Kanjuden_Power_Offset = 0x00;
+        // mov [004E7450],eax -> nop 5 bit 
+        public static IntPtr Kanjuden_Sub_Plyaer_Offset = 0x0056398;
+        // mov [004E745C],eax -> nop 5 bit
+        public static IntPtr Kanjuden_Sub_Bomb_Offset = 0x001497A;
+        //mov [004E7440],ecx -> nop 6 bit
+        public static IntPtr Kanjuden_Sub_Power_Offset = 0x005830B;
 
-        public static IntPtr Kanjuden_Sub_Plyaer_Offset = 0x00;
-
-        public static IntPtr Kanjuden_Sub_Bomb_Offset = 0x00;
-
-        public static IntPtr Kanjuden_Sub_Power_Offset = 0x00;
-
-
-        public static IntPtr Kanjuden_Sub_Invincible_Offset = 0x00;
+        // mov [edi+00016220],00000004 -> nop 10 bit
+        public static IntPtr Kanjuden_Sub_Invincible_Offset = 0x005669F;
 
         // 16东方天空璋
-
-        public static IntPtr Tenkuushou_Power_Offset = 0x00;
-
-        public static IntPtr Tenkuushou_Sub_Plyaer_Offset = 0x00;
-
-        public static IntPtr Tenkuushou_Sub_Bomb_Offset = 0x00;
-
-        public static IntPtr Tenkuushou_Sub_Power_Offset = 0x00;
-
-
-        public static IntPtr Tenkuushou_Sub_Invincible_Offset = 0x00;
+        // 399
+        public static IntPtr Tenkuushou_Power_Offset = 0x00A57E4;
+        // mov [004A57F4],eax -> 5 nop bit
+        public static IntPtr Tenkuushou_Sub_Plyaer_Offset = 0x0043D3A;
+        // mov [004A5800],eax -> nop 5 bit
+        public static IntPtr Tenkuushou_Sub_Bomb_Offset = 0x00DB9C;
+        // mov [004A57E4],ecx - > noop 6 bit
+        public static IntPtr Tenkuushou_Sub_Power_Offset = 0x0042749;
+        //  mov [edi+000165A8],00000004 -> nop 10 bit 
+        public static IntPtr Tenkuushou_Sub_Invincible_Offset = 0x0043FDB;
 
         // 17东方鬼形兽
+        // 399
+        public static IntPtr Kikeijuu_Power_Offset = 0x00B5A30;
+        // mov [004B5A40],ecx -> nop 6 bit
+        public static IntPtr Kikeijuu_Sub_Plyaer_Offset = 0x004921B;
+        // mov [004B5A4C],ecx -> nop 6 bit
+        public static IntPtr Kikeijuu_Sub_Bomb_Offset = 0x0011CAB;
+        // mov [004B5A30],ecx -> nop 6 bit
+        public static IntPtr Kikeijuu_Sub_Power_Offset = 0x0047BA9;
 
-        public static IntPtr Kikeijuu_Power_Offset = 0x00;
-
-        public static IntPtr Kikeijuu_Sub_Plyaer_Offset = 0x00;
-
-        public static IntPtr Kikeijuu_Sub_Bomb_Offset = 0x00;
-
-        public static IntPtr Kikeijuu_Sub_Power_Offset = 0x00;
-
-
-        public static IntPtr Kikeijuu_Sub_Invincible_Offset = 0x00;
+        //mov [edi+00018DB0],00000004 -> nop 10 bit
+        public static IntPtr Kikeijuu_Sub_Invincible_Offset = 0x0049564;
 
         // 18东方虹龙洞
 

@@ -21,13 +21,13 @@ TH12 Touhou Seirensen: Ship: Supported
 
 TH13 Touhou Shinreibyou: Supported
 
-TH14 Touhou Kishinjou: development
+TH14 Touhou Kishinjou: Supported
 
-TH15 Touhou Kanjuden: Legend: development
+TH15 Touhou Kanjuden: Legend: Supported
 
-TH16 Touhou Tenkuushou: development
+TH16 Touhou Tenkuushou: Supported
 
-TH17 Touhou Kikeijuu: development
+TH17 Touhou Kikeijuu: Supported
 
 TH18 Touhou Kouryuudou: development
 
