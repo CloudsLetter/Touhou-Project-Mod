@@ -1,5 +1,5 @@
 ### Touhou Project Mod
-This project provides four basic function modifications for TH06 -> TH19. Currently, it only includes basic functions such as lock residual, lock bomb, full energy, lock energy, invincibility, etc. Of course, it is not limited to this. Subsequent functions are still under development, so stay tuned. Welcome to submit PR or Issues
+This project provides four basic function modifications for TH06 -> TH19(Integer). Currently, it only includes basic functions such as lock residual, lock bomb, full energy, lock energy, invincibility, etc. Of course, it is not limited to this. Subsequent functions are still under development, so stay tuned. Welcome to submit PR or Issues
 
 Written in C#, the function is realized by external R/W of application memory. Supports Chinese/English/Japanese languages. All languages ​​except Chinese are machine translated. Use Visual Stuido 2022 Preview and WPF for development. DONET version is 8.0
 
@@ -11,7 +11,7 @@ TH07 Touhou Youyoumu:  development
 
 TH08 Touhou Eiyashou : development
 
-TH09 Touhou Kaeizuka : selection
+TH09 Touhou Kaeizuka : Selection
 
 TH10 Touhou Fuujinroku: Supported
 
@@ -29,6 +29,6 @@ TH16 Touhou Tenkuushou: Supported
 
 TH17 Touhou Kikeijuu: Supported
 
-TH18 Touhou Kouryuudou: development
+TH18 Touhou Kouryuudou: Supported
 
-TH19 Touhou Juuouen: selection
+TH19 Touhou Juuouen: Selection

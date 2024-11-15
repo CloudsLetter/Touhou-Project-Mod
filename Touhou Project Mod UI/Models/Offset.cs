@@ -193,17 +193,16 @@ namespace Touhou_Project_Mod_UI.Models
         public static IntPtr Kikeijuu_Sub_Invincible_Offset = 0x0049564;
 
         // 18东方虹龙洞
-
-        public static IntPtr Kouryuudou_Power_Offset = 0x00;
-
-        public static IntPtr Kouryuudou_Sub_Plyaer_Offset = 0x00;
-
-        public static IntPtr Kouryuudou_Sub_Bomb_Offset = 0x00;
-
-        public static IntPtr Kouryuudou_Sub_Power_Offset = 0x00;
-
-
-        public static IntPtr Kouryuudou_Sub_Invincible_Offset = 0x00;
+        // 399
+        public static IntPtr Kouryuudou_Power_Offset = 0x00CCD38;
+        // mov [004CCD48],eax -> nop 5 bit
+        public static IntPtr Kouryuudou_Sub_Plyaer_Offset = 0x005D1A3;
+        //add dword ptr [edx+7C],-01 -> nop 4 bit
+        public static IntPtr Kouryuudou_Sub_Bomb_Offset = 0x00574D3;
+        // mov [eax+5C],edi -> nop 3 bit
+        public static IntPtr Kouryuudou_Sub_Power_Offset = 0x005749C;
+        //mov [edi+000476AC],00000004 -> nop 10 bit
+        public static IntPtr Kouryuudou_Sub_Invincible_Offset = 0x005D4E4;
 
         // 19东方兽王国
 
