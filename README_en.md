@@ -7,6 +7,8 @@ DONET 8.0 runtime must be installed before using the non-independent version. Do
 
 Known issues: TH07 Dongfang Yaoyaomeng and TH08 Dongfang Yongyechao cannot modify the power value directly, otherwise it will cause the game to crash, so full energy and locked energy cannot be enabled
 
+Download address: Github Release
+
 TH06 Touhou Koumakyou: Supported
 
 TH07 Touhou Youyoumu:  development

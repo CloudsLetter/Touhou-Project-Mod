@@ -7,6 +7,8 @@
 
 已知问题: TH07东方妖妖梦及TH08东方永夜抄无法修改直接修改Power值否则导致游戏崩溃，故满能量及锁定能量无法启用
 
+下载地址: Github Release
+
 [English](README_en.md)  [日本語](README_jp.md)
 
 ![](main.png)
