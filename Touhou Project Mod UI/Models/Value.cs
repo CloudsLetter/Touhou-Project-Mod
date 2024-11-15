@@ -41,14 +41,14 @@ namespace Touhou_Project_Mod_UI.Models
 
         public static byte[] Youyoumu_Power_Value = [];
 
-        // sub al,01 -> nop 2bit
-        public static byte[] Youyoumu_Sub_Plyaer_Value = [];
+        // sub al,01 -> nop 3 bit
+        public static byte[] Youyoumu_Sub_Plyaer_Value = [0x90, 0x90, 0x90];
 
         // sub dl,01 -> nop 3bit 
-        public static byte[] Youyoumu_Sub_Bomb_Value = [];
+        public static byte[] Youyoumu_Sub_Bomb_Value = [0x90, 0x90, 0x90];
 
         // mov word ptr [0069D4B0],0000 -> nop 9bit
-        public static byte[] Youyoumu_Sub_Power_Value = [];
+        public static byte[] Youyoumu_Sub_Power_Value = [0x90, 0x90, 0x90];
         // sub ecx,10 -> nop 3 bit
         public static byte[] Youyoumu_Sub_Power2_Value = [];
 

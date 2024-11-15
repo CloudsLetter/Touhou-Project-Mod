@@ -21,9 +21,7 @@ namespace Touhou_Project_Mod_UI.Views
     /// <summary>
     /// Youyoumu.xaml 的交互逻辑
     /// </summary>
-    /// <summary>
-    /// Youyoumu.xaml 的交互逻辑
-    /// </summary>
+
     public partial class Youyoumu : Page, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -148,6 +146,11 @@ namespace Touhou_Project_Mod_UI.Views
                     {
                         return false;
                     }
+                    Offset.Youyoumu_ReLocate_Offet = Memory.LocateRealPtr(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress, Offset.Youyoumu_Power_Offset, Offset.Youyoumu_Power_Ptr_Offset);
+                    if (Offset.Youyoumu_ReLocate_Offet == IntPtr.Zero)
+                    {
+                        return false;
+                    }
                 }
                 if (Globals.YouyoumuStatus.IsRunStatusC)
                 {
@@ -156,11 +159,21 @@ namespace Touhou_Project_Mod_UI.Views
                     {
                         return false;
                     }
+                    Offset.Youyoumu_ReLocate_Offet = Memory.LocateRealPtr(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress, Offset.Youyoumu_Power_Offset, Offset.Youyoumu_Power_Ptr_Offset);
+                    if (Offset.Youyoumu_ReLocate_Offet == IntPtr.Zero)
+                    {
+                        return false;
+                    }
                 }
                 if (Globals.YouyoumuStatus.IsRunStatusE)
                 {
                     (Globals.YouyoumuStatus.BaseAddress, Globals.YouyoumuStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th07e");
                     if (Globals.YouyoumuStatus.BaseAddress == IntPtr.Zero && Globals.YouyoumuStatus.ProcessHandle == IntPtr.Zero)
+                    {
+                        return false;
+                    }
+                    Offset.Youyoumu_ReLocate_Offet = Memory.LocateRealPtr(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress, Offset.Youyoumu_Power_Offset, Offset.Youyoumu_Power_Ptr_Offset);
+                    if (Offset.Youyoumu_ReLocate_Offet == IntPtr.Zero)
                     {
                         return false;
                     }
@@ -187,10 +200,14 @@ namespace Touhou_Project_Mod_UI.Views
 
             }
 
-            if (!GetMemoryInfo())
+            if (Globals.YouyoumuStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
+
 
             if (!LockPlayer)
             {
@@ -227,9 +244,12 @@ namespace Touhou_Project_Mod_UI.Views
                 return;
 
             }
-            if (!GetMemoryInfo())
+            if (Globals.YouyoumuStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
 
             if (!LockBomb)
@@ -268,9 +288,12 @@ namespace Touhou_Project_Mod_UI.Views
 
             }
 
-            if (!GetMemoryInfo())
+            if (Globals.YouyoumuStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
             if (!MaxPower)
             {
@@ -284,16 +307,16 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Power_Offset, Value.Youyoumu_Power_Value, true, Globals.SETVALUE, Globals.YouyoumuStatus, 0x00))
-                {
-                    Globals.YouyoumuStatus.MaxPower_Locker = true;
-                    MaxPower = false;
+                //if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Eiyashou_ReLocate_Offet, Value.Youyoumu_Power_Value, true, Globals.SETVALUE, Globals.YouyoumuStatus, 0x00))
+                //{
+                //    Globals.YouyoumuStatus.MaxPower_Locker = true;
+                //    MaxPower = false;
 
-                    return;
-                }
+                //    return;
+                //}
 
 
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Power_Offset, Value.Youyoumu_Power_Value, true, Globals.POWEROB, Globals.YouyoumuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Power_Offset, Value.Youyoumu_Sub_Power_Value, true, Globals.POWEROB, Globals.YouyoumuStatus, 0x00))
                 {
                     Globals.YouyoumuStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -325,9 +348,12 @@ namespace Touhou_Project_Mod_UI.Views
 
                 return;
             }
-            if (!GetMemoryInfo())
+            if (Globals.YouyoumuStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
 
             if (!Invincible)

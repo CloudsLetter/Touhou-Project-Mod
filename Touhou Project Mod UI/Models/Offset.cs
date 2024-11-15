@@ -39,29 +39,36 @@ namespace Touhou_Project_Mod_UI.Models
 
         //07东方妖妖梦
         // th07.exe+226278 -> resulte + 7C
-        public static IntPtr Youyoumu_Power_Offset = 0;
+        public static IntPtr Youyoumu_Power_Offset = 0x00226278;
 
-        public static IntPtr Youyoumu_Sub_Plyaer_Offset = 0;
+        public static IntPtr Youyoumu_Power_Ptr_Offset = 0x007C;
 
-        public static IntPtr Youyoumu_Sub_Bomb_Offset = 0;
+        public static IntPtr Youyoumu_ReLocate_Offet = 0x00;
 
-        public static IntPtr Youyoumu_Sub_Power_Offset = 0;
-
-
+        // fstp dword ptr [eax+5C] -> nop 3 bit
+        public static IntPtr Youyoumu_Sub_Plyaer_Offset = 0x002D602;
+        // fstp dword ptr [eax+68] -> nop 3 bit
+        public static IntPtr Youyoumu_Sub_Bomb_Offset = 0x002D647;
+        // fstp dword ptr [eax+7C] -> nop 3 bit 复用
+        public static IntPtr Youyoumu_Sub_Power_Offset = 0x0032615;
+        
         // 
         public static IntPtr Youyoumu_Sub_Invincible_Offset = 0;
 
         // 08东方永夜抄
-        // 
-        public static IntPtr Eiyashou_Power_Offset = 0x00;
+        public static IntPtr Eiyashou_Power_Offset = 0x00120F510;
 
+        public static IntPtr Eiyashou_Power_Ptr_Offset = 0x0098;
+
+        public static IntPtr Eiyashou_ReLocate_Offet = 0x00;
+
+        //fstp dword ptr [eax+74] -> nop 3 bit
         public static IntPtr Eiyashou_Sub_Plyaer_Offset = 0x003C676;
+        // fstp dword ptr [eax+00000080] -> nop  6 bit 
+        public static IntPtr Eiyashou_Sub_Bomb_Offset = 0x0098BB;
 
-        public static IntPtr Eiyashou_Sub_Bomb_Offset = 0x00;
-
-        // 
-        public static IntPtr Eiyashou_Sub_Power_Offset = 0x00;
-
+        // fstp dword ptr [ecx+00000098] -> 6 bit 复用
+        public static IntPtr Eiyashou_Sub_Power_Offset = 0x006FB0;
 
         //
         public static IntPtr Eiyashou_Sub_Invincible_Offset = 0x00;

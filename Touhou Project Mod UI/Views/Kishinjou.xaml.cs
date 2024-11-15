@@ -184,11 +184,13 @@ namespace Touhou_Project_Mod_UI.Views
 
             }
 
-            if (!GetMemoryInfo())
+            if (Globals.KishinjouStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
-
             if (!LockPlayer)
             {
                 if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Plyaer_Offset, Globals.KishinjouStatus.PlayersOriginalBytes, false, Globals.PLAYEROB, Globals.KishinjouStatus, 0x00))
@@ -224,9 +226,12 @@ namespace Touhou_Project_Mod_UI.Views
                 return;
 
             }
-            if (!GetMemoryInfo())
+            if (Globals.KishinjouStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
 
             if (!LockBomb)
@@ -264,10 +269,12 @@ namespace Touhou_Project_Mod_UI.Views
                 return;
 
             }
-
-            if (!GetMemoryInfo())
+            if (Globals.KishinjouStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
             if (!MaxPower)
             {
@@ -322,11 +329,14 @@ namespace Touhou_Project_Mod_UI.Views
 
                 return;
             }
-            if (!GetMemoryInfo())
-            {
-                return;
-            }
 
+            if (Globals.KishinjouStatus.BaseAddress == IntPtr.Zero)
+            {
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
+            }
             if (!Invincible)
             {
                 if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Invincible_Offset, Globals.KishinjouStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.KishinjouStatus, 0x00))

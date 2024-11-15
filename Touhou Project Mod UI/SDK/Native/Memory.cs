@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using Touhou_Project_Mod_UI.Models;
@@ -200,5 +202,21 @@ public static class Memory
         return (targetProcess.MainModule.BaseAddress, processHandle);
     }
 
+    public static IntPtr LocateRealPtr(IntPtr handle, IntPtr baseAddress, IntPtr offset, IntPtr soffset)
+    {
+        byte[] buffer = new byte[4];
+
+        IntPtr targetAddress = baseAddress + offset;
+
+        // 从目标地址读取内存内容
+        if (!Win32.ReadProcessMemory(handle, targetAddress, buffer, (uint)buffer.Length, out _))
+        {
+            return IntPtr.Zero;
+        }
+
+        IntPtr currentAddress = (IntPtr)(BitConverter.ToUInt32(buffer, 0) + soffset);
+
+        return currentAddress;
+    }
 
 }

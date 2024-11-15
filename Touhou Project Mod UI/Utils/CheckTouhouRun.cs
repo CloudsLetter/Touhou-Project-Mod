@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Touhou_Project_Mod_UI.Models;
 using Touhou_Project_Mod_UI.SDK.Native;
 using Touhou_Project_Mod_UI.Views;
 namespace Touhou_Project_Mod_UI.Utils
@@ -100,7 +101,6 @@ namespace Touhou_Project_Mod_UI.Utils
                         {
                             Globals.YouyoumuStatus.IsRunStatus = true;
                             Globals.YouyoumuStatus.IsRun = true;
-
                         }
                         if (!Globals.YouyoumuStatus.IsRunStatusC && !Globals.YouyoumuStatus.IsRun && item == "th07c")
                         {
@@ -123,6 +123,7 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.YouyoumuStatus.LockBomb = false;
                             Globals.YouyoumuStatus.MaxPower = false;
                             Globals.YouyoumuStatus.Invincible = false;
+                            Offset.Youyoumu_ReLocate_Offet = 0x00;
                         }
                         if (Globals.YouyoumuStatus.IsRunStatusC && Globals.YouyoumuStatus.IsRun && item == "th07c")
                         {
@@ -134,6 +135,7 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.YouyoumuStatus.LockBomb = false;
                             Globals.YouyoumuStatus.MaxPower = false;
                             Globals.YouyoumuStatus.Invincible = false;
+                            Offset.Youyoumu_ReLocate_Offet = 0x00;
                         }
 
                     }
@@ -165,6 +167,8 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.EiyashouStatus.LockBomb = false;
                             Globals.EiyashouStatus.MaxPower = false;
                             Globals.EiyashouStatus.Invincible = false;
+                            Offset.Eiyashou_ReLocate_Offet = 0x00;
+
                         }
                         if (Globals.EiyashouStatus.IsRunStatusC && Globals.EiyashouStatus.IsRun && item == "th08c")
                         {
@@ -176,6 +180,8 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.EiyashouStatus.LockBomb = false;
                             Globals.EiyashouStatus.MaxPower = false;
                             Globals.EiyashouStatus.Invincible = false;
+                            Offset.Eiyashou_ReLocate_Offet = 0x00;
+
                         }
 
                     }

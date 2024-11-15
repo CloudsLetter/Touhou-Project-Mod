@@ -191,10 +191,12 @@ namespace Touhou_Project_Mod_UI.Views
                 return;
 
             }
-
-            if (!GetMemoryInfo())
+            if (Globals.KoumakyouStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
 
             if (!LockPlayer)
@@ -232,9 +234,12 @@ namespace Touhou_Project_Mod_UI.Views
                 return;
 
             }
-            if (!GetMemoryInfo())
+            if (Globals.KoumakyouStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
 
             if (!LockBomb)
@@ -273,9 +278,12 @@ namespace Touhou_Project_Mod_UI.Views
 
             }
 
-            if (!GetMemoryInfo())
+            if (Globals.KoumakyouStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
             if (!MaxPower)
             {
@@ -339,10 +347,15 @@ namespace Touhou_Project_Mod_UI.Views
 
                 return;
             }
-            if (!GetMemoryInfo())
+
+            if (Globals.KoumakyouStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
+
 
             if (!Invincible)
             {

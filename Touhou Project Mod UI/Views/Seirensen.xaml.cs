@@ -184,9 +184,12 @@ namespace Touhou_Project_Mod_UI.Views
 
             }
 
-            if (!GetMemoryInfo())
+            if (Globals.SeirensenStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
 
             if (!LockPlayer)
@@ -224,9 +227,12 @@ namespace Touhou_Project_Mod_UI.Views
                 return;
 
             }
-            if (!GetMemoryInfo())
+            if (Globals.SeirensenStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
 
             if (!LockBomb)
@@ -265,9 +271,12 @@ namespace Touhou_Project_Mod_UI.Views
 
             }
 
-            if (!GetMemoryInfo())
+            if (Globals.SeirensenStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
             if (!MaxPower)
             {
@@ -322,11 +331,13 @@ namespace Touhou_Project_Mod_UI.Views
 
                 return;
             }
-            if (!GetMemoryInfo())
+            if (Globals.SeirensenStatus.BaseAddress == IntPtr.Zero)
             {
-                return;
+                if (!GetMemoryInfo())
+                {
+                    return;
+                }
             }
-
             if (!Invincible)
             {
                 if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Invincible_Offset, Globals.SeirensenStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.SeirensenStatus, 0x00))
