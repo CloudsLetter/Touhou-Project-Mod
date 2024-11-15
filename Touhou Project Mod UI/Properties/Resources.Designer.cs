@@ -223,6 +223,15 @@ namespace Touhou_Project_Mod_UI.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Project 的本地化字符串。
+        /// </summary>
+        public static string Project {
+            get {
+                return ResourceManager.GetString("Project", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Search 的本地化字符串。
         /// </summary>
         public static string Search {
@@ -255,6 +264,15 @@ namespace Touhou_Project_Mod_UI.Properties {
         public static string Tenkuushou {
             get {
                 return ResourceManager.GetString("Tenkuushou", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Welcome 的本地化字符串。
+        /// </summary>
+        public static string Welcome {
+            get {
+                return ResourceManager.GetString("Welcome", resourceCulture);
             }
         }
         

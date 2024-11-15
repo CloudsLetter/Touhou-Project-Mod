@@ -6,20 +6,21 @@
       xmlns:local="clr-namespace:Touhou_Project_Mod_UI.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      xmlns:t="clr-namespace:Touhou_Project_Mod_UI.Properties"
       Title="Home">
 
-    <Grid ShowGridLines="True">
+    <Grid>
         <!-- 定义两行 -->
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Text="Welcome" 
+        <TextBlock Grid.Row="0" Text="{x:Static t:Resources.Welcome}" 
                    VerticalAlignment="Center" HorizontalAlignment="Center"
                    FontSize="16" />
 
-        <TextBlock Grid.Row="1" Text="Hello World" 
+        <TextBlock Grid.Row="1" Text="https://github.com/CloudsLetter/Touhou-Project-Mod/" 
                    VerticalAlignment="Center" HorizontalAlignment="Center"
                    FontSize="16" />
     </Grid>

@@ -171,6 +171,9 @@
   <data name="NoResultsFound" xml:space="preserve">
     <value>未找到结果</value>
   </data>
+  <data name="Project" xml:space="preserve">
+    <value>项目</value>
+  </data>
   <data name="Search" xml:space="preserve">
     <value>搜索</value>
   </data>
@@ -182,6 +185,9 @@
   </data>
   <data name="Tenkuushou" xml:space="preserve">
     <value>东方天空璋</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>欢迎</value>
   </data>
   <data name="Youyoumu" xml:space="preserve">
     <value>东方妖妖梦</value>

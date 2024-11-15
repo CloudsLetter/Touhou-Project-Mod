@@ -147,10 +147,10 @@ namespace Touhou_Project_Mod_UI.Views
                         return false;
                     }
                     Offset.Youyoumu_ReLocate_Offet = Memory.LocateRealPtr(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress, Offset.Youyoumu_Power_Offset, Offset.Youyoumu_Power_Ptr_Offset);
-                    if (Offset.Youyoumu_ReLocate_Offet == IntPtr.Zero)
-                    {
-                        return false;
-                    }
+                    //if (Offset.Youyoumu_ReLocate_Offet == IntPtr.Zero)
+                    //{
+                    //    return false;
+                    //}
                 }
                 if (Globals.YouyoumuStatus.IsRunStatusC)
                 {
@@ -160,10 +160,10 @@ namespace Touhou_Project_Mod_UI.Views
                         return false;
                     }
                     Offset.Youyoumu_ReLocate_Offet = Memory.LocateRealPtr(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress, Offset.Youyoumu_Power_Offset, Offset.Youyoumu_Power_Ptr_Offset);
-                    if (Offset.Youyoumu_ReLocate_Offet == IntPtr.Zero)
-                    {
-                        return false;
-                    }
+                    //if (Offset.Youyoumu_ReLocate_Offet == IntPtr.Zero)
+                    //{
+                    //    return false;
+                    //}
                 }
                 if (Globals.YouyoumuStatus.IsRunStatusE)
                 {
@@ -173,10 +173,10 @@ namespace Touhou_Project_Mod_UI.Views
                         return false;
                     }
                     Offset.Youyoumu_ReLocate_Offet = Memory.LocateRealPtr(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress, Offset.Youyoumu_Power_Offset, Offset.Youyoumu_Power_Ptr_Offset);
-                    if (Offset.Youyoumu_ReLocate_Offet == IntPtr.Zero)
-                    {
-                        return false;
-                    }
+                    //if (Offset.Youyoumu_ReLocate_Offet == IntPtr.Zero)
+                    //{
+                    //    return false;
+                    //}
                 }
                 return true;
             }
@@ -297,32 +297,17 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Power_Offset, Globals.YouyoumuStatus.PowerOriginalBytes, false, Globals.POWEROB, Globals.YouyoumuStatus, 0x00))
-                {
-                    return;
-                }
-
+                Globals.YouyoumuStatus.MaxPower_Locker = false;
+                MaxPower = false;
+                return;
 
             }
             else
             {
 
-                //if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Eiyashou_ReLocate_Offet, Value.Youyoumu_Power_Value, true, Globals.SETVALUE, Globals.YouyoumuStatus, 0x00))
-                //{
-                //    Globals.YouyoumuStatus.MaxPower_Locker = true;
-                //    MaxPower = false;
-
-                //    return;
-                //}
-
-
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Power_Offset, Value.Youyoumu_Sub_Power_Value, true, Globals.POWEROB, Globals.YouyoumuStatus, 0x00))
-                {
-                    Globals.YouyoumuStatus.MaxPower_Locker = true;
-                    MaxPower = false;
-
-                    return;
-                }
+                Globals.YouyoumuStatus.MaxPower_Locker = false;
+                MaxPower = false;
+                return;
 
 
             }
@@ -358,22 +343,40 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible_Offset, Globals.YouyoumuStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.YouyoumuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible1_Offset, Value.Youyoumu_Sub_OriginInvincible1_Value, true, Globals.SETVALUE, Globals.YouyoumuStatus, 0x00))
                 {
-
-                    return;
-                }
-            }
-            else
-            {
-
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible_Offset, Value.Youyoumu_Sub_Invincible_Value, true, Globals.INVINCIBLEOB, Globals.YouyoumuStatus, 0x00))
-                {
-                    Globals.YouyoumuStatus.Invincible_Locker = true;
+                    Globals.YouyoumuStatus.Invincible = false;
                     Invincible = false;
 
                     return;
                 }
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible2_Offset, Value.Youyoumu_Sub_OriginInvincible2_Value, true, Globals.SETVALUE, Globals.YouyoumuStatus, 0x00))
+                {
+                    Globals.YouyoumuStatus.Invincible = false;
+                    Invincible = false;
+
+                    return;
+                }
+
+            }
+            else
+            {
+
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible1_Offset, Value.Youyoumu_Sub_Invincible1_Value, true, Globals.SETVALUE, Globals.YouyoumuStatus, 0x00))
+                {
+                    Globals.YouyoumuStatus.Invincible = true;
+                    Invincible = true;
+
+                    return;
+                }
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible2_Offset, Value.Youyoumu_Sub_Invincible2_Value, true, Globals.SETVALUE, Globals.YouyoumuStatus, 0x00))
+                {
+                    Globals.YouyoumuStatus.Invincible = true;
+                    Invincible = true;
+
+                    return;
+                }
+
             }
 
 

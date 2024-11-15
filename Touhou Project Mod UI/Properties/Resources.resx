@@ -171,6 +171,9 @@
   <data name="NoResultsFound" xml:space="preserve">
     <value>No results found</value>
   </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
   <data name="Search" xml:space="preserve">
     <value>Search</value>
   </data>
@@ -182,6 +185,9 @@
   </data>
   <data name="Tenkuushou" xml:space="preserve">
     <value>Touhou Tenkuushou</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
   </data>
   <data name="Youyoumu" xml:space="preserve">
     <value>Touhou Youyoumu</value>

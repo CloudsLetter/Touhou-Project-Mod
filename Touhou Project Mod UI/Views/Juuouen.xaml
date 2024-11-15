@@ -6,9 +6,74 @@
       xmlns:local="clr-namespace:Touhou_Project_Mod_UI.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      xmlns:ui="http://schemas.modernwpf.com/2019"
+      xmlns:t="clr-namespace:Touhou_Project_Mod_UI.Properties"
       Title="Juuouen">
 
     <Grid>
-        <TextBlock Text="路漫漫其修远兮，吾将上下而求索" />
+        <!-- Define two rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image Source="/Img/Th19.png" 
+               Width="200" Height="200" />
+
+            <Ellipse Width="15" Height="15"
+                     HorizontalAlignment="Right" VerticalAlignment="Top"
+                     Margin="0,5,5,0">
+                <Ellipse.Style>
+                    <Style TargetType="Ellipse">
+                        <Setter Property="Fill" Value="#ef4444"/>
+                        <Setter Property="Opacity" Value="1"/>
+                        <Style.Triggers>
+
+                        </Style.Triggers>
+                    </Style>
+                </Ellipse.Style>
+            </Ellipse>
+        </Grid>
+
+        <!-- UniformGrid for arranging buttons in two columns in Row 1 -->
+        <UniformGrid Grid.Row="1" Columns="2" 
+                 HorizontalAlignment="Center" VerticalAlignment="Center"
+                 Margin="0,20,0,0">
+
+            <!-- ToggleSwitch Buttons -->
+            <ui:ToggleSwitch
+            x:Name="LockPlayerSwitch"
+            Header="{x:Static t:Resources.LockPlayer}"
+            OffContent="{x:Static t:Resources.Disabled}"
+            OnContent="{x:Static t:Resources.Enabled}"
+            IsOn="False"
+            Margin="10" />
+
+            <ui:ToggleSwitch
+            x:Name="LockBombSwitch"
+            Header="{x:Static t:Resources.LockBomb}"
+            OffContent="{x:Static t:Resources.Disabled}"
+            OnContent="{x:Static t:Resources.Enabled}"
+            IsOn="False"
+            Margin="10" />
+
+            <ui:ToggleSwitch
+            x:Name="MaxPowerSwitch"
+            Header="{x:Static t:Resources.MaxPower}"
+            OffContent="{x:Static t:Resources.Disabled}"
+            OnContent="{x:Static t:Resources.Enabled}"
+            IsOn="False"
+            Margin="10" />
+
+            <ui:ToggleSwitch
+            x:Name="InvincibleSwitch"
+            Header="{x:Static t:Resources.Invincible}"
+            OffContent="{x:Static t:Resources.Disabled}"
+            OnContent="{x:Static t:Resources.Enabled}"
+            IsOn="False"
+            Margin="10" />
+
+        </UniformGrid>
     </Grid>
 </Page>

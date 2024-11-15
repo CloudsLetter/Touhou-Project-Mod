@@ -48,27 +48,42 @@ namespace Touhou_Project_Mod_UI.Models
         public static byte[] Youyoumu_Sub_Bomb_Value = [0x90, 0x90, 0x90];
 
         // mov word ptr [0069D4B0],0000 -> nop 9bit
-        public static byte[] Youyoumu_Sub_Power_Value = [0x90, 0x90, 0x90];
-        // sub ecx,10 -> nop 3 bit
-        public static byte[] Youyoumu_Sub_Power2_Value = [];
+        public static byte[] Youyoumu_Sub_Power_Value = [];
 
-        // cmp edx,03 -> cmp edx,02 relpace no bit change value != 3
-        public static byte[ ]Youyoumu_Sub_Invincible_Value = [];
+
+        public static byte[] Youyoumu_Sub_OriginPower1_Offset = [0x2D,0x74];
+        public static byte[] Youyoumu_Sub_OriginPower2_Offset = [0xF0];
+
+        public static byte[] Youyoumu_Sub_Power1_Value = [0xEB, 0x16];
+        public static byte[] Youyoumu_Sub_Power2_Value = [0x00];
+
+        public static byte[] Youyoumu_Sub_OriginInvincible1_Value = [0x07];
+        public static byte[] Youyoumu_Sub_OriginInvincible2_Value = [0x04];
+
+        public static byte[] Youyoumu_Sub_Invincible1_Value = [0x00];
+        public static byte[] Youyoumu_Sub_Invincible2_Value = [0x00];
+
+
 
         // 08东方永夜抄
         // 
-        public static byte[] Eiyashou_Power_Value = [];
+        public static byte[] Eiyashou_Power_Value = [0x98];
 
-        public static byte[] Eiyashou_Sub_Plyaer_Value = [];
+        public static byte[] Eiyashou_Sub_Plyaer_Value = [0x90, 0x90, 0x90];
 
-        public static byte[] Eiyashou_Sub_Bomb_Value = [];
-
+        public static byte[] Eiyashou_Sub_Bomb_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
         // 
         public static byte[] Eiyashou_Sub_Power_Value = [];
 
 
         //
-        public static byte[] Eiyashou_Sub_Invincible_Value = [];
+        public static byte[] Eiyashou_Sub_OriginInvincible1_Value = [0x07];
+        public static byte[] Eiyashou_Sub_OriginInvincible2_Value = [0x07];
+        public static byte[] Eiyashou_Sub_OriginInvincible3_Value = [0x04];
+
+        public static byte[] Eiyashou_Sub_Invincible1_Value = [0x00];
+        public static byte[] Eiyashou_Sub_Invincible2_Value = [0x00];
+        public static byte[] Eiyashou_Sub_Invincible3_Value = [0x00];
 
         // 09东方花映塚 
 

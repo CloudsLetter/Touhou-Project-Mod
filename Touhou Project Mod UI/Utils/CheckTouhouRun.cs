@@ -123,7 +123,6 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.YouyoumuStatus.LockBomb = false;
                             Globals.YouyoumuStatus.MaxPower = false;
                             Globals.YouyoumuStatus.Invincible = false;
-                            Offset.Youyoumu_ReLocate_Offet = 0x00;
                         }
                         if (Globals.YouyoumuStatus.IsRunStatusC && Globals.YouyoumuStatus.IsRun && item == "th07c")
                         {
@@ -135,7 +134,6 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.YouyoumuStatus.LockBomb = false;
                             Globals.YouyoumuStatus.MaxPower = false;
                             Globals.YouyoumuStatus.Invincible = false;
-                            Offset.Youyoumu_ReLocate_Offet = 0x00;
                         }
 
                     }

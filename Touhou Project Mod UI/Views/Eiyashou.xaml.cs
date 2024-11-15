@@ -143,7 +143,7 @@ namespace Touhou_Project_Mod_UI.Views
             {
                 if (Globals.EiyashouStatus.IsRunStatus)
                 {
-                    (Globals.EiyashouStatus.BaseAddress, Globals.EiyashouStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th07");
+                    (Globals.EiyashouStatus.BaseAddress, Globals.EiyashouStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th08");
                     if (Globals.EiyashouStatus.BaseAddress == IntPtr.Zero && Globals.EiyashouStatus.ProcessHandle == IntPtr.Zero)
                     {
                         return false;
@@ -151,7 +151,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
                 if (Globals.EiyashouStatus.IsRunStatusC)
                 {
-                    (Globals.EiyashouStatus.BaseAddress, Globals.EiyashouStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th07c");
+                    (Globals.EiyashouStatus.BaseAddress, Globals.EiyashouStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th08c");
                     if (Globals.EiyashouStatus.BaseAddress == IntPtr.Zero && Globals.EiyashouStatus.ProcessHandle == IntPtr.Zero)
                     {
                         return false;
@@ -159,7 +159,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
                 if (Globals.EiyashouStatus.IsRunStatusE)
                 {
-                    (Globals.EiyashouStatus.BaseAddress, Globals.EiyashouStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th07e");
+                    (Globals.EiyashouStatus.BaseAddress, Globals.EiyashouStatus.ProcessHandle) = Memory.GetBaseAddressWithProcvessHandle("th08e");
                     if (Globals.EiyashouStatus.BaseAddress == IntPtr.Zero && Globals.EiyashouStatus.ProcessHandle == IntPtr.Zero)
                     {
                         return false;
@@ -283,34 +283,17 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Power_Offset, Globals.EiyashouStatus.PowerOriginalBytes, false, Globals.POWEROB, Globals.EiyashouStatus, 0x00))
-                {
-                    return;
-                }
-
+                Globals.EiyashouStatus.MaxPower_Locker = false;
+                MaxPower = false;
+                return;
 
             }
             else
             {
 
-                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Power_Offset, Value.Eiyashou_Power_Value, true, Globals.SETVALUE, Globals.EiyashouStatus, 0x00))
-                {
-                    Globals.EiyashouStatus.MaxPower_Locker = true;
-                    MaxPower = false;
-
-                    return;
-                }
-
-
-                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Power_Offset, Value.Eiyashou_Power_Value, true, Globals.POWEROB, Globals.EiyashouStatus, 0x00))
-                {
-                    Globals.EiyashouStatus.MaxPower_Locker = true;
-                    MaxPower = false;
-
-                    return;
-                }
-
-
+                Globals.EiyashouStatus.MaxPower_Locker = false;
+                MaxPower = false;
+                return;
             }
 
 
@@ -344,8 +327,24 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Invincible_Offset, Globals.EiyashouStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.EiyashouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Invincible1_Offset, Value.Eiyashou_Sub_OriginInvincible1_Value, true, Globals.SETVALUE, Globals.EiyashouStatus, 0x00))
                 {
+                    Globals.EiyashouStatus.Invincible = false;
+                    Invincible = false;
+
+                    return;
+                }
+                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Invincible2_Offset, Value.Eiyashou_Sub_OriginInvincible2_Value, true, Globals.SETVALUE, Globals.EiyashouStatus, 0x00))
+                {
+                    Globals.EiyashouStatus.Invincible = false;
+                    Invincible = false;
+
+                    return;
+                }
+                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Invincible3_Offset, Value.Eiyashou_Sub_OriginInvincible3_Value, true, Globals.SETVALUE, Globals.EiyashouStatus, 0x00))
+                {
+                    Globals.EiyashouStatus.Invincible = false;
+                    Invincible = false;
 
                     return;
                 }
@@ -353,10 +352,24 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Invincible_Offset, Value.Eiyashou_Sub_Invincible_Value, true, Globals.INVINCIBLEOB, Globals.EiyashouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Invincible1_Offset, Value.Eiyashou_Sub_Invincible1_Value, true, Globals.SETVALUE, Globals.EiyashouStatus, 0x00))
                 {
-                    Globals.EiyashouStatus.Invincible_Locker = true;
-                    Invincible = false;
+                    Globals.EiyashouStatus.Invincible = true;
+                    Invincible = true;
+
+                    return;
+                }
+                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Invincible2_Offset, Value.Eiyashou_Sub_Invincible2_Value, true, Globals.SETVALUE, Globals.EiyashouStatus, 0x00))
+                {
+                    Globals.EiyashouStatus.Invincible = true;
+                    Invincible = true;
+
+                    return;
+                }
+                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Invincible3_Offset, Value.Eiyashou_Sub_Invincible3_Value, true, Globals.SETVALUE, Globals.EiyashouStatus, 0x00))
+                {
+                    Globals.EiyashouStatus.Invincible = true;
+                    Invincible = true;
 
                     return;
                 }
