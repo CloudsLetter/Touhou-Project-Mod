@@ -194,7 +194,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockPlayer)
             {
-                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Plyaer_Offset, Globals.FuujinrokuStatus.PlayersOriginalBytes, false, Globals.PLAYEROB, Globals.FuujinrokuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Plyaer_Offset, Value.Fuujinroku_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -202,7 +202,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Plyaer_Offset, Value.Fuujinroku_Sub_Plyaer_Value, true, Globals.PLAYEROB, Globals.FuujinrokuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Plyaer_Offset, Value.Fuujinroku_Sub_Plyaer_Value))
                 {
                     Globals.FuujinrokuStatus.LockPlayer_Locker = true;
                     LockPlayer = false;
@@ -237,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Bomb_Offset, Globals.FuujinrokuStatus.BombOriginalBytes, false, Globals.BOMBOB, Globals.FuujinrokuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Bomb_Offset, Value.Fuujinroku_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -245,7 +245,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Bomb_Offset, Value.Fuujinroku_Sub_Bomb_Value, true, Globals.BOMBOB, Globals.FuujinrokuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Bomb_Offset, Value.Fuujinroku_Sub_Bomb_Value))
                 {
                     Globals.FuujinrokuStatus.LockerBomb_Locker = true;
                     LockBomb = false;
@@ -280,7 +280,7 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Power_Offset, Globals.FuujinrokuStatus.PowerOriginalBytes, false, Globals.POWEROB, Globals.FuujinrokuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Power_Offset, Value.Fuujinroku_Sub_Power_Value_Default))
                 {
                     return;
                 }
@@ -290,7 +290,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Power_Offset, Value.Fuujinroku_Power_Value, true, Globals.SETVALUE, Globals.FuujinrokuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Power_Offset, Value.Fuujinroku_Power_Value))
                 {
                     Globals.FuujinrokuStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -299,7 +299,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
 
 
-                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Power_Offset, Value.Fuujinroku_Sub_Power_Value, true, Globals.POWEROB, Globals.FuujinrokuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Power_Offset, Value.Fuujinroku_Sub_Power_Value))
                 {
                     Globals.FuujinrokuStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -331,7 +331,6 @@ namespace Touhou_Project_Mod_UI.Views
 
                 return;
             }
-
             if (Globals.FuujinrokuStatus.BaseAddress == IntPtr.Zero)
             {
                 if (!GetMemoryInfo())
@@ -339,9 +338,10 @@ namespace Touhou_Project_Mod_UI.Views
                     return;
                 }
             }
+
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Invincible_Offset, Globals.FuujinrokuStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.FuujinrokuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Invincible_Offset, Value.Fuujinroku_Sub_Invincible_Value_Default))
                 {
 
                     return;
@@ -350,7 +350,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Invincible_Offset, Value.Fuujinroku_Sub_Invincible_Value, true, Globals.INVINCIBLEOB, Globals.FuujinrokuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.FuujinrokuStatus.ProcessHandle, Globals.FuujinrokuStatus.BaseAddress + Offset.Fuujinroku_Sub_Invincible_Offset, Value.Fuujinroku_Sub_Invincible_Value))
                 {
                     Globals.FuujinrokuStatus.Invincible_Locker = true;
                     Invincible = false;

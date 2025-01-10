@@ -13,134 +13,7 @@ namespace Touhou_Project_Mod_UI.SDK.Native;
 public static class Memory
 {
 
-
-    public static bool SaveWithLoadOriginalBytes(IntPtr processHandle, IntPtr targetAddress, byte[] value, uint length ,uint func, bool set, Status status, uint powernums)
-    {
-
-        if (func == Globals.PLAYEROB && set)
-        {
-            if (!Win32.ReadProcessMemory(processHandle, targetAddress, status.PlayersOriginalBytes, length, out uint bytesRead) || bytesRead != (uint)length)
-            {
-                return false;
-            }
-            {
-                if (!Win32.WriteProcessMemory(processHandle, targetAddress, value, (uint)status.PlayersOriginalBytes.Length, out _))
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        } 
-        else if(func == Globals.PLAYEROB && !set)
-        {
-            if (!Win32.WriteProcessMemory(processHandle, targetAddress, value, (uint)status.PlayersOriginalBytes.Length, out _))
-            {
-                return false;
-            }
-        }
-
-        if (func == Globals.BOMBOB && set)
-        {
-            if (!Win32.ReadProcessMemory(processHandle, targetAddress, status.BombOriginalBytes, length, out uint bytesRead) || bytesRead != length)
-            {
-                return false;
-            }
-
-                if (!Win32.WriteProcessMemory(processHandle, targetAddress, value, (uint)status.BombOriginalBytes.Length, out _))
-                {
-                    return false;
-                }
-
-
-            return true;
-        }
-        else if (func == Globals.BOMBOB && !set)
-        {
-            if (!Win32.WriteProcessMemory(processHandle, targetAddress, value, (uint)status.BombOriginalBytes.Length, out _))
-            {
-                return false;
-            }
-        }
-
-
-        if (func == Globals.POWEROB && set)
-        {
-
-            if (powernums == 0x00)
-            {
-                if (!Win32.ReadProcessMemory(processHandle, targetAddress, status.PowerOriginalBytes, length, out uint bytesRead) || bytesRead != length)
-                {
-                    return false;
-                }
-                if (!Win32.WriteProcessMemory(processHandle, targetAddress, value, (uint)status.PowerOriginalBytes.Length, out _))
-                {
-                    return false;
-                }
-            }
-
-
-            if (powernums == 0x01)
-            {
-                if (!Win32.ReadProcessMemory(processHandle, targetAddress, status.PowerOriginalBytes2, length, out uint bytesRead) || bytesRead != length)
-                {
-                    return false;
-                }
-                if (!Win32.WriteProcessMemory(processHandle, targetAddress, value, (uint)status.PowerOriginalBytes2.Length, out _))
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-        else if (func == Globals.POWEROB && !set)
-        {
-            if (powernums == 0x00)
-            {
-                if (!Win32.WriteProcessMemory(processHandle, targetAddress, value, (uint)status.PowerOriginalBytes.Length, out _))
-                {
-                    return false;
-                }
-            }
-
-            if (powernums == 0x01)
-            {
-                if (!Win32.WriteProcessMemory(processHandle, targetAddress, value, (uint)status.PowerOriginalBytes2.Length, out _))
-                {
-                    return false;
-                }
-            }
-        }
-
-        if (func == Globals.INVINCIBLEOB && set)
-        {
-            if (!Win32.ReadProcessMemory(processHandle, targetAddress, status.InvincibleOriginalBytes, length, out uint bytesRead) || bytesRead != length)
-            {
-                return false;
-            }
-
-                if (!Win32.WriteProcessMemory(processHandle, targetAddress, value, (uint)status.InvincibleOriginalBytes.Length, out _))
-                {
-                    return false;
-                }
-
-            return true;
-        }
-        else if (func == Globals.INVINCIBLEOB && !set)
-        {
-            if (!Win32.WriteProcessMemory(processHandle, targetAddress, value, (uint)status.InvincibleOriginalBytes.Length, out _))
-            {
-                return false;
-            }
-        }
-
-
-        return true;
-    }
-
-
-    public static bool SetMemory(IntPtr processHandle, IntPtr targetAddress, byte[] value, bool set, uint type, Status status, uint powernums)
+    public static bool SetMemory(IntPtr processHandle, IntPtr targetAddress, byte[] value)
     {
         uint oldProtect;
 
@@ -150,21 +23,11 @@ public static class Memory
             return false;
         }
 
-        if (type != Globals.SETVALUE)
-        {
-            if (!SaveWithLoadOriginalBytes(processHandle, targetAddress, value,(uint)value.Length, type, set, status,powernums))
-            {
-                return false;
-            }
-        }
 
-        if (type == Globals.SETVALUE)
-        {
             if (!Win32.WriteProcessMemory(processHandle, targetAddress, value, (uint)value.Length, out _))
             {
                 return false;
             }
-        }
 
         if (!Win32.VirtualProtectEx(processHandle,targetAddress, (uint)value.Length, oldProtect, out _))
         {
@@ -220,3 +83,30 @@ public static class Memory
     }
 
 }
+
+// 致敬传奇调试代码
+//            if (status.Chireiden_Sub_Plyaer_Value_Default.Length != 0)
+//            {
+//                Debug.WriteLine("\nChireiden_Sub_Plyaer_Value_Default:");
+//                Debug.WriteLine(BitConverter.ToString(status.Chireiden_Sub_Plyaer_Value_Default).Replace("-", ", 0x"));
+//            }
+//            if (status.BombOriginalBytes.Length != 0)
+//{
+//    Debug.WriteLine("\nBombOriginalBytes:");
+//    Debug.WriteLine(BitConverter.ToString(status.BombOriginalBytes).Replace("-", ", 0x"));
+//}
+//if (status.PowerOriginalBytes.Length != 0)
+//{
+//    Debug.WriteLine("\nPowerOriginalBytes:");
+//    Debug.WriteLine(BitConverter.ToString(status.PowerOriginalBytes).Replace("-", ", 0x"));
+//}
+////if (status.PowerOriginalBytes2.Length != 0)
+////{
+////    Debug.WriteLine("\nPowerOriginalBytes2:");
+////    Debug.WriteLine(BitConverter.ToString(status.PowerOriginalBytes2).Replace("-", ", 0x"));
+////}
+////if (status.InvincibleOriginalBytes.Length != 0)
+////{
+////    Debug.WriteLine("\nInvincibleOriginalBytes:");
+////    Debug.WriteLine(BitConverter.ToString(status.InvincibleOriginalBytes).Replace("-", ", 0x"));
+////}

@@ -191,9 +191,10 @@ namespace Touhou_Project_Mod_UI.Views
                     return;
                 }
             }
+
             if (!LockPlayer)
             {
-                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Plyaer_Offset, Globals.KishinjouStatus.PlayersOriginalBytes, false, Globals.PLAYEROB, Globals.KishinjouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Plyaer_Offset, Value.Kishinjou_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -201,7 +202,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Plyaer_Offset, Value.Kishinjou_Sub_Plyaer_Value, true, Globals.PLAYEROB, Globals.KishinjouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Plyaer_Offset, Value.Kishinjou_Sub_Plyaer_Value))
                 {
                     Globals.KishinjouStatus.LockPlayer_Locker = true;
                     LockPlayer = false;
@@ -236,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Bomb_Offset, Globals.KishinjouStatus.BombOriginalBytes, false, Globals.BOMBOB, Globals.KishinjouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Bomb_Offset, Value.Kishinjou_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -244,7 +245,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Bomb_Offset, Value.Kishinjou_Sub_Bomb_Value, true, Globals.BOMBOB, Globals.KishinjouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Bomb_Offset, Value.Kishinjou_Sub_Bomb_Value))
                 {
                     Globals.KishinjouStatus.LockerBomb_Locker = true;
                     LockBomb = false;
@@ -269,6 +270,7 @@ namespace Touhou_Project_Mod_UI.Views
                 return;
 
             }
+
             if (Globals.KishinjouStatus.BaseAddress == IntPtr.Zero)
             {
                 if (!GetMemoryInfo())
@@ -278,7 +280,7 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Power_Offset, Globals.KishinjouStatus.PowerOriginalBytes, false, Globals.POWEROB, Globals.KishinjouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Power_Offset, Value.Kishinjou_Sub_Power_Value_Default))
                 {
                     return;
                 }
@@ -288,7 +290,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Power_Offset, Value.Kishinjou_Power_Value, true, Globals.SETVALUE, Globals.KishinjouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Power_Offset, Value.Kishinjou_Power_Value))
                 {
                     Globals.KishinjouStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -297,7 +299,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
 
 
-                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Power_Offset, Value.Kishinjou_Sub_Power_Value, true, Globals.POWEROB, Globals.KishinjouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Power_Offset, Value.Kishinjou_Sub_Power_Value))
                 {
                     Globals.KishinjouStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -329,7 +331,6 @@ namespace Touhou_Project_Mod_UI.Views
 
                 return;
             }
-
             if (Globals.KishinjouStatus.BaseAddress == IntPtr.Zero)
             {
                 if (!GetMemoryInfo())
@@ -337,9 +338,10 @@ namespace Touhou_Project_Mod_UI.Views
                     return;
                 }
             }
+
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Invincible_Offset, Globals.KishinjouStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.KishinjouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Invincible_Offset, Value.Kishinjou_Sub_Invincible_Value_Default))
                 {
 
                     return;
@@ -348,7 +350,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Invincible_Offset, Value.Kishinjou_Sub_Invincible_Value, true, Globals.INVINCIBLEOB, Globals.KishinjouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Invincible_Offset, Value.Kishinjou_Sub_Invincible_Value))
                 {
                     Globals.KishinjouStatus.Invincible_Locker = true;
                     Invincible = false;

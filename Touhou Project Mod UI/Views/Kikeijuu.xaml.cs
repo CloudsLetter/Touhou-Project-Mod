@@ -194,7 +194,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockPlayer)
             {
-                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Plyaer_Offset, Globals.KikeijuuStatus.PlayersOriginalBytes, false, Globals.PLAYEROB, Globals.KikeijuuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Plyaer_Offset, Value.Kikeijuu_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -202,7 +202,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Plyaer_Offset, Value.Kikeijuu_Sub_Plyaer_Value, true, Globals.PLAYEROB, Globals.KikeijuuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Plyaer_Offset, Value.Kikeijuu_Sub_Plyaer_Value))
                 {
                     Globals.KikeijuuStatus.LockPlayer_Locker = true;
                     LockPlayer = false;
@@ -237,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Bomb_Offset, Globals.KikeijuuStatus.BombOriginalBytes, false, Globals.BOMBOB, Globals.KikeijuuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Bomb_Offset, Value.Kikeijuu_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -245,7 +245,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Bomb_Offset, Value.Kikeijuu_Sub_Bomb_Value, true, Globals.BOMBOB, Globals.KikeijuuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Bomb_Offset, Value.Kikeijuu_Sub_Bomb_Value))
                 {
                     Globals.KikeijuuStatus.LockerBomb_Locker = true;
                     LockBomb = false;
@@ -280,7 +280,7 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Power_Offset, Globals.KikeijuuStatus.PowerOriginalBytes, false, Globals.POWEROB, Globals.KikeijuuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Power_Offset, Value.Kikeijuu_Sub_Power_Value_Default))
                 {
                     return;
                 }
@@ -290,7 +290,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Power_Offset, Value.Kikeijuu_Power_Value, true, Globals.SETVALUE, Globals.KikeijuuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Power_Offset, Value.Kikeijuu_Power_Value))
                 {
                     Globals.KikeijuuStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -299,7 +299,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
 
 
-                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Power_Offset, Value.Kikeijuu_Sub_Power_Value, true, Globals.POWEROB, Globals.KikeijuuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Power_Offset, Value.Kikeijuu_Sub_Power_Value))
                 {
                     Globals.KikeijuuStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -341,7 +341,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Invincible_Offset, Globals.KikeijuuStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.KikeijuuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Invincible_Offset, Value.Kikeijuu_Sub_Invincible_Value_Default))
                 {
 
                     return;
@@ -350,7 +350,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Invincible_Offset, Value.Kikeijuu_Sub_Invincible_Value, true, Globals.INVINCIBLEOB, Globals.KikeijuuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Invincible_Offset, Value.Kikeijuu_Sub_Invincible_Value))
                 {
                     Globals.KikeijuuStatus.Invincible_Locker = true;
                     Invincible = false;

@@ -194,7 +194,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockPlayer)
             {
-                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Plyaer_Offset, Globals.KanjudenStatus.PlayersOriginalBytes, false, Globals.PLAYEROB, Globals.KanjudenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Plyaer_Offset, Value.Kanjuden_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -202,7 +202,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Plyaer_Offset, Value.Kanjuden_Sub_Plyaer_Value, true, Globals.PLAYEROB, Globals.KanjudenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Plyaer_Offset, Value.Kanjuden_Sub_Plyaer_Value))
                 {
                     Globals.KanjudenStatus.LockPlayer_Locker = true;
                     LockPlayer = false;
@@ -237,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Bomb_Offset, Globals.KanjudenStatus.BombOriginalBytes, false, Globals.BOMBOB, Globals.KanjudenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Bomb_Offset, Value.Kanjuden_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -245,7 +245,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Bomb_Offset, Value.Kanjuden_Sub_Bomb_Value, true, Globals.BOMBOB, Globals.KanjudenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Bomb_Offset, Value.Kanjuden_Sub_Bomb_Value))
                 {
                     Globals.KanjudenStatus.LockerBomb_Locker = true;
                     LockBomb = false;
@@ -280,7 +280,7 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Power_Offset, Globals.KanjudenStatus.PowerOriginalBytes, false, Globals.POWEROB, Globals.KanjudenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Power_Offset, Value.Kanjuden_Sub_Power_Value_Default))
                 {
                     return;
                 }
@@ -290,7 +290,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Power_Offset, Value.Kanjuden_Power_Value, true, Globals.SETVALUE, Globals.KanjudenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Power_Offset, Value.Kanjuden_Power_Value))
                 {
                     Globals.KanjudenStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -299,7 +299,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
 
 
-                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Power_Offset, Value.Kanjuden_Sub_Power_Value, true, Globals.POWEROB, Globals.KanjudenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Power_Offset, Value.Kanjuden_Sub_Power_Value))
                 {
                     Globals.KanjudenStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -331,7 +331,6 @@ namespace Touhou_Project_Mod_UI.Views
 
                 return;
             }
-
             if (Globals.KanjudenStatus.BaseAddress == IntPtr.Zero)
             {
                 if (!GetMemoryInfo())
@@ -342,7 +341,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Invincible_Offset, Globals.KanjudenStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.KanjudenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Invincible_Offset, Value.Kanjuden_Sub_Invincible_Value_Default))
                 {
 
                     return;
@@ -351,7 +350,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Invincible_Offset, Value.Kanjuden_Sub_Invincible_Value, true, Globals.INVINCIBLEOB, Globals.KanjudenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KanjudenStatus.ProcessHandle, Globals.KanjudenStatus.BaseAddress + Offset.Kanjuden_Sub_Invincible_Offset, Value.Kanjuden_Sub_Invincible_Value))
                 {
                     Globals.KanjudenStatus.Invincible_Locker = true;
                     Invincible = false;

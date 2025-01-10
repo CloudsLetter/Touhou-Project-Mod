@@ -211,7 +211,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockPlayer)
             {
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Plyaer_Offset, Globals.YouyoumuStatus.PlayersOriginalBytes, false, Globals.PLAYEROB, Globals.YouyoumuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Plyaer_Offset, Value.Youyoumu_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -219,7 +219,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Plyaer_Offset, Value.Youyoumu_Sub_Plyaer_Value, true, Globals.PLAYEROB, Globals.YouyoumuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Plyaer_Offset, Value.Youyoumu_Sub_Plyaer_Value))
                 {
                     Globals.YouyoumuStatus.LockPlayer_Locker = true;
                     LockPlayer = false;
@@ -254,7 +254,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Bomb_Offset, Globals.YouyoumuStatus.BombOriginalBytes, false, Globals.BOMBOB, Globals.YouyoumuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Bomb_Offset, Value.Youyoumu_Sub_Bomb_Value_Default))
                 {
                     return;
                 }
@@ -262,7 +262,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Bomb_Offset, Value.Youyoumu_Sub_Bomb_Value, true, Globals.BOMBOB, Globals.YouyoumuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Bomb_Offset, Value.Youyoumu_Sub_Bomb_Value))
                 {
                     Globals.YouyoumuStatus.LockerBomb_Locker = true;
                     LockBomb = false;
@@ -343,14 +343,14 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible1_Offset, Value.Youyoumu_Sub_OriginInvincible1_Value, true, Globals.SETVALUE, Globals.YouyoumuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible1_Offset, Value.Youyoumu_Sub_Invincible1_Value_Default))
                 {
                     Globals.YouyoumuStatus.Invincible = false;
                     Invincible = false;
 
                     return;
                 }
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible2_Offset, Value.Youyoumu_Sub_OriginInvincible2_Value, true, Globals.SETVALUE, Globals.YouyoumuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible2_Offset, Value.Youyoumu_Sub_Invincible2_Value_Default))
                 {
                     Globals.YouyoumuStatus.Invincible = false;
                     Invincible = false;
@@ -362,14 +362,14 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible1_Offset, Value.Youyoumu_Sub_Invincible1_Value, true, Globals.SETVALUE, Globals.YouyoumuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible1_Offset, Value.Youyoumu_Sub_Invincible1_Value))
                 {
                     Globals.YouyoumuStatus.Invincible = true;
                     Invincible = true;
 
                     return;
                 }
-                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible2_Offset, Value.Youyoumu_Sub_Invincible2_Value, true, Globals.SETVALUE, Globals.YouyoumuStatus, 0x00))
+                if (!Memory.SetMemory(Globals.YouyoumuStatus.ProcessHandle, Globals.YouyoumuStatus.BaseAddress + Offset.Youyoumu_Sub_Invincible2_Offset, Value.Youyoumu_Sub_Invincible2_Value))
                 {
                     Globals.YouyoumuStatus.Invincible = true;
                     Invincible = true;

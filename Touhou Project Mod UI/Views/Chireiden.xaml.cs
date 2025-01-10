@@ -194,7 +194,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockPlayer)
             {
-                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Plyaer_Offset, Globals.ChireidenStatus.PlayersOriginalBytes, false, Globals.PLAYEROB, Globals.ChireidenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Plyaer_Offset, Value.Chireiden_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -202,7 +202,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Plyaer_Offset, Value.Chireiden_Sub_Plyaer_Value, true, Globals.PLAYEROB, Globals.ChireidenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Plyaer_Offset, Value.Chireiden_Sub_Plyaer_Value))
                 {
                     Globals.ChireidenStatus.LockPlayer_Locker = true;
                     LockPlayer = false;
@@ -237,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Bomb_Offset, Globals.ChireidenStatus.BombOriginalBytes, false, Globals.BOMBOB, Globals.ChireidenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Bomb_Offset, Value.Chireiden_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -245,7 +245,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Bomb_Offset, Value.Chireiden_Sub_Bomb_Value, true, Globals.BOMBOB, Globals.ChireidenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Bomb_Offset, Value.Chireiden_Sub_Bomb_Value))
                 {
                     Globals.ChireidenStatus.LockerBomb_Locker = true;
                     LockBomb = false;
@@ -280,7 +280,7 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Power_Offset, Globals.ChireidenStatus.PowerOriginalBytes, false, Globals.POWEROB, Globals.ChireidenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Power_Offset, Value.Chireiden_Sub_Power_Value_Default))
                 {
                     return;
                 }
@@ -290,7 +290,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Power_Offset, Value.Chireiden_Power_Value, true, Globals.SETVALUE, Globals.ChireidenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Power_Offset, Value.Chireiden_Power_Value))
                 {
                     Globals.ChireidenStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -299,7 +299,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
 
 
-                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Power_Offset, Value.Chireiden_Sub_Power_Value, true, Globals.POWEROB, Globals.ChireidenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Power_Offset, Value.Chireiden_Sub_Power_Value))
                 {
                     Globals.ChireidenStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -341,7 +341,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Invincible_Offset, Globals.ChireidenStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.ChireidenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Invincible_Offset, Value.Chireiden_Sub_Invincible_Value_Default))
                 {
 
                     return;
@@ -350,7 +350,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Invincible_Offset, Value.Chireiden_Sub_Invincible_Value, true, Globals.INVINCIBLEOB, Globals.ChireidenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Invincible_Offset, Value.Chireiden_Sub_Invincible_Value))
                 {
                     Globals.ChireidenStatus.Invincible_Locker = true;
                     Invincible = false;

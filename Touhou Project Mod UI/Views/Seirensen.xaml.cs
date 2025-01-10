@@ -194,7 +194,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockPlayer)
             {
-                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Plyaer_Offset, Globals.SeirensenStatus.PlayersOriginalBytes, false, Globals.PLAYEROB, Globals.SeirensenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Plyaer_Offset, Value.Seirensen_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -202,7 +202,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Plyaer_Offset, Value.Seirensen_Sub_Plyaer_Value, true, Globals.PLAYEROB, Globals.SeirensenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Plyaer_Offset, Value.Seirensen_Sub_Plyaer_Value))
                 {
                     Globals.SeirensenStatus.LockPlayer_Locker = true;
                     LockPlayer = false;
@@ -237,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Bomb_Offset, Globals.SeirensenStatus.BombOriginalBytes, false, Globals.BOMBOB, Globals.SeirensenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Bomb_Offset, Value.Seirensen_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -245,7 +245,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Bomb_Offset, Value.Seirensen_Sub_Bomb_Value, true, Globals.BOMBOB, Globals.SeirensenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Bomb_Offset, Value.Seirensen_Sub_Bomb_Value))
                 {
                     Globals.SeirensenStatus.LockerBomb_Locker = true;
                     LockBomb = false;
@@ -280,7 +280,7 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Power_Offset, Globals.SeirensenStatus.PowerOriginalBytes, false, Globals.POWEROB, Globals.SeirensenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Power_Offset, Value.Seirensen_Sub_Power_Value_Default))
                 {
                     return;
                 }
@@ -290,7 +290,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Power_Offset, Value.Seirensen_Power_Value, true, Globals.SETVALUE, Globals.SeirensenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Power_Offset, Value.Seirensen_Power_Value))
                 {
                     Globals.SeirensenStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -299,7 +299,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
 
 
-                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Power_Offset, Value.Koumakyou_Sub_Power_Value, true, Globals.POWEROB, Globals.SeirensenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Power_Offset, Value.Seirensen_Sub_Power_Value))
                 {
                     Globals.SeirensenStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -338,9 +338,10 @@ namespace Touhou_Project_Mod_UI.Views
                     return;
                 }
             }
+
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Invincible_Offset, Globals.SeirensenStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.SeirensenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Invincible_Offset, Value.Seirensen_Sub_Invincible_Value_Default))
                 {
 
                     return;
@@ -349,7 +350,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Invincible_Offset, Value.Seirensen_Sub_Invincible_Value, true, Globals.INVINCIBLEOB, Globals.SeirensenStatus, 0x00))
+                if (!Memory.SetMemory(Globals.SeirensenStatus.ProcessHandle, Globals.SeirensenStatus.BaseAddress + Offset.Seirensen_Sub_Invincible_Offset, Value.Seirensen_Sub_Invincible_Value))
                 {
                     Globals.SeirensenStatus.Invincible_Locker = true;
                     Invincible = false;

@@ -194,7 +194,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockPlayer)
             {
-                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Plyaer_Offset, Globals.KouryuudouStatus.PlayersOriginalBytes, false, Globals.PLAYEROB, Globals.KouryuudouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Plyaer_Offset, Value.Kouryuudou_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -202,7 +202,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Plyaer_Offset, Value.Kouryuudou_Sub_Plyaer_Value, true, Globals.PLAYEROB, Globals.KouryuudouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Plyaer_Offset, Value.Kouryuudou_Sub_Plyaer_Value))
                 {
                     Globals.KouryuudouStatus.LockPlayer_Locker = true;
                     LockPlayer = false;
@@ -237,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Bomb_Offset, Globals.KouryuudouStatus.BombOriginalBytes, false, Globals.BOMBOB, Globals.KouryuudouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Bomb_Offset, Value.Kouryuudou_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -245,7 +245,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Bomb_Offset, Value.Kouryuudou_Sub_Bomb_Value, true, Globals.BOMBOB, Globals.KouryuudouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Bomb_Offset, Value.Kouryuudou_Sub_Bomb_Value))
                 {
                     Globals.KouryuudouStatus.LockerBomb_Locker = true;
                     LockBomb = false;
@@ -280,7 +280,7 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Power_Offset, Globals.KouryuudouStatus.PowerOriginalBytes, false, Globals.POWEROB, Globals.KouryuudouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Power_Offset, Value.Kouryuudou_Sub_Power_Value_Default))
                 {
                     return;
                 }
@@ -290,7 +290,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Power_Offset, Value.Kouryuudou_Power_Value, true, Globals.SETVALUE, Globals.KouryuudouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Power_Offset, Value.Kouryuudou_Power_Value))
                 {
                     Globals.KouryuudouStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -299,7 +299,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
 
 
-                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Power_Offset, Value.Koumakyou_Sub_Power_Value, true, Globals.POWEROB, Globals.KouryuudouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Power_Offset, Value.Kouryuudou_Sub_Power_Value))
                 {
                     Globals.KouryuudouStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -339,12 +339,9 @@ namespace Touhou_Project_Mod_UI.Views
                 }
             }
 
-
-
-
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Invincible_Offset, Globals.KouryuudouStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.KouryuudouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Invincible_Offset, Value.Kouryuudou_Sub_Invincible_Value_Default))
                 {
 
                     return;
@@ -353,7 +350,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Invincible_Offset, Value.Kouryuudou_Sub_Invincible_Value, true, Globals.INVINCIBLEOB, Globals.KouryuudouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KouryuudouStatus.ProcessHandle, Globals.KouryuudouStatus.BaseAddress + Offset.Kouryuudou_Sub_Invincible_Offset, Value.Kouryuudou_Sub_Invincible_Value))
                 {
                     Globals.KouryuudouStatus.Invincible_Locker = true;
                     Invincible = false;

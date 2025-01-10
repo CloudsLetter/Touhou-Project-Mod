@@ -194,7 +194,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockPlayer)
             {
-                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Plyaer_Offset, Globals.ShinreibyouStatus.PlayersOriginalBytes, false, Globals.PLAYEROB, Globals.ShinreibyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Plyaer_Offset, Value.Shinreibyou_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -202,7 +202,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Plyaer_Offset, Value.Shinreibyou_Sub_Plyaer_Value, true, Globals.PLAYEROB, Globals.ShinreibyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Plyaer_Offset, Value.Shinreibyou_Sub_Plyaer_Value))
                 {
                     Globals.ShinreibyouStatus.LockPlayer_Locker = true;
                     LockPlayer = false;
@@ -237,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Bomb_Offset, Globals.ShinreibyouStatus.BombOriginalBytes, false, Globals.BOMBOB, Globals.ShinreibyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Bomb_Offset, Value.Shinreibyou_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -245,7 +245,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Bomb_Offset, Value.Shinreibyou_Sub_Bomb_Value, true, Globals.BOMBOB, Globals.ShinreibyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Bomb_Offset, Value.Shinreibyou_Sub_Bomb_Value))
                 {
                     Globals.ShinreibyouStatus.LockerBomb_Locker = true;
                     LockBomb = false;
@@ -280,7 +280,7 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Power_Offset, Globals.ShinreibyouStatus.PowerOriginalBytes, false, Globals.POWEROB, Globals.ShinreibyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Power_Offset, Value.Shinreibyou_Sub_Power_Value_Default))
                 {
                     return;
                 }
@@ -290,7 +290,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Power_Offset, Value.Shinreibyou_Power_Value, true, Globals.SETVALUE, Globals.ShinreibyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Power_Offset, Value.Shinreibyou_Power_Value))
                 {
                     Globals.ShinreibyouStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -299,7 +299,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
 
 
-                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Power_Offset, Value.Shinreibyou_Sub_Power_Value, true, Globals.POWEROB, Globals.ShinreibyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Power_Offset, Value.Shinreibyou_Sub_Power_Value))
                 {
                     Globals.ShinreibyouStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -331,7 +331,6 @@ namespace Touhou_Project_Mod_UI.Views
 
                 return;
             }
-
             if (Globals.ShinreibyouStatus.BaseAddress == IntPtr.Zero)
             {
                 if (!GetMemoryInfo())
@@ -342,7 +341,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Invincible_Offset, Globals.ShinreibyouStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.ShinreibyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Invincible_Offset, Value.Shinreibyou_Sub_Invincible_Value_Default))
                 {
 
                     return;
@@ -351,7 +350,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Invincible_Offset, Value.Shinreibyou_Sub_Invincible_Value, true, Globals.INVINCIBLEOB, Globals.ShinreibyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.ShinreibyouStatus.ProcessHandle, Globals.ShinreibyouStatus.BaseAddress + Offset.Shinreibyou_Sub_Invincible_Offset, Value.Shinreibyou_Sub_Invincible_Value))
                 {
                     Globals.ShinreibyouStatus.Invincible_Locker = true;
                     Invincible = false;

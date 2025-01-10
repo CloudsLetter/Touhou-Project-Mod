@@ -94,11 +94,6 @@ namespace Touhou_Project_Mod_UI.Models
         public IntPtr BaseAddress { get; set; }
         public IntPtr ProcessHandle { get; set; }
 
-        public byte[] PlayersOriginalBytes { get; set; }
-        public byte[] BombOriginalBytes { get; set; }
-        public byte[] PowerOriginalBytes { get; set; }
-        public byte[] PowerOriginalBytes2 { get; set; }
-        public byte[] InvincibleOriginalBytes { get; set; }
 
         public int Vsersion { get; set; }
     }

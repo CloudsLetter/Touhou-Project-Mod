@@ -35,7 +35,6 @@ namespace Touhou_Project_Mod_UI.Models
         // wait to find offset with dev
         public static IntPtr  Koumakyou_Lock_Time = 0x00;
 
-        public static IntPtr  Seirensen_Humans_Offset = 0x00B0C98;
 
         //07东方妖妖梦
         // th07.exe+226278 -> resulte + 7C
@@ -125,6 +124,7 @@ namespace Touhou_Project_Mod_UI.Models
 
 
         //12东方星莲船
+        public static IntPtr Seirensen_Humans_Offset = 0x00B0C98;
 
         public static IntPtr Seirensen_Power_Offset = 0x00B0C48;
 

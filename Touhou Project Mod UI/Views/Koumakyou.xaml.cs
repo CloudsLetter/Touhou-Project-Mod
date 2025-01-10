@@ -201,7 +201,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockPlayer)
             {
-                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Plyaer_Offset, Globals.KoumakyouStatus.PlayersOriginalBytes, false, Globals.PLAYEROB, Globals.KoumakyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Plyaer_Offset, Value.Koumakyou_Sub_Plyaer_Value_Default))
                 {
                     return;
                 }
@@ -209,7 +209,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Plyaer_Offset, Value.Koumakyou_Sub_Plyaer_Value, true, Globals.PLAYEROB, Globals.KoumakyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Plyaer_Offset, Value.Koumakyou_Sub_Plyaer_Value))
                 {
                     Globals.KoumakyouStatus.LockPlayer_Locker = true;
                     LockPlayer = false;
@@ -244,7 +244,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Bomb_Offset, Globals.KoumakyouStatus.BombOriginalBytes, false, Globals.BOMBOB, Globals.KoumakyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Bomb_Offset, Value.Koumakyou_Sub_Bomb_Value_Default))
                 {
                     return;
                 }
@@ -252,7 +252,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Bomb_Offset, Value.Koumakyou_Sub_Bomb_Value, true, Globals.BOMBOB, Globals.KoumakyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Bomb_Offset, Value.Koumakyou_Sub_Bomb_Value))
                 {
                     Globals.KoumakyouStatus.LockerBomb_Locker = true;
                     LockBomb = false;
@@ -287,12 +287,12 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Power_2_Zero_Offset, Globals.KoumakyouStatus.PowerOriginalBytes, false, Globals.POWEROB, Globals.KoumakyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Power_2_Zero_Offset, Value.Koumakyou_Sub_Power_2_Zero_Value_Default))
                 {
                     return;
                 }
 
-                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Power_Offset, Globals.KoumakyouStatus.PowerOriginalBytes2, false, Globals.POWEROB, Globals.KoumakyouStatus, 0x01))
+                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Power_Offset, Value.Koumakyou_Sub_Power_Value_Default))
                 {
                     return;
                 }
@@ -300,7 +300,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Power_Offset, Value.Koumakyou_Power_Value, true, Globals.SETVALUE, Globals.KoumakyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Power_Offset, Value.Koumakyou_Power_Value))
                 {
                     Globals.KoumakyouStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -309,7 +309,7 @@ namespace Touhou_Project_Mod_UI.Views
                 }
 
 
-                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Power_2_Zero_Offset, Value.Koumakyou_Sub_Power_Value, true, Globals.POWEROB, Globals.KoumakyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Power_2_Zero_Offset, Value.Koumakyou_Sub_Power_Value))
                 {
                     Globals.KoumakyouStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -317,7 +317,7 @@ namespace Touhou_Project_Mod_UI.Views
                     return;
                 }
 
-                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Power_Offset, Value.Koumakyou_Sub_Power2_Value, true, Globals.POWEROB, Globals.KoumakyouStatus, 0x01))
+                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Power_Offset, Value.Koumakyou_Sub_Power2_Value))
                 {
                     Globals.KoumakyouStatus.MaxPower_Locker = true;
                     MaxPower = false;
@@ -359,7 +359,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!Invincible)
             {
-                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Invincible_Offset, Globals.KoumakyouStatus.InvincibleOriginalBytes, false, Globals.INVINCIBLEOB, Globals.KoumakyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Invincible_Offset, Value.Koumakyou_Sub_Invincible_Value_Default))
                 {
 
                     return;
@@ -368,7 +368,7 @@ namespace Touhou_Project_Mod_UI.Views
             else
             {
 
-                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Invincible_Offset, Value.Koumakyou_Sub_Invincible_Value, true, Globals.INVINCIBLEOB, Globals.KoumakyouStatus, 0x00))
+                if (!Memory.SetMemory(Globals.KoumakyouStatus.ProcessHandle, Globals.KoumakyouStatus.BaseAddress + Offset.Koumakyou_Sub_Invincible_Offset, Value.Koumakyou_Sub_Invincible_Value))
                 {
                     Globals.KoumakyouStatus.Invincible_Locker = true;
                     Invincible = false;
