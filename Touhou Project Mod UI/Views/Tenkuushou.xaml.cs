@@ -237,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.TenkuushouStatus.ProcessHandle, Globals.TenkuushouStatus.BaseAddress + Offset.Tenkuushou_Sub_Bomb_Offset, Value.Tenkuushou_Sub_Plyaer_Value_Default))
+                if (!Memory.SetMemory(Globals.TenkuushouStatus.ProcessHandle, Globals.TenkuushouStatus.BaseAddress + Offset.Tenkuushou_Sub_Bomb_Offset, Value.Tenkuushou_Sub_Bomb_Value_Default))
                 {
                     return;
                 }

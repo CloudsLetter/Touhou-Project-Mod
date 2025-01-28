@@ -237,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Bomb_Offset, Value.Kikeijuu_Sub_Plyaer_Value_Default))
+                if (!Memory.SetMemory(Globals.KikeijuuStatus.ProcessHandle, Globals.KikeijuuStatus.BaseAddress + Offset.Kikeijuu_Sub_Bomb_Offset, Value.Kikeijuu_Sub_Bomb_Value_Default))
                 {
                     return;
                 }
