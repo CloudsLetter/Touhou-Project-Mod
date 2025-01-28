@@ -36,13 +36,20 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        NavigateToSelectedPage();
-        SetStartPage();
-        if (_startPage != null)
-        {
-            PagesList.SelectedItem = PagesList.Items.OfType<ControlInfoDataItem>().FirstOrDefault(x => x.PageType == _startPage);
-        }
+        //RootFrame.Navigate(typeof(Home));
+
+        ////SetStartPage();
+        //if (_startPage != null)
+        //{
+        //    PagesList.SelectedItem = PagesList.Items.OfType<ControlInfoDataItem>().FirstOrDefault(x => x.PageType == _startPage);
+        //}
         RootFrame = rootFrame;
+        NavigateToSelectedPage();
+        RootFrame.Navigate(typeof(Home));
+        PagesList.SelectedItem = PagesList.Items
+            .OfType<ControlInfoDataItem>()
+            .FirstOrDefault(x => x.PageType == typeof(Home));
+
 
     }
     partial void SetStartPage();
