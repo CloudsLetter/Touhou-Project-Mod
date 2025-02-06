@@ -169,7 +169,7 @@ namespace Touhou_Project_Mod_UI.Models
 
         // 15东方绀珠传
         // 399
-        public static IntPtr Kanjuden_Power_Offset = 0x00;
+        public static IntPtr Kanjuden_Power_Offset = 0x00E7440;
         // mov [004E7450],eax -> nop 5 bit 
         public static IntPtr Kanjuden_Sub_Plyaer_Offset = 0x0056398;
         // mov [004E745C],eax -> nop 5 bit
