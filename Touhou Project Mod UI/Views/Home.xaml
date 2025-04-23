@@ -25,7 +25,7 @@
         <TextBlock Grid.Row="1" Text="https://github.com/CloudsLetter/Touhou-Project-Mod/" 
                    VerticalAlignment="Center" HorizontalAlignment="Center"
                    FontSize="16" />
-        <TextBlock Grid.Row="2" Text="祝大家新年快乐，万事如意，身体健康，阖家幸福！" 
+        <TextBlock Grid.Row="2" Text="祝大家逢考必过！事业有成！" 
                    VerticalAlignment="Center" HorizontalAlignment="Center"
                    FontSize="16" />
     </Grid>
