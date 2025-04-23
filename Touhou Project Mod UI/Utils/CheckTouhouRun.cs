@@ -108,6 +108,12 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.YouyoumuStatus.IsRun = true;
 
                         }
+                        if (!Globals.YouyoumuStatus.IsRunStatusE && !Globals.YouyoumuStatus.IsRun && item == "th07e")
+                        {
+                            Globals.YouyoumuStatus.IsRunStatusE = true;
+                            Globals.YouyoumuStatus.IsRun = true;
+
+                        }
 
                     }
                     else if (!tmpBool && item.Contains("th07"))
@@ -135,6 +141,17 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.YouyoumuStatus.MaxPower = false;
                             Globals.YouyoumuStatus.Invincible = false;
                         }
+                        if (Globals.YouyoumuStatus.IsRunStatusE && Globals.YouyoumuStatus.IsRun && item == "th07e")
+                        {
+                            Globals.YouyoumuStatus.IsRunStatusE = false;
+                            Globals.YouyoumuStatus.IsRun = false;
+                            Globals.YouyoumuStatus.BaseAddress = 0;
+                            Globals.YouyoumuStatus.ProcessHandle = 0;
+                            Globals.YouyoumuStatus.LockPlayer = false;
+                            Globals.YouyoumuStatus.LockBomb = false;
+                            Globals.YouyoumuStatus.MaxPower = false;
+                            Globals.YouyoumuStatus.Invincible = false;
+                        }
 
                     }
                     if (tmpBool && item.Contains("th08"))
@@ -148,6 +165,12 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.EiyashouStatus.IsRunStatusC && !Globals.EiyashouStatus.IsRun && item == "th08c")
                         {
                             Globals.EiyashouStatus.IsRunStatusC = true;
+                            Globals.EiyashouStatus.IsRun = true;
+
+                        }
+                        if (!Globals.EiyashouStatus.IsRunStatusE && !Globals.EiyashouStatus.IsRun && item == "th08e")
+                        {
+                            Globals.EiyashouStatus.IsRunStatusE = true;
                             Globals.EiyashouStatus.IsRun = true;
 
                         }
@@ -181,7 +204,19 @@ namespace Touhou_Project_Mod_UI.Utils
                             Offset.Eiyashou_ReLocate_Offet = 0x00;
 
                         }
+                        if (Globals.EiyashouStatus.IsRunStatusE && Globals.EiyashouStatus.IsRun && item == "th08e")
+                        {
+                            Globals.EiyashouStatus.IsRunStatusE = false;
+                            Globals.EiyashouStatus.IsRun = false;
+                            Globals.EiyashouStatus.BaseAddress = 0;
+                            Globals.EiyashouStatus.ProcessHandle = 0;
+                            Globals.EiyashouStatus.LockPlayer = false;
+                            Globals.EiyashouStatus.LockBomb = false;
+                            Globals.EiyashouStatus.MaxPower = false;
+                            Globals.EiyashouStatus.Invincible = false;
+                            Offset.Eiyashou_ReLocate_Offet = 0x00;
 
+                        }
                     }
                     if (tmpBool && item.Contains("th09"))
                     {
@@ -194,6 +229,13 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.KaeizukaStatus.IsRunStatusC && !Globals.KaeizukaStatus.IsRun && item == "th09c")
                         {
                             Globals.KaeizukaStatus.IsRunStatusC = true;
+                            Globals.KaeizukaStatus.IsRun = true;
+
+                        }
+
+                        if (!Globals.KaeizukaStatus.IsRunStatusE && !Globals.KaeizukaStatus.IsRun && item == "th09e")
+                        {
+                            Globals.KaeizukaStatus.IsRunStatusE = true;
                             Globals.KaeizukaStatus.IsRun = true;
 
                         }
@@ -225,6 +267,18 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.KaeizukaStatus.Invincible = false;
                         }
 
+                        if (Globals.KaeizukaStatus.IsRunStatusE && Globals.KaeizukaStatus.IsRun && item == "th09e")
+                        {
+                            Globals.KaeizukaStatus.IsRunStatusE = false;
+                            Globals.KaeizukaStatus.IsRun = false;
+                            Globals.KaeizukaStatus.BaseAddress = 0;
+                            Globals.KaeizukaStatus.ProcessHandle = 0;
+                            Globals.KaeizukaStatus.LockPlayer = false;
+                            Globals.KaeizukaStatus.LockBomb = false;
+                            Globals.KaeizukaStatus.MaxPower = false;
+                            Globals.KaeizukaStatus.Invincible = false;
+                        }
+
                     }
                     if (tmpBool && item.Contains("th10"))
                     {
@@ -237,6 +291,12 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.FuujinrokuStatus.IsRunStatusC && !Globals.FuujinrokuStatus.IsRun && item == "th10c")
                         {
                             Globals.FuujinrokuStatus.IsRunStatusC = true;
+                            Globals.FuujinrokuStatus.IsRun = true;
+
+                        }
+                        if (!Globals.FuujinrokuStatus.IsRunStatusE && !Globals.FuujinrokuStatus.IsRun && item == "th10e")
+                        {
+                            Globals.FuujinrokuStatus.IsRunStatusE = true;
                             Globals.FuujinrokuStatus.IsRun = true;
 
                         }
@@ -268,6 +328,18 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.FuujinrokuStatus.Invincible = false;
                         }
 
+                        if (Globals.FuujinrokuStatus.IsRunStatusE && Globals.FuujinrokuStatus.IsRun && item == "th10e")
+                        {
+                            Globals.FuujinrokuStatus.IsRunStatusE = false;
+                            Globals.FuujinrokuStatus.IsRun = false;
+                            Globals.FuujinrokuStatus.BaseAddress = 0;
+                            Globals.FuujinrokuStatus.ProcessHandle = 0;
+                            Globals.FuujinrokuStatus.LockPlayer = false;
+                            Globals.FuujinrokuStatus.LockBomb = false;
+                            Globals.FuujinrokuStatus.MaxPower = false;
+                            Globals.FuujinrokuStatus.Invincible = false;
+                        }
+
                     }
                     if (tmpBool && item.Contains("th11"))
                     {
@@ -280,6 +352,13 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.ChireidenStatus.IsRunStatusC && !Globals.ChireidenStatus.IsRun && item == "th11c")
                         {
                             Globals.ChireidenStatus.IsRunStatusC = true;
+                            Globals.ChireidenStatus.IsRun = true;
+
+                        }
+
+                        if (!Globals.ChireidenStatus.IsRunStatusE && !Globals.ChireidenStatus.IsRun && item == "th11e")
+                        {
+                            Globals.ChireidenStatus.IsRunStatusE = true;
                             Globals.ChireidenStatus.IsRun = true;
 
                         }
@@ -310,6 +389,17 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.ChireidenStatus.Invincible = false;
                         }
 
+                        if (Globals.ChireidenStatus.IsRunStatusE && Globals.ChireidenStatus.IsRun && item == "th11e")
+                        {
+                            Globals.ChireidenStatus.IsRunStatusE = false;
+                            Globals.ChireidenStatus.IsRun = false;
+                            Globals.ChireidenStatus.BaseAddress = 0;
+                            Globals.ChireidenStatus.ProcessHandle = 0;
+                            Globals.ChireidenStatus.LockPlayer = false;
+                            Globals.ChireidenStatus.LockBomb = false;
+                            Globals.ChireidenStatus.MaxPower = false;
+                            Globals.ChireidenStatus.Invincible = false;
+                        }
 
                     }
                     if (tmpBool && item.Contains("th12"))
@@ -323,6 +413,12 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.SeirensenStatus.IsRunStatusC && !Globals.SeirensenStatus.IsRun && item == "th12c")
                         {
                             Globals.SeirensenStatus.IsRunStatusC = true;
+                            Globals.SeirensenStatus.IsRun = true;
+
+                        }
+                        if (!Globals.SeirensenStatus.IsRunStatusE && !Globals.SeirensenStatus.IsRun && item == "th12e")
+                        {
+                            Globals.SeirensenStatus.IsRunStatusE = true;
                             Globals.SeirensenStatus.IsRun = true;
 
                         }
@@ -353,7 +449,17 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.SeirensenStatus.Invincible = false;
                         }
 
-
+                        if (Globals.SeirensenStatus.IsRunStatusE && Globals.SeirensenStatus.IsRun && item == "th12e")
+                        {
+                            Globals.SeirensenStatus.IsRunStatusE = false;
+                            Globals.SeirensenStatus.IsRun = false;
+                            Globals.SeirensenStatus.BaseAddress = 0;
+                            Globals.SeirensenStatus.ProcessHandle = 0;
+                            Globals.SeirensenStatus.LockPlayer = false;
+                            Globals.SeirensenStatus.LockBomb = false;
+                            Globals.SeirensenStatus.MaxPower = false;
+                            Globals.SeirensenStatus.Invincible = false;
+                        }
                     }
                     if (tmpBool && item.Contains("th13"))
                     {
@@ -366,6 +472,12 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.ShinreibyouStatus.IsRunStatusC && !Globals.ShinreibyouStatus.IsRun && item == "th13c")
                         {
                             Globals.ShinreibyouStatus.IsRunStatusC = true;
+                            Globals.ShinreibyouStatus.IsRun = true;
+
+                        }
+                        if (!Globals.ShinreibyouStatus.IsRunStatusE && !Globals.ShinreibyouStatus.IsRun && item == "th13e")
+                        {
+                            Globals.ShinreibyouStatus.IsRunStatusE = true;
                             Globals.ShinreibyouStatus.IsRun = true;
 
                         }
@@ -395,7 +507,17 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.ShinreibyouStatus.MaxPower = false;
                             Globals.ShinreibyouStatus.Invincible = false;
                         }
-
+                        if (Globals.ShinreibyouStatus.IsRunStatusE && Globals.ShinreibyouStatus.IsRun && item == "th13e")
+                        {
+                            Globals.ShinreibyouStatus.IsRunStatusE = false;
+                            Globals.ShinreibyouStatus.IsRun = false;
+                            Globals.ShinreibyouStatus.BaseAddress = 0;
+                            Globals.ShinreibyouStatus.ProcessHandle = 0;
+                            Globals.ShinreibyouStatus.LockPlayer = false;
+                            Globals.ShinreibyouStatus.LockBomb = false;
+                            Globals.ShinreibyouStatus.MaxPower = false;
+                            Globals.ShinreibyouStatus.Invincible = false;
+                        }
 
                     }
                     if (tmpBool && item.Contains("th14"))
@@ -409,6 +531,12 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.KishinjouStatus.IsRunStatusC && !Globals.KishinjouStatus.IsRun && item == "th14c")
                         {
                             Globals.KishinjouStatus.IsRunStatusC = true;
+                            Globals.KishinjouStatus.IsRun = true;
+
+                        }
+                        if (!Globals.KishinjouStatus.IsRunStatusE && !Globals.KishinjouStatus.IsRun && item == "th14e")
+                        {
+                            Globals.KishinjouStatus.IsRunStatusE = true;
                             Globals.KishinjouStatus.IsRun = true;
 
                         }
@@ -438,7 +566,17 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.KishinjouStatus.MaxPower = false;
                             Globals.KishinjouStatus.Invincible = false;
                         }
-
+                        if (Globals.KishinjouStatus.IsRunStatusE && Globals.KishinjouStatus.IsRun && item == "th14e")
+                        {
+                            Globals.KishinjouStatus.IsRunStatusE = false;
+                            Globals.KishinjouStatus.IsRun = false;
+                            Globals.KishinjouStatus.BaseAddress = 0;
+                            Globals.KishinjouStatus.ProcessHandle = 0;
+                            Globals.KishinjouStatus.LockPlayer = false;
+                            Globals.KishinjouStatus.LockBomb = false;
+                            Globals.KishinjouStatus.MaxPower = false;
+                            Globals.KishinjouStatus.Invincible = false;
+                        }
 
                     }
                     if (tmpBool && item.Contains("th15"))
@@ -452,6 +590,12 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.KanjudenStatus.IsRunStatusC && !Globals.KanjudenStatus.IsRun && item == "th15c")
                         {
                             Globals.KanjudenStatus.IsRunStatusC = true;
+                            Globals.KanjudenStatus.IsRun = true;
+
+                        }
+                        if (!Globals.KanjudenStatus.IsRunStatusE && !Globals.KanjudenStatus.IsRun && item == "th15e")
+                        {
+                            Globals.KanjudenStatus.IsRunStatusE = true;
                             Globals.KanjudenStatus.IsRun = true;
 
                         }
@@ -482,7 +626,18 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.KanjudenStatus.Invincible = false;
 
                         }
+                        if (Globals.KanjudenStatus.IsRunStatusE && Globals.KanjudenStatus.IsRun && item == "th15e")
+                        {
+                            Globals.KanjudenStatus.IsRunStatusE = false;
+                            Globals.KanjudenStatus.IsRun = false;
+                            Globals.KanjudenStatus.BaseAddress = 0;
+                            Globals.KanjudenStatus.ProcessHandle = 0;
+                            Globals.KanjudenStatus.LockPlayer = false;
+                            Globals.KanjudenStatus.LockBomb = false;
+                            Globals.KanjudenStatus.MaxPower = false;
+                            Globals.KanjudenStatus.Invincible = false;
 
+                        }
 
                     }
                     if (tmpBool && item.Contains("th16"))
@@ -496,6 +651,12 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.TenkuushouStatus.IsRunStatusC && !Globals.TenkuushouStatus.IsRun && item == "th16c")
                         {
                             Globals.TenkuushouStatus.IsRunStatusC = true;
+                            Globals.TenkuushouStatus.IsRun = true;
+
+                        }
+                        if (!Globals.TenkuushouStatus.IsRunStatusE && !Globals.TenkuushouStatus.IsRun && item == "th16e")
+                        {
+                            Globals.TenkuushouStatus.IsRunStatusE = true;
                             Globals.TenkuushouStatus.IsRun = true;
 
                         }
@@ -525,7 +686,17 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.TenkuushouStatus.MaxPower = false;
                             Globals.TenkuushouStatus.Invincible = false;
                         }
-
+                        if (Globals.TenkuushouStatus.IsRunStatusE && Globals.TenkuushouStatus.IsRun && item == "th16e")
+                        {
+                            Globals.TenkuushouStatus.IsRunStatusE = false;
+                            Globals.TenkuushouStatus.IsRun = false;
+                            Globals.TenkuushouStatus.BaseAddress = 0;
+                            Globals.TenkuushouStatus.ProcessHandle = 0;
+                            Globals.TenkuushouStatus.LockPlayer = false;
+                            Globals.TenkuushouStatus.LockBomb = false;
+                            Globals.TenkuushouStatus.MaxPower = false;
+                            Globals.TenkuushouStatus.Invincible = false;
+                        }
 
                     }
 
@@ -540,6 +711,12 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.KikeijuuStatus.IsRunStatusC && !Globals.KikeijuuStatus.IsRun && item == "th17c")
                         {
                             Globals.KikeijuuStatus.IsRunStatusC = true;
+                            Globals.KikeijuuStatus.IsRun = true;
+
+                        }
+                        if (!Globals.KikeijuuStatus.IsRunStatusE && !Globals.KikeijuuStatus.IsRun && item == "th17e")
+                        {
+                            Globals.KikeijuuStatus.IsRunStatusE = true;
                             Globals.KikeijuuStatus.IsRun = true;
 
                         }
@@ -569,7 +746,17 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.KikeijuuStatus.MaxPower = false;
                             Globals.KikeijuuStatus.Invincible = false;
                         }
-
+                        if (Globals.KikeijuuStatus.IsRunStatusE && Globals.KikeijuuStatus.IsRun && item == "th17e")
+                        {
+                            Globals.KikeijuuStatus.IsRunStatusE = false;
+                            Globals.KikeijuuStatus.IsRun = false;
+                            Globals.KikeijuuStatus.BaseAddress = 0;
+                            Globals.KikeijuuStatus.ProcessHandle = 0;
+                            Globals.KikeijuuStatus.LockPlayer = false;
+                            Globals.KikeijuuStatus.LockBomb = false;
+                            Globals.KikeijuuStatus.MaxPower = false;
+                            Globals.KikeijuuStatus.Invincible = false;
+                        }
 
                     }
                     if (tmpBool && item.Contains("th18"))
@@ -583,6 +770,12 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.KouryuudouStatus.IsRunStatusC && !Globals.KouryuudouStatus.IsRun && item == "th18c")
                         {
                             Globals.KouryuudouStatus.IsRunStatusC = true;
+                            Globals.KouryuudouStatus.IsRun = true;
+
+                        }
+                        if (!Globals.KouryuudouStatus.IsRunStatusE && !Globals.KouryuudouStatus.IsRun && item == "th18e")
+                        {
+                            Globals.KouryuudouStatus.IsRunStatusE = true;
                             Globals.KouryuudouStatus.IsRun = true;
 
                         }
@@ -612,7 +805,17 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.KouryuudouStatus.MaxPower = false;
                             Globals.KouryuudouStatus.Invincible = false;
                         }
-
+                        if (Globals.KouryuudouStatus.IsRunStatusE && Globals.KouryuudouStatus.IsRun && item == "th18e")
+                        {
+                            Globals.KouryuudouStatus.IsRunStatusE = false;
+                            Globals.KouryuudouStatus.IsRun = false;
+                            Globals.KouryuudouStatus.BaseAddress = 0;
+                            Globals.KouryuudouStatus.ProcessHandle = 0;
+                            Globals.KouryuudouStatus.LockPlayer = false;
+                            Globals.KouryuudouStatus.LockBomb = false;
+                            Globals.KouryuudouStatus.MaxPower = false;
+                            Globals.KouryuudouStatus.Invincible = false;
+                        }
 
                     }
 
@@ -627,6 +830,12 @@ namespace Touhou_Project_Mod_UI.Utils
                         if (!Globals.JuuouenStatus.IsRunStatusC && !Globals.JuuouenStatus.IsRun && item == "th19c")
                         {
                             Globals.JuuouenStatus.IsRunStatusC = true;
+                            Globals.JuuouenStatus.IsRun = true;
+
+                        }
+                        if (!Globals.JuuouenStatus.IsRunStatusE && !Globals.JuuouenStatus.IsRun && item == "th19e")
+                        {
+                            Globals.JuuouenStatus.IsRunStatusE = true;
                             Globals.JuuouenStatus.IsRun = true;
 
                         }
@@ -657,7 +866,77 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.JuuouenStatus.Invincible = false;
                         }
 
+                        if (Globals.JuuouenStatus.IsRunStatusE && Globals.JuuouenStatus.IsRun && item == "th19e")
+                        {
+                            Globals.JuuouenStatus.IsRunStatusE = false;
+                            Globals.JuuouenStatus.IsRun = false;
+                            Globals.JuuouenStatus.BaseAddress = 0;
+                            Globals.JuuouenStatus.ProcessHandle = 0;
+                            Globals.JuuouenStatus.LockPlayer = false;
+                            Globals.JuuouenStatus.LockBomb = false;
+                            Globals.JuuouenStatus.MaxPower = false;
+                            Globals.JuuouenStatus.Invincible = false;
+                        }
 
+                    }
+                    if (tmpBool && item.Contains("th20"))
+                    {
+                        if (!Globals.JuuouenStatus.IsRunStatus && !Globals.JuuouenStatus.IsRun && item == "th20")
+                        {
+                            Globals.JuuouenStatus.IsRunStatus = true;
+                            Globals.JuuouenStatus.IsRun = true;
+
+                        }
+                        if (!Globals.JuuouenStatus.IsRunStatusC && !Globals.JuuouenStatus.IsRun && item == "th20c")
+                        {
+                            Globals.JuuouenStatus.IsRunStatusC = true;
+                            Globals.JuuouenStatus.IsRun = true;
+
+                        }
+                        if (!Globals.JuuouenStatus.IsRunStatusE && !Globals.JuuouenStatus.IsRun && item == "th20e")
+                        {
+                            Globals.JuuouenStatus.IsRunStatusE = true;
+                            Globals.JuuouenStatus.IsRun = true;
+
+                        }
+                    }
+                    else if (!tmpBool && item.Contains("th20"))
+                    {
+
+                        if (Globals.KinjoukyouStatus.IsRunStatus && Globals.KinjoukyouStatus.IsRun && item == "th20")
+                        {
+                            Globals.KinjoukyouStatus.IsRunStatus = false;
+                            Globals.KinjoukyouStatus.IsRun = false;
+                            Globals.KinjoukyouStatus.BaseAddress = 0;
+                            Globals.KinjoukyouStatus.ProcessHandle = 0;
+                            Globals.KinjoukyouStatus.LockPlayer = false;
+                            Globals.KinjoukyouStatus.LockBomb = false;
+                            Globals.KinjoukyouStatus.MaxPower = false;
+                            Globals.KinjoukyouStatus.Invincible = false;
+                        }
+                        if (Globals.KinjoukyouStatus.IsRunStatusC && Globals.KinjoukyouStatus.IsRun && item == "th20c")
+                        {
+                            Globals.KinjoukyouStatus.IsRunStatusC = false;
+                            Globals.KinjoukyouStatus.IsRun = false;
+                            Globals.KinjoukyouStatus.BaseAddress = 0;
+                            Globals.KinjoukyouStatus.ProcessHandle = 0;
+                            Globals.KinjoukyouStatus.LockPlayer = false;
+                            Globals.KinjoukyouStatus.LockBomb = false;
+                            Globals.KinjoukyouStatus.MaxPower = false;
+                            Globals.KinjoukyouStatus.Invincible = false;
+                        }
+
+                        if (Globals.KinjoukyouStatus.IsRunStatusE && Globals.KinjoukyouStatus.IsRun && item == "th20e")
+                        {
+                            Globals.KinjoukyouStatus.IsRunStatusE = false;
+                            Globals.KinjoukyouStatus.IsRun = false;
+                            Globals.KinjoukyouStatus.BaseAddress = 0;
+                            Globals.KinjoukyouStatus.ProcessHandle = 0;
+                            Globals.KinjoukyouStatus.LockPlayer = false;
+                            Globals.KinjoukyouStatus.LockBomb = false;
+                            Globals.KinjoukyouStatus.MaxPower = false;
+                            Globals.KinjoukyouStatus.Invincible = false;
+                        }
                     }
                 }
 

@@ -231,5 +231,17 @@ namespace Touhou_Project_Mod_UI.Models
         public static IntPtr Juuouen_Sub_Invincible_Offset = 0x00;
 
 
+        // 20东方锦上京
+
+        public static IntPtr Kinjoukyou_Power_Offset = 0x00;
+
+        public static IntPtr Kinjoukyou_Sub_Plyaer_Offset = 0x00;
+
+        public static IntPtr Kinjoukyou_Sub_Bomb_Offset = 0x00;
+
+        public static IntPtr Kinjoukyou_Sub_Power_Offset = 0x00;
+
+        public static IntPtr Kinjoukyou_Sub_Invincible_Offset = 0x00;
+
     }
 }

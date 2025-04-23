@@ -367,9 +367,30 @@ namespace Touhou_Project_Mod_UI.Models
 
         public static byte[] Juuouen_Sub_Power_Value = [];
 
-
         public static byte[] Juuouen_Sub_Invincible_Value = [];
 
+        // 20东方锦上京
+
+        public static byte[] Kinjoukyou_Power_Value_Default = [];
+
+        public static byte[] Kinjoukyou_Sub_Plyaer_Value_Default = [];
+
+        public static byte[] Kinjoukyou_Sub_Bomb_Value_Default = [];
+
+        public static byte[] Kinjoukyou_Sub_Power_Value_Default = [];
+
+        public static byte[] Kinjoukyou_Sub_Invincible_Value_Default = [];
+
+
+        public static byte[] Kinjoukyou_Power_Value = [];
+
+        public static byte[] Kinjoukyou_Sub_Plyaer_Value = [];
+
+        public static byte[] Kinjoukyou_Sub_Bomb_Value = [];
+
+        public static byte[] Kinjoukyou_Sub_Power_Value = [];
+
+        public static byte[] Kinjoukyou_Sub_Invincible_Value = [];
 
     }
 }

@@ -160,6 +160,15 @@ namespace Touhou_Project_Mod_UI.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Touhou Kinjoukyou 的本地化字符串。
+        /// </summary>
+        public static string Kinjoukyou {
+            get {
+                return ResourceManager.GetString("Kinjoukyou", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Touhou Kishinjou 的本地化字符串。
         /// </summary>
         public static string Kishinjou {

@@ -37,3 +37,4 @@ TH18 Touhou Kouryuudou: Supported
 
 TH19 Touhou Juuouen: Not Supported (No Modifiable Items)
 
+TH20 Touhou Kinjoukyou Trial: Not Supported (Not Released)

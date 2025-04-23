@@ -150,6 +150,9 @@
   <data name="Kikeijuu" xml:space="preserve">
     <value>とうほうきけいじゅう</value>
   </data>
+  <data name="Kinjoukyou" xml:space="preserve">
+    <value>とうほうきんじょうきょう</value>
+  </data>
   <data name="Kishinjou" xml:space="preserve">
     <value>とうほうきしんじょう</value>
   </data>

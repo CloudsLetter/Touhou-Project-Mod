@@ -150,6 +150,9 @@
   <data name="Kikeijuu" xml:space="preserve">
     <value>Touhou Kikeijuu</value>
   </data>
+  <data name="Kinjoukyou" xml:space="preserve">
+    <value>Touhou Kinjoukyou</value>
+  </data>
   <data name="Kishinjou" xml:space="preserve">
     <value>Touhou Kishinjou</value>
   </data>

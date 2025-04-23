@@ -194,7 +194,7 @@ public class ControlPagesData : List<ControlInfoDataItem>
         AddPage(typeof(Kikeijuu), Properties.Resources.Kikeijuu);
         AddPage(typeof(Kouryuudou), Properties.Resources.Kouryuudou);
         AddPage(typeof(Juuouen), Properties.Resources.Juuouen);
-
+        AddPage(typeof(Kinjoukyou), Properties.Resources.Kinjoukyou);
     }
 
     private void AddPage(Type pageType, string displayName = null)
