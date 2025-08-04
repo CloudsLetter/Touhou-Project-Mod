@@ -9,7 +9,7 @@
     <UseWPF>true</UseWPF>
 	 <Nullable>enable</Nullable>
 	 <ApplicationManifest>app.manifest</ApplicationManifest>
-	 <ApplicationIcon>Th12.ico</ApplicationIcon>
+	 <ApplicationIcon>Th20.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,11 +23,8 @@
     <None Remove="Img\Th17.png" />
     <None Remove="Img\Th18.png" />
     <None Remove="Img\Th19.png" />
+    <None Remove="Img\Th20.png" />
     <None Remove="Img\Th9.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Th12.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,6 +46,7 @@
     <Resource Include="Img\Th08.png" />
     <Resource Include="Img\Th09.png" />
     <Resource Include="Img\Th19.png" />
+    <Resource Include="Img\Th20.png" />
     <Resource Include="Img\Th9.png" />
   </ItemGroup>
 
