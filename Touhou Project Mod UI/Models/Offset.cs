@@ -232,16 +232,16 @@ namespace Touhou_Project_Mod_UI.Models
 
 
         // 20东方锦上京
-
-        public static IntPtr Kinjoukyou_Power_Offset = 0x00;
-
-        public static IntPtr Kinjoukyou_Sub_Plyaer_Offset = 0x00;
-
-        public static IntPtr Kinjoukyou_Sub_Bomb_Offset = 0x00;
-
-        public static IntPtr Kinjoukyou_Sub_Power_Offset = 0x00;
-
-        public static IntPtr Kinjoukyou_Sub_Invincible_Offset = 0x00;
+        // 399
+        public static IntPtr Kinjoukyou_Power_Offset = 0x1BA620;
+        // mov [edx+000000B8],ecx -> nop 6 bit
+        public static IntPtr Kinjoukyou_Sub_Plyaer_Offset = 0xE1288; 
+        // mov [edx+000000CC],ecx -> nop 6 bit
+        public static IntPtr Kinjoukyou_Sub_Bomb_Offset = 0xE1728;
+        // mov [edx+30],ecx -> nop 3bit 
+        public static IntPtr Kinjoukyou_Sub_Power_Offset = 0xE16A8;
+        // value 04 -> 01
+        public static IntPtr Kinjoukyou_Sub_Invincible_Offset = 0xF87FC;
 
     }
 }

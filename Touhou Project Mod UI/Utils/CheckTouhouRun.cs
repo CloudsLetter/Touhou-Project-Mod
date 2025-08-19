@@ -881,22 +881,22 @@ namespace Touhou_Project_Mod_UI.Utils
                     }
                     if (tmpBool && item.Contains("th20"))
                     {
-                        if (!Globals.JuuouenStatus.IsRunStatus && !Globals.JuuouenStatus.IsRun && item == "th20")
+                        if (!Globals.KinjoukyouStatus.IsRunStatus && !Globals.KinjoukyouStatus.IsRun && item == "th20")
                         {
-                            Globals.JuuouenStatus.IsRunStatus = true;
-                            Globals.JuuouenStatus.IsRun = true;
+                            Globals.KinjoukyouStatus.IsRunStatus = true;
+                            Globals.KinjoukyouStatus.IsRun = true;
 
                         }
-                        if (!Globals.JuuouenStatus.IsRunStatusC && !Globals.JuuouenStatus.IsRun && item == "th20c")
+                        if (!Globals.KinjoukyouStatus.IsRunStatusC && !Globals.KinjoukyouStatus.IsRun && item == "th20c")
                         {
-                            Globals.JuuouenStatus.IsRunStatusC = true;
-                            Globals.JuuouenStatus.IsRun = true;
+                            Globals.KinjoukyouStatus.IsRunStatusC = true;
+                            Globals.KinjoukyouStatus.IsRun = true;
 
                         }
-                        if (!Globals.JuuouenStatus.IsRunStatusE && !Globals.JuuouenStatus.IsRun && item == "th20e")
+                        if (!Globals.KinjoukyouStatus.IsRunStatusE && !Globals.KinjoukyouStatus.IsRun && item == "th20e")
                         {
-                            Globals.JuuouenStatus.IsRunStatusE = true;
-                            Globals.JuuouenStatus.IsRun = true;
+                            Globals.KinjoukyouStatus.IsRunStatusE = true;
+                            Globals.KinjoukyouStatus.IsRun = true;
 
                         }
                     }

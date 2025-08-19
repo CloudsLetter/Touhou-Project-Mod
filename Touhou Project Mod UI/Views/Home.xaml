@@ -25,7 +25,7 @@
         <TextBlock Grid.Row="1" Text="https://github.com/CloudsLetter/Touhou-Project-Mod/" 
                    VerticalAlignment="Center" HorizontalAlignment="Center"
                    FontSize="16" />
-        <TextBlock Grid.Row="2" Text="祝大家逢考必过！事业有成！" 
+        <TextBlock Grid.Row="2" Text="我们所度过的每个平凡的日常，也许就是连续发生的奇迹。 -《日常》" 
                    VerticalAlignment="Center" HorizontalAlignment="Center"
                    FontSize="16" />
     </Grid>

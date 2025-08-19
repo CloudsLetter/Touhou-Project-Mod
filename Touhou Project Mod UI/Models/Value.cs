@@ -8,10 +8,10 @@ namespace Touhou_Project_Mod_UI.Models
 {
     public static class Value
     {
+        // 06东方红魔乡
+
         public static byte[] Koumakyou_Power_Value = [0x80];
 
-
-        // 06东方红魔乡
         public static byte[] Koumakyou_Sub_Plyaer_Value_Default = [0x2C, 0x01];
 
         public static byte[] Koumakyou_Sub_Bomb_Value_Default = [0x80, 0xEA, 0x01];
@@ -371,26 +371,25 @@ namespace Touhou_Project_Mod_UI.Models
 
         // 20东方锦上京
 
-        public static byte[] Kinjoukyou_Power_Value_Default = [];
+        public static byte[] Kinjoukyou_Power_Value = [0x8F, 0x01];
 
-        public static byte[] Kinjoukyou_Sub_Plyaer_Value_Default = [];
+        public static byte[] Kinjoukyou_Sub_Plyaer_Value_Default = [0x89, 0x8A, 0xB8, 0x00, 0x00, 0x00];
 
-        public static byte[] Kinjoukyou_Sub_Bomb_Value_Default = [];
+        public static byte[] Kinjoukyou_Sub_Bomb_Value_Default = [0x89, 0x8A, 0xCC, 0x00, 0x00 ,0x00];
 
-        public static byte[] Kinjoukyou_Sub_Power_Value_Default = [];
+        public static byte[] Kinjoukyou_Sub_Power_Value_Default = [0x89, 0x4A, 0x30];
 
-        public static byte[] Kinjoukyou_Sub_Invincible_Value_Default = [];
+        public static byte[] Kinjoukyou_Sub_Invincible_Value_Default = [0x04];
 
 
-        public static byte[] Kinjoukyou_Power_Value = [];
 
-        public static byte[] Kinjoukyou_Sub_Plyaer_Value = [];
+        public static byte[] Kinjoukyou_Sub_Plyaer_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Kinjoukyou_Sub_Bomb_Value = [];
+        public static byte[] Kinjoukyou_Sub_Bomb_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
 
-        public static byte[] Kinjoukyou_Sub_Power_Value = [];
+        public static byte[] Kinjoukyou_Sub_Power_Value = [0x90, 0x90, 0x90];
 
-        public static byte[] Kinjoukyou_Sub_Invincible_Value = [];
+        public static byte[] Kinjoukyou_Sub_Invincible_Value = [0x01];
 
     }
 }
