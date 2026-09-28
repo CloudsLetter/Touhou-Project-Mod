@@ -94,8 +94,10 @@ jobs:
 
       - name: Publish release
         shell: bash
+        # 这里用的是每次运行自动签发的内置 token（github.token），
+        # 不需要在仓库里建任何 secret —— 叫 GITHUB_* 的 secret 是建不了的。
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.ref_name }}
         run: |
           ls -lh dist
