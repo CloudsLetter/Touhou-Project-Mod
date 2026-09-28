@@ -237,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Bomb_Offset, Value.Chireiden_Sub_Plyaer_Value_Default))
+                if (!Memory.SetMemory(Globals.ChireidenStatus.ProcessHandle, Globals.ChireidenStatus.BaseAddress + Offset.Chireiden_Sub_Bomb_Offset, Value.Chireiden_Sub_Bomb_Value_Default))
                 {
                     return;
                 }

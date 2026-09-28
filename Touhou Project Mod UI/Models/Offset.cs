@@ -69,8 +69,8 @@ namespace Touhou_Project_Mod_UI.Models
         // fstp dword ptr [eax+00000080] -> nop  6 bit 
         public static IntPtr Eiyashou_Sub_Bomb_Offset = 0x00398BB;
 
-        // fstp dword ptr [ecx+00000098] -> 6 bit 复用
-        public static IntPtr Eiyashou_Sub_Power_Offset = 0x006FB0;
+        public static IntPtr Eiyashou_Sub_Power_Offset = 0x003B295;
+        public static IntPtr Eiyashou_Sub_Power2_Offset = 0x004CDB1;
 
         //
         public static IntPtr Eiyashou_Sub_Invincible1_Offset = 0x004A339;
@@ -242,6 +242,81 @@ namespace Touhou_Project_Mod_UI.Models
         public static IntPtr Kinjoukyou_Sub_Power_Offset = 0xE16A8;
         // value 04 -> 01
         public static IntPtr Kinjoukyou_Sub_Invincible_Offset = 0xF87FC;
+
+        // 07.5东方萃梦想 (th075) —— 骨架已就绪，偏移待逆向
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+        public static IntPtr Suimusou_Power_Offset = 0x00;
+        public static IntPtr Suimusou_Sub_Plyaer_Offset = 0x00;
+        public static IntPtr Suimusou_Sub_Bomb_Offset = 0x00;
+        public static IntPtr Suimusou_Sub_Power_Offset = 0x00;
+        public static IntPtr Suimusou_Sub_Invincible_Offset = 0x00;
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+
+        // 10.5东方绯想天 (th105) —— 骨架已就绪，偏移待逆向
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+        public static IntPtr Hisouten_Power_Offset = 0x00;
+        public static IntPtr Hisouten_Sub_Plyaer_Offset = 0x00;
+        public static IntPtr Hisouten_Sub_Bomb_Offset = 0x00;
+        public static IntPtr Hisouten_Sub_Power_Offset = 0x00;
+        public static IntPtr Hisouten_Sub_Invincible_Offset = 0x00;
+
+        // 12.3东方非想天则 (th123) —— 骨架已就绪，偏移待逆向
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+        public static IntPtr Hisoutensoku_Power_Offset = 0x00;
+        public static IntPtr Hisoutensoku_Sub_Plyaer_Offset = 0x00;
+        public static IntPtr Hisoutensoku_Sub_Bomb_Offset = 0x00;
+        public static IntPtr Hisoutensoku_Sub_Power_Offset = 0x00;
+        public static IntPtr Hisoutensoku_Sub_Invincible_Offset = 0x00;
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+
+        // 13.5东方心绮楼 (th135) —— 骨架已就绪，偏移待逆向
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+        public static IntPtr Shinkirou_Power_Offset = 0x00;
+        public static IntPtr Shinkirou_Sub_Plyaer_Offset = 0x00;
+        public static IntPtr Shinkirou_Sub_Bomb_Offset = 0x00;
+        public static IntPtr Shinkirou_Sub_Power_Offset = 0x00;
+        public static IntPtr Shinkirou_Sub_Invincible_Offset = 0x00;
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+
+        // 14.5东方深秘录 (th145) —— 骨架已就绪，偏移待逆向
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+        public static IntPtr Shinpiroku_Power_Offset = 0x00;
+        public static IntPtr Shinpiroku_Sub_Plyaer_Offset = 0x00;
+        public static IntPtr Shinpiroku_Sub_Bomb_Offset = 0x00;
+        public static IntPtr Shinpiroku_Sub_Power_Offset = 0x00;
+        public static IntPtr Shinpiroku_Sub_Invincible_Offset = 0x00;
+
+        // 15.5东方凭依华 (th155) —— 骨架已就绪，偏移待逆向
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+        public static IntPtr Hyouika_Power_Offset = 0x00;
+        public static IntPtr Hyouika_Sub_Plyaer_Offset = 0x00;
+        public static IntPtr Hyouika_Sub_Bomb_Offset = 0x00;
+        public static IntPtr Hyouika_Sub_Power_Offset = 0x00;
+        public static IntPtr Hyouika_Sub_Invincible_Offset = 0x00;
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+
+        // 17.5东方刚欲异闻 (th175) —— 骨架已就绪，偏移待逆向
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
+        public static IntPtr GouyokuIbun_Power_Offset = 0x00;
+        public static IntPtr GouyokuIbun_Sub_Plyaer_Offset = 0x00;
+        public static IntPtr GouyokuIbun_Sub_Bomb_Offset = 0x00;
+        public static IntPtr GouyokuIbun_Sub_Power_Offset = 0x00;
+        public static IntPtr GouyokuIbun_Sub_Invincible_Offset = 0x00;
+        // 注意：0x00 表示尚未找到。配合 Value 里的空数组，SetMemory 会整条失败，
+        // 不会写入基址+0x00（PE 头）。填偏移时必须同时填 Value 里对应的字节数组。
 
     }
 }

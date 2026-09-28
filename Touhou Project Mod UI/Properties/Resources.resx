@@ -117,11 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AutoBomb" xml:space="preserve">
+    <value>Auto Bomb</value>
+  </data>
+  <data name="BlackMarket" xml:space="preserve">
+    <value>100th Black Market</value>
+  </data>
+  <data name="Bunkachou" xml:space="preserve">
+    <value>Touhou Bunkachou</value>
+  </data>
   <data name="Chireiden" xml:space="preserve">
     <value>Touhou Chireiden</value>
   </data>
+  <data name="CpuChargeLock" xml:space="preserve">
+    <value>Lock CPU Charge</value>
+  </data>
+  <data name="DanmakuAmanojaku" xml:space="preserve">
+    <value>Danmaku Amanojaku</value>
+  </data>
   <data name="Disabled" xml:space="preserve">
     <value>Disabled</value>
+  </data>
+  <data name="DoubleSpoiler" xml:space="preserve">
+    <value>Double Spoiler</value>
   </data>
   <data name="Eiyashou" xml:space="preserve">
     <value>Touhou Eiyashou</value>
@@ -129,11 +147,35 @@
   <data name="Enabled" xml:space="preserve">
     <value>Enabled</value>
   </data>
+  <data name="FocusLockOn" xml:space="preserve">
+    <value>Coercive Reporting</value>
+  </data>
   <data name="Fuujinroku" xml:space="preserve">
     <value>Touhou Fuujinroku</value>
   </data>
+  <data name="GouyokuIbun" xml:space="preserve">
+    <value>Touhou Gouyoku Ibun</value>
+  </data>
+  <data name="Hisouten" xml:space="preserve">
+    <value>Touhou Hisouten</value>
+  </data>
+  <data name="Hisoutensoku" xml:space="preserve">
+    <value>Touhou Hisoutensoku</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="Hyouika" xml:space="preserve">
+    <value>Touhou Hyouika</value>
+  </data>
+  <data name="InfBMoney" xml:space="preserve">
+    <value>Inf. BMoney</value>
+  </data>
+  <data name="InfCharge" xml:space="preserve">
+    <value>Inf. Charge</value>
+  </data>
+  <data name="InfItems" xml:space="preserve">
+    <value>Inf. Items</value>
   </data>
   <data name="Invincible" xml:space="preserve">
     <value>Invincible</value>
@@ -159,6 +201,9 @@
   <data name="Koumakyou" xml:space="preserve">
     <value>Touhou Koumakyou</value>
   </data>
+  <data name="KoumakyouNc" xml:space="preserve">
+    <value>Touhou Koumakyou: New Classic</value>
+  </data>
   <data name="Kouryuudou" xml:space="preserve">
     <value>Touhou Kouryuudou</value>
   </data>
@@ -168,8 +213,20 @@
   <data name="LockPlayer" xml:space="preserve">
     <value>Lock Player</value>
   </data>
+  <data name="LockRank" xml:space="preserve">
+    <value>Lock Rank</value>
+  </data>
+  <data name="LockTime" xml:space="preserve">
+    <value>Time Lock</value>
+  </data>
   <data name="MaxPower" xml:space="preserve">
     <value>Max Power</value>
+  </data>
+  <data name="MultiInstance" xml:space="preserve">
+    <value>Allow Multiple Instances</value>
+  </data>
+  <data name="NightmareDiary" xml:space="preserve">
+    <value>Hifuu Nightmare Diary</value>
   </data>
   <data name="NoResultsFound" xml:space="preserve">
     <value>No results found</value>
@@ -183,14 +240,29 @@
   <data name="Seirensen" xml:space="preserve">
     <value>Touhou Seirensen</value>
   </data>
+  <data name="Shinkirou" xml:space="preserve">
+    <value>Touhou Shinkirou</value>
+  </data>
+  <data name="Shinpiroku" xml:space="preserve">
+    <value>Touhou Shinpiroku</value>
+  </data>
   <data name="Shinreibyou" xml:space="preserve">
     <value>Touhou Shinreibyou</value>
+  </data>
+  <data name="Suimusou" xml:space="preserve">
+    <value>Touhou Suimusou</value>
   </data>
   <data name="Tenkuushou" xml:space="preserve">
     <value>Touhou Tenkuushou</value>
   </data>
+  <data name="VersionMismatch" xml:space="preserve">
+    <value>Unsupported game version</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome</value>
+  </data>
+  <data name="YouseiDaisensou" xml:space="preserve">
+    <value>Great Fairy Wars</value>
   </data>
   <data name="Youyoumu" xml:space="preserve">
     <value>Touhou Youyoumu</value>

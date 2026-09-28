@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Local-only assistant workspace (memory, tools, vendored reference data)
+.workbuddy/

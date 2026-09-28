@@ -117,11 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AutoBomb" xml:space="preserve">
+    <value>自動喰らいボム</value>
+  </data>
+  <data name="BlackMarket" xml:space="preserve">
+    <value>ばれっとふぃりあたちのやみいちば</value>
+  </data>
+  <data name="Bunkachou" xml:space="preserve">
+    <value>とうほうぶんかちょう</value>
+  </data>
   <data name="Chireiden" xml:space="preserve">
     <value>とうほうちれいでん</value>
   </data>
+  <data name="CpuChargeLock" xml:space="preserve">
+    <value>CPUチャージ固定</value>
+  </data>
+  <data name="DanmakuAmanojaku" xml:space="preserve">
+    <value>だんまくあまのじゃく</value>
+  </data>
   <data name="Disabled" xml:space="preserve">
     <value>無効</value>
+  </data>
+  <data name="DoubleSpoiler" xml:space="preserve">
+    <value>だぶるすぽいらー</value>
   </data>
   <data name="Eiyashou" xml:space="preserve">
     <value>とうほうえいやしょう</value>
@@ -129,11 +147,35 @@
   <data name="Enabled" xml:space="preserve">
     <value>有効</value>
   </data>
+  <data name="FocusLockOn" xml:space="preserve">
+    <value>圧迫取材</value>
+  </data>
   <data name="Fuujinroku" xml:space="preserve">
     <value>とうほうふうじんろく</value>
   </data>
+  <data name="GouyokuIbun" xml:space="preserve">
+    <value>とうほうごうよくいぶん</value>
+  </data>
+  <data name="Hisouten" xml:space="preserve">
+    <value>とうほうひそうてん</value>
+  </data>
+  <data name="Hisoutensoku" xml:space="preserve">
+    <value>とうほうひそうてんそく</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>ホーム</value>
+  </data>
+  <data name="Hyouika" xml:space="preserve">
+    <value>とうほうひょういか</value>
+  </data>
+  <data name="InfBMoney" xml:space="preserve">
+    <value>無限弾貨</value>
+  </data>
+  <data name="InfCharge" xml:space="preserve">
+    <value>無限装填率</value>
+  </data>
+  <data name="InfItems" xml:space="preserve">
+    <value>アイテム減らない</value>
   </data>
   <data name="Invincible" xml:space="preserve">
     <value>無敵</value>
@@ -159,6 +201,9 @@
   <data name="Koumakyou" xml:space="preserve">
     <value>とうほうこうまきょう</value>
   </data>
+  <data name="KoumakyouNc" xml:space="preserve">
+    <value>とうほうこうまきょう にゅーくらしっく</value>
+  </data>
   <data name="Kouryuudou" xml:space="preserve">
     <value>とうほうこうりゅうどう</value>
   </data>
@@ -168,8 +213,20 @@
   <data name="LockPlayer" xml:space="preserve">
     <value>プレーヤーをロック</value>
   </data>
+  <data name="LockRank" xml:space="preserve">
+    <value>ランク固定</value>
+  </data>
+  <data name="LockTime" xml:space="preserve">
+    <value>残り時間減らない</value>
+  </data>
   <data name="MaxPower" xml:space="preserve">
     <value>最大パワー</value>
+  </data>
+  <data name="MultiInstance" xml:space="preserve">
+    <value>多重起動を許可</value>
+  </data>
+  <data name="NightmareDiary" xml:space="preserve">
+    <value>ひふうないとめあだいありー</value>
   </data>
   <data name="NoResultsFound" xml:space="preserve">
     <value>結果が見つかりませんでした</value>
@@ -183,14 +240,29 @@
   <data name="Seirensen" xml:space="preserve">
     <value>とうほうせいれんせん</value>
   </data>
+  <data name="Shinkirou" xml:space="preserve">
+    <value>とうほうしんきろう</value>
+  </data>
+  <data name="Shinpiroku" xml:space="preserve">
+    <value>とうほうしんぴろく</value>
+  </data>
   <data name="Shinreibyou" xml:space="preserve">
     <value>とうほうしんれいびょう</value>
+  </data>
+  <data name="Suimusou" xml:space="preserve">
+    <value>とうほうすいむそう</value>
   </data>
   <data name="Tenkuushou" xml:space="preserve">
     <value>とうほうてんくうしょう</value>
   </data>
+  <data name="VersionMismatch" xml:space="preserve">
+    <value>未対応のゲームバージョン</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>いらっしゃいませ</value>
+  </data>
+  <data name="YouseiDaisensou" xml:space="preserve">
+    <value>ようせいだいせんそう</value>
   </data>
   <data name="Youyoumu" xml:space="preserve">
     <value>とうほうようようむ</value>

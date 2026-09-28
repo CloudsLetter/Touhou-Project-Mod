@@ -95,6 +95,30 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.KoumakyouStatus.Invincible = false;
                         }
                     }
+
+                    if (tmpBool && item == "th06nc")
+                    {
+                        if (!Globals.KoumakyouNcStatus.IsRunStatus && !Globals.KoumakyouNcStatus.IsRun)
+                        {
+                            Globals.KoumakyouNcStatus.IsRunStatus = true;
+                            Globals.KoumakyouNcStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item == "th06nc")
+                    {
+
+                        if (Globals.KoumakyouNcStatus.IsRunStatus && Globals.KoumakyouNcStatus.IsRun)
+                        {
+                            Globals.KoumakyouNcStatus.IsRunStatus = false;
+                            Globals.KoumakyouNcStatus.IsRun = false;
+                            Globals.KoumakyouNcStatus.BaseAddress = 0;
+                            Globals.KoumakyouNcStatus.ProcessHandle = 0;
+                            TouhouHackProfiles.KoumakyouNc.ResetAll();
+                        }
+
+                    }
                     if (tmpBool && item.Contains("th07"))
                     {
                         if (!Globals.YouyoumuStatus.IsRunStatus && !Globals.YouyoumuStatus.IsRun && item == "th07")
@@ -250,10 +274,7 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.KaeizukaStatus.IsRun = false;
                             Globals.KaeizukaStatus.BaseAddress = 0;
                             Globals.KaeizukaStatus.ProcessHandle = 0;
-                            Globals.KaeizukaStatus.LockPlayer = false;
-                            Globals.KaeizukaStatus.LockBomb = false;
-                            Globals.KaeizukaStatus.MaxPower = false;
-                            Globals.KaeizukaStatus.Invincible = false;
+                            TouhouHackProfiles.Kaeizuka.ResetAll();
                         }
                         if (Globals.KaeizukaStatus.IsRunStatusC && Globals.KaeizukaStatus.IsRun && item == "th09c")
                         {
@@ -261,10 +282,7 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.KaeizukaStatus.IsRun = false;
                             Globals.KaeizukaStatus.BaseAddress = 0;
                             Globals.KaeizukaStatus.ProcessHandle = 0;
-                            Globals.KaeizukaStatus.LockPlayer = false;
-                            Globals.KaeizukaStatus.LockBomb = false;
-                            Globals.KaeizukaStatus.MaxPower = false;
-                            Globals.KaeizukaStatus.Invincible = false;
+                            TouhouHackProfiles.Kaeizuka.ResetAll();
                         }
 
                         if (Globals.KaeizukaStatus.IsRunStatusE && Globals.KaeizukaStatus.IsRun && item == "th09e")
@@ -273,10 +291,7 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.KaeizukaStatus.IsRun = false;
                             Globals.KaeizukaStatus.BaseAddress = 0;
                             Globals.KaeizukaStatus.ProcessHandle = 0;
-                            Globals.KaeizukaStatus.LockPlayer = false;
-                            Globals.KaeizukaStatus.LockBomb = false;
-                            Globals.KaeizukaStatus.MaxPower = false;
-                            Globals.KaeizukaStatus.Invincible = false;
+                            TouhouHackProfiles.Kaeizuka.ResetAll();
                         }
 
                     }
@@ -849,10 +864,8 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.JuuouenStatus.IsRun = false;
                             Globals.JuuouenStatus.BaseAddress = 0;
                             Globals.JuuouenStatus.ProcessHandle = 0;
-                            Globals.JuuouenStatus.LockPlayer = false;
-                            Globals.JuuouenStatus.LockBomb = false;
-                            Globals.JuuouenStatus.MaxPower = false;
-                            Globals.JuuouenStatus.Invincible = false;
+                            TouhouHackProfiles.JuuouenV100a.ResetAll();
+                            TouhouHackProfiles.JuuouenV110c.ResetAll();
                         }
                         if (Globals.JuuouenStatus.IsRunStatusC && Globals.JuuouenStatus.IsRun && item == "th19c")
                         {
@@ -860,10 +873,8 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.JuuouenStatus.IsRun = false;
                             Globals.JuuouenStatus.BaseAddress = 0;
                             Globals.JuuouenStatus.ProcessHandle = 0;
-                            Globals.JuuouenStatus.LockPlayer = false;
-                            Globals.JuuouenStatus.LockBomb = false;
-                            Globals.JuuouenStatus.MaxPower = false;
-                            Globals.JuuouenStatus.Invincible = false;
+                            TouhouHackProfiles.JuuouenV100a.ResetAll();
+                            TouhouHackProfiles.JuuouenV110c.ResetAll();
                         }
 
                         if (Globals.JuuouenStatus.IsRunStatusE && Globals.JuuouenStatus.IsRun && item == "th19e")
@@ -872,10 +883,8 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.JuuouenStatus.IsRun = false;
                             Globals.JuuouenStatus.BaseAddress = 0;
                             Globals.JuuouenStatus.ProcessHandle = 0;
-                            Globals.JuuouenStatus.LockPlayer = false;
-                            Globals.JuuouenStatus.LockBomb = false;
-                            Globals.JuuouenStatus.MaxPower = false;
-                            Globals.JuuouenStatus.Invincible = false;
+                            TouhouHackProfiles.JuuouenV100a.ResetAll();
+                            TouhouHackProfiles.JuuouenV110c.ResetAll();
                         }
 
                     }
@@ -937,6 +946,353 @@ namespace Touhou_Project_Mod_UI.Utils
                             Globals.KinjoukyouStatus.MaxPower = false;
                             Globals.KinjoukyouStatus.Invincible = false;
                         }
+                    }
+
+                    // ===================== 小数点作（骨架，待逆向） =====================
+                    // ---- 07.5东方萃梦想 (th075) ----
+                    if (tmpBool && item.Contains("th075"))
+                    {
+                        if (!Globals.SuimusouStatus.IsRunStatus && !Globals.SuimusouStatus.IsRun && item == "th075")
+                        {
+                            Globals.SuimusouStatus.IsRunStatus = true;
+                            Globals.SuimusouStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th075"))
+                    {
+
+                        if (Globals.SuimusouStatus.IsRunStatus && Globals.SuimusouStatus.IsRun && item == "th075")
+                        {
+                            Globals.SuimusouStatus.IsRunStatus = false;
+                            Globals.SuimusouStatus.IsRun = false;
+                            Globals.SuimusouStatus.BaseAddress = 0;
+                            Globals.SuimusouStatus.ProcessHandle = 0;
+                            Globals.SuimusouStatus.LockPlayer = false;
+                            Globals.SuimusouStatus.LockBomb = false;
+                            Globals.SuimusouStatus.MaxPower = false;
+                            Globals.SuimusouStatus.Invincible = false;
+                        }
+
+                    }
+
+                    // ---- 09.5东方文花帖 (th095) ----
+                    if (tmpBool && item.Contains("th095"))
+                    {
+                        if (!Globals.BunkachouStatus.IsRunStatus && !Globals.BunkachouStatus.IsRun && item == "th095")
+                        {
+                            Globals.BunkachouStatus.IsRunStatus = true;
+                            Globals.BunkachouStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th095"))
+                    {
+
+                        if (Globals.BunkachouStatus.IsRunStatus && Globals.BunkachouStatus.IsRun && item == "th095")
+                        {
+                            Globals.BunkachouStatus.IsRunStatus = false;
+                            Globals.BunkachouStatus.IsRun = false;
+                            Globals.BunkachouStatus.BaseAddress = 0;
+                            Globals.BunkachouStatus.ProcessHandle = 0;
+                            TouhouHackProfiles.Bunkachou.ResetAll();
+                        }
+
+                    }
+
+                    // ---- 10.5东方绯想天 (th105) ----
+                    if (tmpBool && item.Contains("th105"))
+                    {
+                        if (!Globals.HisoutenStatus.IsRunStatus && !Globals.HisoutenStatus.IsRun && item == "th105")
+                        {
+                            Globals.HisoutenStatus.IsRunStatus = true;
+                            Globals.HisoutenStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th105"))
+                    {
+
+                        if (Globals.HisoutenStatus.IsRunStatus && Globals.HisoutenStatus.IsRun && item == "th105")
+                        {
+                            Globals.HisoutenStatus.IsRunStatus = false;
+                            Globals.HisoutenStatus.IsRun = false;
+                            Globals.HisoutenStatus.BaseAddress = 0;
+                            Globals.HisoutenStatus.ProcessHandle = 0;
+                            Globals.HisoutenStatus.LockPlayer = false;
+                            Globals.HisoutenStatus.LockBomb = false;
+                            Globals.HisoutenStatus.MaxPower = false;
+                            Globals.HisoutenStatus.Invincible = false;
+                        }
+
+                    }
+
+                    // ---- 12.3东方非想天则 (th123) ----
+                    if (tmpBool && item.Contains("th123"))
+                    {
+                        if (!Globals.HisoutensokuStatus.IsRunStatus && !Globals.HisoutensokuStatus.IsRun && item == "th123")
+                        {
+                            Globals.HisoutensokuStatus.IsRunStatus = true;
+                            Globals.HisoutensokuStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th123"))
+                    {
+
+                        if (Globals.HisoutensokuStatus.IsRunStatus && Globals.HisoutensokuStatus.IsRun && item == "th123")
+                        {
+                            Globals.HisoutensokuStatus.IsRunStatus = false;
+                            Globals.HisoutensokuStatus.IsRun = false;
+                            Globals.HisoutensokuStatus.BaseAddress = 0;
+                            Globals.HisoutensokuStatus.ProcessHandle = 0;
+                            Globals.HisoutensokuStatus.LockPlayer = false;
+                            Globals.HisoutensokuStatus.LockBomb = false;
+                            Globals.HisoutensokuStatus.MaxPower = false;
+                            Globals.HisoutensokuStatus.Invincible = false;
+                        }
+
+                    }
+
+                    // ---- 12.5东方文花帖DS (th125) ----
+                    if (tmpBool && item.Contains("th125"))
+                    {
+                        if (!Globals.DoubleSpoilerStatus.IsRunStatus && !Globals.DoubleSpoilerStatus.IsRun && item == "th125")
+                        {
+                            Globals.DoubleSpoilerStatus.IsRunStatus = true;
+                            Globals.DoubleSpoilerStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th125"))
+                    {
+
+                        if (Globals.DoubleSpoilerStatus.IsRunStatus && Globals.DoubleSpoilerStatus.IsRun && item == "th125")
+                        {
+                            Globals.DoubleSpoilerStatus.IsRunStatus = false;
+                            Globals.DoubleSpoilerStatus.IsRun = false;
+                            Globals.DoubleSpoilerStatus.BaseAddress = 0;
+                            Globals.DoubleSpoilerStatus.ProcessHandle = 0;
+                            TouhouHackProfiles.DoubleSpoiler.ResetAll();
+                        }
+
+                    }
+
+                    // ---- 12.8妖精大战争 (th128) ----
+                    if (tmpBool && item.Contains("th128"))
+                    {
+                        if (!Globals.YouseiDaisensouStatus.IsRunStatus && !Globals.YouseiDaisensouStatus.IsRun && item == "th128")
+                        {
+                            Globals.YouseiDaisensouStatus.IsRunStatus = true;
+                            Globals.YouseiDaisensouStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th128"))
+                    {
+
+                        if (Globals.YouseiDaisensouStatus.IsRunStatus && Globals.YouseiDaisensouStatus.IsRun && item == "th128")
+                        {
+                            Globals.YouseiDaisensouStatus.IsRunStatus = false;
+                            Globals.YouseiDaisensouStatus.IsRun = false;
+                            Globals.YouseiDaisensouStatus.BaseAddress = 0;
+                            Globals.YouseiDaisensouStatus.ProcessHandle = 0;
+                            TouhouHackProfiles.YouseiDaisensou.ResetAll();
+                        }
+
+                    }
+
+                    // ---- 13.5东方心绮楼 (th135) ----
+                    if (tmpBool && item.Contains("th135"))
+                    {
+                        if (!Globals.ShinkirouStatus.IsRunStatus && !Globals.ShinkirouStatus.IsRun && item == "th135")
+                        {
+                            Globals.ShinkirouStatus.IsRunStatus = true;
+                            Globals.ShinkirouStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th135"))
+                    {
+
+                        if (Globals.ShinkirouStatus.IsRunStatus && Globals.ShinkirouStatus.IsRun && item == "th135")
+                        {
+                            Globals.ShinkirouStatus.IsRunStatus = false;
+                            Globals.ShinkirouStatus.IsRun = false;
+                            Globals.ShinkirouStatus.BaseAddress = 0;
+                            Globals.ShinkirouStatus.ProcessHandle = 0;
+                            Globals.ShinkirouStatus.LockPlayer = false;
+                            Globals.ShinkirouStatus.LockBomb = false;
+                            Globals.ShinkirouStatus.MaxPower = false;
+                            Globals.ShinkirouStatus.Invincible = false;
+                        }
+
+                    }
+
+                    // ---- 14.3弹幕天邪鬼 (th143) ----
+                    if (tmpBool && item.Contains("th143"))
+                    {
+                        if (!Globals.DanmakuAmanojakuStatus.IsRunStatus && !Globals.DanmakuAmanojakuStatus.IsRun && item == "th143")
+                        {
+                            Globals.DanmakuAmanojakuStatus.IsRunStatus = true;
+                            Globals.DanmakuAmanojakuStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th143"))
+                    {
+
+                        if (Globals.DanmakuAmanojakuStatus.IsRunStatus && Globals.DanmakuAmanojakuStatus.IsRun && item == "th143")
+                        {
+                            Globals.DanmakuAmanojakuStatus.IsRunStatus = false;
+                            Globals.DanmakuAmanojakuStatus.IsRun = false;
+                            Globals.DanmakuAmanojakuStatus.BaseAddress = 0;
+                            Globals.DanmakuAmanojakuStatus.ProcessHandle = 0;
+                            TouhouHackProfiles.DanmakuAmanojaku.ResetAll();
+                        }
+
+                    }
+
+                    // ---- 14.5东方深秘录 (th145) ----
+                    if (tmpBool && item.Contains("th145"))
+                    {
+                        if (!Globals.ShinpirokuStatus.IsRunStatus && !Globals.ShinpirokuStatus.IsRun && item == "th145")
+                        {
+                            Globals.ShinpirokuStatus.IsRunStatus = true;
+                            Globals.ShinpirokuStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th145"))
+                    {
+
+                        if (Globals.ShinpirokuStatus.IsRunStatus && Globals.ShinpirokuStatus.IsRun && item == "th145")
+                        {
+                            Globals.ShinpirokuStatus.IsRunStatus = false;
+                            Globals.ShinpirokuStatus.IsRun = false;
+                            Globals.ShinpirokuStatus.BaseAddress = 0;
+                            Globals.ShinpirokuStatus.ProcessHandle = 0;
+                            Globals.ShinpirokuStatus.LockPlayer = false;
+                            Globals.ShinpirokuStatus.LockBomb = false;
+                            Globals.ShinpirokuStatus.MaxPower = false;
+                            Globals.ShinpirokuStatus.Invincible = false;
+                        }
+
+                    }
+
+                    // ---- 15.5东方凭依华 (th155) ----
+                    if (tmpBool && item.Contains("th155"))
+                    {
+                        if (!Globals.HyouikaStatus.IsRunStatus && !Globals.HyouikaStatus.IsRun && item == "th155")
+                        {
+                            Globals.HyouikaStatus.IsRunStatus = true;
+                            Globals.HyouikaStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th155"))
+                    {
+
+                        if (Globals.HyouikaStatus.IsRunStatus && Globals.HyouikaStatus.IsRun && item == "th155")
+                        {
+                            Globals.HyouikaStatus.IsRunStatus = false;
+                            Globals.HyouikaStatus.IsRun = false;
+                            Globals.HyouikaStatus.BaseAddress = 0;
+                            Globals.HyouikaStatus.ProcessHandle = 0;
+                            Globals.HyouikaStatus.LockPlayer = false;
+                            Globals.HyouikaStatus.LockBomb = false;
+                            Globals.HyouikaStatus.MaxPower = false;
+                            Globals.HyouikaStatus.Invincible = false;
+                        }
+
+                    }
+
+                    // ---- 16.5秘封噩梦日记 (th165) ----
+                    if (tmpBool && item.Contains("th165"))
+                    {
+                        if (!Globals.NightmareDiaryStatus.IsRunStatus && !Globals.NightmareDiaryStatus.IsRun && item == "th165")
+                        {
+                            Globals.NightmareDiaryStatus.IsRunStatus = true;
+                            Globals.NightmareDiaryStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th165"))
+                    {
+
+                        if (Globals.NightmareDiaryStatus.IsRunStatus && Globals.NightmareDiaryStatus.IsRun && item == "th165")
+                        {
+                            Globals.NightmareDiaryStatus.IsRunStatus = false;
+                            Globals.NightmareDiaryStatus.IsRun = false;
+                            Globals.NightmareDiaryStatus.BaseAddress = 0;
+                            Globals.NightmareDiaryStatus.ProcessHandle = 0;
+                            TouhouHackProfiles.NightmareDiary.ResetAll();
+                        }
+
+                    }
+
+                    // ---- 17.5东方刚欲异闻 (th175) ----
+                    if (tmpBool && item.Contains("th175"))
+                    {
+                        if (!Globals.GouyokuIbunStatus.IsRunStatus && !Globals.GouyokuIbunStatus.IsRun && item == "th175")
+                        {
+                            Globals.GouyokuIbunStatus.IsRunStatus = true;
+                            Globals.GouyokuIbunStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th175"))
+                    {
+
+                        if (Globals.GouyokuIbunStatus.IsRunStatus && Globals.GouyokuIbunStatus.IsRun && item == "th175")
+                        {
+                            Globals.GouyokuIbunStatus.IsRunStatus = false;
+                            Globals.GouyokuIbunStatus.IsRun = false;
+                            Globals.GouyokuIbunStatus.BaseAddress = 0;
+                            Globals.GouyokuIbunStatus.ProcessHandle = 0;
+                            Globals.GouyokuIbunStatus.LockPlayer = false;
+                            Globals.GouyokuIbunStatus.LockBomb = false;
+                            Globals.GouyokuIbunStatus.MaxPower = false;
+                            Globals.GouyokuIbunStatus.Invincible = false;
+                        }
+
+                    }
+
+                    // ---- 18.5弹幕狂们的黑市 (th185) ----
+                    if (tmpBool && item.Contains("th185"))
+                    {
+                        if (!Globals.BlackMarketStatus.IsRunStatus && !Globals.BlackMarketStatus.IsRun && item == "th185")
+                        {
+                            Globals.BlackMarketStatus.IsRunStatus = true;
+                            Globals.BlackMarketStatus.IsRun = true;
+
+                        }
+
+                    }
+                    else if (!tmpBool && item.Contains("th185"))
+                    {
+
+                        if (Globals.BlackMarketStatus.IsRunStatus && Globals.BlackMarketStatus.IsRun && item == "th185")
+                        {
+                            Globals.BlackMarketStatus.IsRunStatus = false;
+                            Globals.BlackMarketStatus.IsRun = false;
+                            Globals.BlackMarketStatus.BaseAddress = 0;
+                            Globals.BlackMarketStatus.ProcessHandle = 0;
+                            TouhouHackProfiles.BlackMarket.ResetAll();
+                        }
+
                     }
                 }
 

@@ -185,6 +185,15 @@ namespace Touhou_Project_Mod_UI.Properties {
                 return ResourceManager.GetString("Koumakyou", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   查找类似 Touhou Koumakyou: New Classic 的本地化字符串。
+        /// </summary>
+        public static string KoumakyouNc {
+            get {
+                return ResourceManager.GetString("KoumakyouNc", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   查找类似 Touhou Kouryuudou 的本地化字符串。
@@ -293,5 +302,212 @@ namespace Touhou_Project_Mod_UI.Properties {
                 return ResourceManager.GetString("Youyoumu", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   查找类似 Touhou Suimusou 的本地化字符串。
+        /// </summary>
+        public static string Suimusou {
+            get {
+                return ResourceManager.GetString("Suimusou", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Touhou Bunkachou 的本地化字符串。
+        /// </summary>
+        public static string Bunkachou {
+            get {
+                return ResourceManager.GetString("Bunkachou", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Touhou Hisouten 的本地化字符串。
+        /// </summary>
+        public static string Hisouten {
+            get {
+                return ResourceManager.GetString("Hisouten", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Touhou Hisoutensoku 的本地化字符串。
+        /// </summary>
+        public static string Hisoutensoku {
+            get {
+                return ResourceManager.GetString("Hisoutensoku", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Double Spoiler 的本地化字符串。
+        /// </summary>
+        public static string DoubleSpoiler {
+            get {
+                return ResourceManager.GetString("DoubleSpoiler", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Great Fairy Wars 的本地化字符串。
+        /// </summary>
+        public static string YouseiDaisensou {
+            get {
+                return ResourceManager.GetString("YouseiDaisensou", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Touhou Shinkirou 的本地化字符串。
+        /// </summary>
+        public static string Shinkirou {
+            get {
+                return ResourceManager.GetString("Shinkirou", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Danmaku Amanojaku 的本地化字符串。
+        /// </summary>
+        public static string DanmakuAmanojaku {
+            get {
+                return ResourceManager.GetString("DanmakuAmanojaku", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Touhou Shinpiroku 的本地化字符串。
+        /// </summary>
+        public static string Shinpiroku {
+            get {
+                return ResourceManager.GetString("Shinpiroku", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Touhou Hyouika 的本地化字符串。
+        /// </summary>
+        public static string Hyouika {
+            get {
+                return ResourceManager.GetString("Hyouika", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Hifuu Nightmare Diary 的本地化字符串。
+        /// </summary>
+        public static string NightmareDiary {
+            get {
+                return ResourceManager.GetString("NightmareDiary", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Touhou Gouyoku Ibun 的本地化字符串。
+        /// </summary>
+        public static string GouyokuIbun {
+            get {
+                return ResourceManager.GetString("GouyokuIbun", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 100th Black Market 的本地化字符串。
+        /// </summary>
+        public static string BlackMarket {
+            get {
+                return ResourceManager.GetString("BlackMarket", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   查找类似 Time Lock 的本地化字符串。
+        /// </summary>
+        public static string LockTime {
+            get {
+                return ResourceManager.GetString("LockTime", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Inf. Charge 的本地化字符串。
+        /// </summary>
+        public static string InfCharge {
+            get {
+                return ResourceManager.GetString("InfCharge", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Coercive Reporting 的本地化字符串。
+        /// </summary>
+        public static string FocusLockOn {
+            get {
+                return ResourceManager.GetString("FocusLockOn", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Inf. Items 的本地化字符串。
+        /// </summary>
+        public static string InfItems {
+            get {
+                return ResourceManager.GetString("InfItems", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Inf. BMoney 的本地化字符串。
+        /// </summary>
+        public static string InfBMoney {
+            get {
+                return ResourceManager.GetString("InfBMoney", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Auto Bomb 的本地化字符串。
+        /// </summary>
+        public static string AutoBomb {
+            get {
+                return ResourceManager.GetString("AutoBomb", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Lock CPU Charge 的本地化字符串。
+        /// </summary>
+        public static string CpuChargeLock {
+            get {
+                return ResourceManager.GetString("CpuChargeLock", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Lock Rank 的本地化字符串。
+        /// </summary>
+        public static string LockRank {
+            get {
+                return ResourceManager.GetString("LockRank", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Allow Multiple Instances 的本地化字符串。
+        /// </summary>
+        public static string MultiInstance {
+            get {
+                return ResourceManager.GetString("MultiInstance", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   查找类似 Unsupported game version 的本地化字符串。
+        /// </summary>
+        public static string VersionMismatch {
+            get {
+                return ResourceManager.GetString("VersionMismatch", resourceCulture);
+            }
+        }
+
     }
 }

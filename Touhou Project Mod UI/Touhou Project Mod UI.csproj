@@ -9,7 +9,7 @@
     <UseWPF>true</UseWPF>
 	 <Nullable>enable</Nullable>
 	 <ApplicationManifest>app.manifest</ApplicationManifest>
-	 <ApplicationIcon>Th20.ico</ApplicationIcon>
+	 <ApplicationIcon>Th06nc.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,6 +25,20 @@
     <None Remove="Img\Th19.png" />
     <None Remove="Img\Th20.png" />
     <None Remove="Img\Th9.png" />
+    <None Remove="Img\Th075.png" />
+    <None Remove="Img\Th095.png" />
+    <None Remove="Img\Th105.png" />
+    <None Remove="Img\Th123.png" />
+    <None Remove="Img\Th125.png" />
+    <None Remove="Img\Th128.png" />
+    <None Remove="Img\Th135.png" />
+    <None Remove="Img\Th143.png" />
+    <None Remove="Img\Th145.png" />
+    <None Remove="Img\Th155.png" />
+    <None Remove="Img\Th165.png" />
+    <None Remove="Img\Th175.png" />
+    <None Remove="Img\Th185.png" />
+    <None Remove="Img\Th06nc.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +62,20 @@
     <Resource Include="Img\Th19.png" />
     <Resource Include="Img\Th20.png" />
     <Resource Include="Img\Th9.png" />
+    <Resource Include="Img\Th075.png" />
+    <Resource Include="Img\Th095.png" />
+    <Resource Include="Img\Th105.png" />
+    <Resource Include="Img\Th123.png" />
+    <Resource Include="Img\Th125.png" />
+    <Resource Include="Img\Th128.png" />
+    <Resource Include="Img\Th135.png" />
+    <Resource Include="Img\Th143.png" />
+    <Resource Include="Img\Th145.png" />
+    <Resource Include="Img\Th155.png" />
+    <Resource Include="Img\Th165.png" />
+    <Resource Include="Img\Th175.png" />
+    <Resource Include="Img\Th185.png" />
+    <Resource Include="Img\Th06nc.png" />
   </ItemGroup>
 
   <ItemGroup>

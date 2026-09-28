@@ -181,18 +181,32 @@ public class ControlPagesData : List<ControlInfoDataItem>
     {
         AddPage(typeof(Home), Properties.Resources.Home);
         AddPage(typeof(Koumakyou), Properties.Resources.Koumakyou);
+        AddPage(typeof(KoumakyouNc), Properties.Resources.KoumakyouNc);
         AddPage(typeof(Youyoumu), Properties.Resources.Youyoumu);
+        AddPage(typeof(Suimusou), Properties.Resources.Suimusou);
         AddPage(typeof(Eiyashou), Properties.Resources.Eiyashou);
         AddPage(typeof(Kaeizuka), Properties.Resources.Kaeizuka);
+        AddPage(typeof(Bunkachou), Properties.Resources.Bunkachou);
         AddPage(typeof(Fuujinroku), Properties.Resources.Fuujinroku);
+        AddPage(typeof(Hisouten), Properties.Resources.Hisouten);
         AddPage(typeof(Chireiden), Properties.Resources.Chireiden);
         AddPage(typeof(Seirensen), Properties.Resources.Seirensen);
+        AddPage(typeof(Hisoutensoku), Properties.Resources.Hisoutensoku);
+        AddPage(typeof(DoubleSpoiler), Properties.Resources.DoubleSpoiler);
+        AddPage(typeof(YouseiDaisensou), Properties.Resources.YouseiDaisensou);
         AddPage(typeof(Shinreibyou), Properties.Resources.Shinreibyou);
+        AddPage(typeof(Shinkirou), Properties.Resources.Shinkirou);
         AddPage(typeof(Kishinjou), Properties.Resources.Kishinjou);
+        AddPage(typeof(DanmakuAmanojaku), Properties.Resources.DanmakuAmanojaku);
+        AddPage(typeof(Shinpiroku), Properties.Resources.Shinpiroku);
         AddPage(typeof(Kanjuden), Properties.Resources.Kanjuden);
+        AddPage(typeof(Hyouika), Properties.Resources.Hyouika);
         AddPage(typeof(Tenkuushou), Properties.Resources.Tenkuushou);
+        AddPage(typeof(NightmareDiary), Properties.Resources.NightmareDiary);
         AddPage(typeof(Kikeijuu), Properties.Resources.Kikeijuu);
+        AddPage(typeof(GouyokuIbun), Properties.Resources.GouyokuIbun);
         AddPage(typeof(Kouryuudou), Properties.Resources.Kouryuudou);
+        AddPage(typeof(BlackMarket), Properties.Resources.BlackMarket);
         AddPage(typeof(Juuouen), Properties.Resources.Juuouen);
         AddPage(typeof(Kinjoukyou), Properties.Resources.Kinjoukyou);
     }

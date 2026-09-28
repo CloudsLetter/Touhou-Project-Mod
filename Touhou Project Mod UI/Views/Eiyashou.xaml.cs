@@ -283,21 +283,30 @@ namespace Touhou_Project_Mod_UI.Views
             }
             if (!MaxPower)
             {
-                Globals.EiyashouStatus.MaxPower_Locker = false;
-                MaxPower = false;
-                return;
-
+                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Power_Offset, Value.Eiyashou_Sub_Power_Value_Default))
+                {
+                    return;
+                }
+                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Power2_Offset, Value.Eiyashou_Sub_Power2_Value_Default))
+                {
+                    return;
+                }
             }
             else
             {
-
-                Globals.EiyashouStatus.MaxPower_Locker = false;
-                MaxPower = false;
-                return;
+                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Power_Offset, Value.Eiyashou_Sub_Power_Value))
+                {
+                    Globals.EiyashouStatus.MaxPower_Locker = true;
+                    MaxPower = false;
+                    return;
+                }
+                if (!Memory.SetMemory(Globals.EiyashouStatus.ProcessHandle, Globals.EiyashouStatus.BaseAddress + Offset.Eiyashou_Sub_Power2_Offset, Value.Eiyashou_Sub_Power2_Value))
+                {
+                    Globals.EiyashouStatus.MaxPower_Locker = true;
+                    MaxPower = false;
+                    return;
+                }
             }
-
-
-            MaxPower = MaxPowerSwitch.IsOn;
 
         }
         private void InvincibleToggled(object sender, RoutedEventArgs e)

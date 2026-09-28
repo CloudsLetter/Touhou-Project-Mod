@@ -59,8 +59,8 @@ namespace Touhou_Project_Mod_UI.Models
 
         public static byte[] Youyoumu_Sub_Bomb_Value_Default = [0xD9, 0x58, 0x68];
 
-        public static byte[] Youyoumu_Sub_Power1_Value_Default = [];
-        public static byte[] Youyoumu_Sub_Power2_Value_Default = [];
+        public static byte[] Youyoumu_Sub_Power1_Value_Default = [0x74, 0x2D];
+        public static byte[] Youyoumu_Sub_Power2_Value_Default = [0xF0];
 
         public static byte[] Youyoumu_Sub_Invincible1_Value_Default = [0x07];
         public static byte[] Youyoumu_Sub_Invincible2_Value_Default = [0x04];
@@ -70,8 +70,8 @@ namespace Touhou_Project_Mod_UI.Models
 
         public static byte[] Youyoumu_Sub_Bomb_Value = [0x90, 0x90, 0x90];
 
-        public static byte[] Youyoumu_Sub_Power1_Value = [];
-        public static byte[] Youyoumu_Sub_Power2_Value = [];
+        public static byte[] Youyoumu_Sub_Power1_Value = [0xEB, 0x16];
+        public static byte[] Youyoumu_Sub_Power2_Value = [0x00];
 
         public static byte[] Youyoumu_Sub_Invincible1_Value = [0x00];
         public static byte[] Youyoumu_Sub_Invincible2_Value = [0x00];
@@ -89,7 +89,7 @@ namespace Touhou_Project_Mod_UI.Models
         public static byte[] Eiyashou_Sub_Bomb_Value_Default = [0xD9, 0x98, 0x80, 0x00, 0x00, 0x00];
 
 
-        public static byte[] Eiyashou_Sub_Power_Value_Default = [];
+        public static byte[] Eiyashou_Sub_Power_Value_Default = [0x0F, 0x84, 0xED];
 
 
         public static byte[] Eiyashou_Sub_Invincible1_Value_Default = [0x07];
@@ -102,7 +102,10 @@ namespace Touhou_Project_Mod_UI.Models
 
         public static byte[] Eiyashou_Sub_Bomb_Value = [0x90, 0x90, 0x90, 0x90, 0x90, 0x90];
         // 
-        public static byte[] Eiyashou_Sub_Power_Value = [];
+        public static byte[] Eiyashou_Sub_Power_Value = [0x2E, 0xE9, 0x61];
+
+        public static byte[] Eiyashou_Sub_Power2_Value_Default = [0xF0];
+        public static byte[] Eiyashou_Sub_Power2_Value = [0x00];
 
 
 
@@ -390,6 +393,89 @@ namespace Touhou_Project_Mod_UI.Models
         public static byte[] Kinjoukyou_Sub_Power_Value = [0x90, 0x90, 0x90];
 
         public static byte[] Kinjoukyou_Sub_Invincible_Value = [0x01];
+
+        // ===================== 小数点作（骨架，待逆向） =====================
+        // 以下数组必须保持为空。Memory.SetMemory 在 value.Length == 0 时会在
+        // VirtualProtectEx 处失败并返回 false，从而保证「基址 + 0x00」永远不会被写入。
+        // 逆向出字节后，再把对应的原始字节 / NOP 字节填进这两个数组即可生效。
+        // ===================================================================
+
+        // 07.5东方萃梦想 (th075)
+        public static byte[] Suimusou_Power_Value = [];
+        public static byte[] Suimusou_Sub_Plyaer_Value_Default = [];
+        public static byte[] Suimusou_Sub_Bomb_Value_Default = [];
+        public static byte[] Suimusou_Sub_Power_Value_Default = [];
+        public static byte[] Suimusou_Sub_Invincible_Value_Default = [];
+        public static byte[] Suimusou_Sub_Plyaer_Value = [];
+        public static byte[] Suimusou_Sub_Bomb_Value = [];
+        public static byte[] Suimusou_Sub_Power_Value = [];
+        public static byte[] Suimusou_Sub_Invincible_Value = [];
+
+        // 10.5东方绯想天 (th105)
+        public static byte[] Hisouten_Power_Value = [];
+        public static byte[] Hisouten_Sub_Plyaer_Value_Default = [];
+        public static byte[] Hisouten_Sub_Bomb_Value_Default = [];
+        public static byte[] Hisouten_Sub_Power_Value_Default = [];
+        public static byte[] Hisouten_Sub_Invincible_Value_Default = [];
+        public static byte[] Hisouten_Sub_Plyaer_Value = [];
+        public static byte[] Hisouten_Sub_Bomb_Value = [];
+        public static byte[] Hisouten_Sub_Power_Value = [];
+        public static byte[] Hisouten_Sub_Invincible_Value = [];
+
+        // 12.3东方非想天则 (th123)
+        public static byte[] Hisoutensoku_Power_Value = [];
+        public static byte[] Hisoutensoku_Sub_Plyaer_Value_Default = [];
+        public static byte[] Hisoutensoku_Sub_Bomb_Value_Default = [];
+        public static byte[] Hisoutensoku_Sub_Power_Value_Default = [];
+        public static byte[] Hisoutensoku_Sub_Invincible_Value_Default = [];
+        public static byte[] Hisoutensoku_Sub_Plyaer_Value = [];
+        public static byte[] Hisoutensoku_Sub_Bomb_Value = [];
+        public static byte[] Hisoutensoku_Sub_Power_Value = [];
+        public static byte[] Hisoutensoku_Sub_Invincible_Value = [];
+
+        // 13.5东方心绮楼 (th135)
+        public static byte[] Shinkirou_Power_Value = [];
+        public static byte[] Shinkirou_Sub_Plyaer_Value_Default = [];
+        public static byte[] Shinkirou_Sub_Bomb_Value_Default = [];
+        public static byte[] Shinkirou_Sub_Power_Value_Default = [];
+        public static byte[] Shinkirou_Sub_Invincible_Value_Default = [];
+        public static byte[] Shinkirou_Sub_Plyaer_Value = [];
+        public static byte[] Shinkirou_Sub_Bomb_Value = [];
+        public static byte[] Shinkirou_Sub_Power_Value = [];
+        public static byte[] Shinkirou_Sub_Invincible_Value = [];
+
+        // 14.5东方深秘录 (th145)
+        public static byte[] Shinpiroku_Power_Value = [];
+        public static byte[] Shinpiroku_Sub_Plyaer_Value_Default = [];
+        public static byte[] Shinpiroku_Sub_Bomb_Value_Default = [];
+        public static byte[] Shinpiroku_Sub_Power_Value_Default = [];
+        public static byte[] Shinpiroku_Sub_Invincible_Value_Default = [];
+        public static byte[] Shinpiroku_Sub_Plyaer_Value = [];
+        public static byte[] Shinpiroku_Sub_Bomb_Value = [];
+        public static byte[] Shinpiroku_Sub_Power_Value = [];
+        public static byte[] Shinpiroku_Sub_Invincible_Value = [];
+
+        // 15.5东方凭依华 (th155)
+        public static byte[] Hyouika_Power_Value = [];
+        public static byte[] Hyouika_Sub_Plyaer_Value_Default = [];
+        public static byte[] Hyouika_Sub_Bomb_Value_Default = [];
+        public static byte[] Hyouika_Sub_Power_Value_Default = [];
+        public static byte[] Hyouika_Sub_Invincible_Value_Default = [];
+        public static byte[] Hyouika_Sub_Plyaer_Value = [];
+        public static byte[] Hyouika_Sub_Bomb_Value = [];
+        public static byte[] Hyouika_Sub_Power_Value = [];
+        public static byte[] Hyouika_Sub_Invincible_Value = [];
+
+        // 17.5东方刚欲异闻 (th175)
+        public static byte[] GouyokuIbun_Power_Value = [];
+        public static byte[] GouyokuIbun_Sub_Plyaer_Value_Default = [];
+        public static byte[] GouyokuIbun_Sub_Bomb_Value_Default = [];
+        public static byte[] GouyokuIbun_Sub_Power_Value_Default = [];
+        public static byte[] GouyokuIbun_Sub_Invincible_Value_Default = [];
+        public static byte[] GouyokuIbun_Sub_Plyaer_Value = [];
+        public static byte[] GouyokuIbun_Sub_Bomb_Value = [];
+        public static byte[] GouyokuIbun_Sub_Power_Value = [];
+        public static byte[] GouyokuIbun_Sub_Invincible_Value = [];
 
     }
 }

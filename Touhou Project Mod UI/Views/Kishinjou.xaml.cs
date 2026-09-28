@@ -237,7 +237,7 @@ namespace Touhou_Project_Mod_UI.Views
 
             if (!LockBomb)
             {
-                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Bomb_Offset, Value.Kishinjou_Sub_Plyaer_Value_Default))
+                if (!Memory.SetMemory(Globals.KishinjouStatus.ProcessHandle, Globals.KishinjouStatus.BaseAddress + Offset.Kishinjou_Sub_Bomb_Offset, Value.Kishinjou_Sub_Bomb_Value_Default))
                 {
                     return;
                 }

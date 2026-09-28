@@ -117,11 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AutoBomb" xml:space="preserve">
+    <value>自动B</value>
+  </data>
+  <data name="BlackMarket" xml:space="preserve">
+    <value>弹幕狂们的黑市</value>
+  </data>
+  <data name="Bunkachou" xml:space="preserve">
+    <value>东方文花帖</value>
+  </data>
   <data name="Chireiden" xml:space="preserve">
     <value>东方地灵殿</value>
   </data>
+  <data name="CpuChargeLock" xml:space="preserve">
+    <value>锁 CPU 充能</value>
+  </data>
+  <data name="DanmakuAmanojaku" xml:space="preserve">
+    <value>弹幕天邪鬼</value>
+  </data>
   <data name="Disabled" xml:space="preserve">
     <value>已停用</value>
+  </data>
+  <data name="DoubleSpoiler" xml:space="preserve">
+    <value>东方文花帖DS</value>
   </data>
   <data name="Eiyashou" xml:space="preserve">
     <value>东方永夜抄</value>
@@ -129,11 +147,35 @@
   <data name="Enabled" xml:space="preserve">
     <value>已启用</value>
   </data>
+  <data name="FocusLockOn" xml:space="preserve">
+    <value>暴力取材</value>
+  </data>
   <data name="Fuujinroku" xml:space="preserve">
     <value>东方风神录</value>
   </data>
+  <data name="GouyokuIbun" xml:space="preserve">
+    <value>东方刚欲异闻</value>
+  </data>
+  <data name="Hisouten" xml:space="preserve">
+    <value>东方绯想天</value>
+  </data>
+  <data name="Hisoutensoku" xml:space="preserve">
+    <value>东方非想天则</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>主页</value>
+  </data>
+  <data name="Hyouika" xml:space="preserve">
+    <value>东方凭依华</value>
+  </data>
+  <data name="InfBMoney" xml:space="preserve">
+    <value>无限弹币</value>
+  </data>
+  <data name="InfCharge" xml:space="preserve">
+    <value>无限装填率</value>
+  </data>
+  <data name="InfItems" xml:space="preserve">
+    <value>无限道具</value>
   </data>
   <data name="Invincible" xml:space="preserve">
     <value>无敌</value>
@@ -159,6 +201,9 @@
   <data name="Koumakyou" xml:space="preserve">
     <value>东方红魔乡</value>
   </data>
+  <data name="KoumakyouNc" xml:space="preserve">
+    <value>东方红魔乡 新典</value>
+  </data>
   <data name="Kouryuudou" xml:space="preserve">
     <value>东方虹龙洞</value>
   </data>
@@ -168,8 +213,20 @@
   <data name="LockPlayer" xml:space="preserve">
     <value>锁残</value>
   </data>
+  <data name="LockRank" xml:space="preserve">
+    <value>Rank 锁定</value>
+  </data>
+  <data name="LockTime" xml:space="preserve">
+    <value>锁时</value>
+  </data>
   <data name="MaxPower" xml:space="preserve">
     <value>满能量</value>
+  </data>
+  <data name="MultiInstance" xml:space="preserve">
+    <value>允许多开</value>
+  </data>
+  <data name="NightmareDiary" xml:space="preserve">
+    <value>秘封噩梦日记</value>
   </data>
   <data name="NoResultsFound" xml:space="preserve">
     <value>未找到结果</value>
@@ -183,14 +240,29 @@
   <data name="Seirensen" xml:space="preserve">
     <value>东方星莲船</value>
   </data>
+  <data name="Shinkirou" xml:space="preserve">
+    <value>东方心绮楼</value>
+  </data>
+  <data name="Shinpiroku" xml:space="preserve">
+    <value>东方深秘录</value>
+  </data>
   <data name="Shinreibyou" xml:space="preserve">
     <value>东方神灵庙</value>
+  </data>
+  <data name="Suimusou" xml:space="preserve">
+    <value>东方萃梦想</value>
   </data>
   <data name="Tenkuushou" xml:space="preserve">
     <value>东方天空璋</value>
   </data>
+  <data name="VersionMismatch" xml:space="preserve">
+    <value>游戏版本不匹配</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>欢迎</value>
+  </data>
+  <data name="YouseiDaisensou" xml:space="preserve">
+    <value>妖精大战争</value>
   </data>
   <data name="Youyoumu" xml:space="preserve">
     <value>东方妖妖梦</value>

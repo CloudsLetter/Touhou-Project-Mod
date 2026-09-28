@@ -40,6 +40,27 @@ public static class Memory
 
 
 
+    /// <summary>
+    /// 读取目标进程内存到调用方提供的缓冲区。用于在打补丁前捕获原始字节。
+    /// </summary>
+    public static bool TryReadMemory(IntPtr processHandle, IntPtr targetAddress, byte[] buffer)
+    {
+        if (processHandle == IntPtr.Zero || buffer.Length == 0)
+        {
+            return false;
+        }
+
+        if (!Win32.ReadProcessMemory(processHandle, targetAddress, buffer, (uint)buffer.Length, out uint bytesRead))
+        {
+            return false;
+        }
+
+        return bytesRead == buffer.Length;
+    }
+
+
+
+
     public static bool IsTouhouRun(string processName)
     {
         Process[] processes = Process.GetProcessesByName(processName);
@@ -62,7 +83,15 @@ public static class Memory
 
         IntPtr processHandle = Win32.OpenProcess(Win32Offset.PROCESS_ALL_ACCESS, false, targetProcess.Id);
 
-        return (targetProcess.MainModule.BaseAddress, processHandle);
+        try
+        {
+            return (targetProcess.MainModule.BaseAddress, processHandle);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"读取 {processName} 模块基址失败：{ex.Message}");
+            return (IntPtr.Zero, IntPtr.Zero);
+        }
     }
 
     public static IntPtr LocateRealPtr(IntPtr handle, IntPtr baseAddress, IntPtr offset, IntPtr soffset)
