@@ -1,0 +1,33 @@
+name: Build
+
+# 平时的编译检查：推送到 master 或提 PR 时跑一次 Release 编译。
+# 只编译 WPF 那个 csproj（解决方案里还挂着一个 C++ 的 vcxproj，
+# 走 sln 需要额外装 C++ 工作负载，这里不需要）。
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      - "**.md"
+      - ".gitignore"
+      - "LICENSE.txt"
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    name: Build (Release)
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore
+        run: dotnet restore "Touhou Project Mod UI/Touhou Project Mod UI.csproj"
+
+      - name: Build
+        run: dotnet build "Touhou Project Mod UI/Touhou Project Mod UI.csproj" -c Release --no-restore
